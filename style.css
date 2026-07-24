@@ -284,3 +284,10 @@ font-family:'Pacifico',cursive;
 margin:5px;
 
 }
+.day-card{
+background:#ffe8f0;
+border:2px solid black;
+border-radius:20px;
+padding:15px;
+margin:15px;
+}
