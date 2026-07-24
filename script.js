@@ -1792,245 +1792,100 @@ alternative:"Dark chocolate."
 
 function searchRecipe(){
 
-let search =
-document.getElementById("searchBox").value.toLowerCase();
+let search = document
+.getElementById("searchBox")
+.value
+.toLowerCase()
+.trim();
+
+let result = document.getElementById("result");
 
 
-let result =
-document.getElementById("result");
+if(search === ""){
+result.innerHTML = 
+"<p>Please type a food name to search.</p>";
+return;
+}
 
 
-if(recipes[search]){
+let foundRecipes = [];
 
 
-let food=recipes[search];
+for(let key in recipes){
+
+if(
+key.includes(search) ||
+recipes[key].name.toLowerCase().includes(search)
+){
+
+foundRecipes.push(recipes[key]);
+
+}
+
+}
 
 
-result.innerHTML=
 
-`
-<h3>${food.name}</h3>
+if(foundRecipes.length > 0){
 
-<p>Calories: ${food.calories}</p>
 
-<p>Protein: ${food.protein}</p>
+result.innerHTML = "";
 
-<p>Carbohydrates: ${food.carbs}</p>
 
-<p>Fat: ${food.fat}</p>
+foundRecipes.forEach(food => {
 
-<h4>Recipe:</h4>
+
+result.innerHTML += `
+
+<div class="recipe-card">
+
+<h2>${food.name}</h2>
+
+<h4>Category:
+${food.category}</h4>
+
+
+<p>🔥 Calories:
+${food.calories}</p>
+
+<p>💪 Protein:
+${food.protein}</p>
+
+<p>🍚 Carbohydrates:
+${food.carbs}</p>
+
+<p>🥑 Fat:
+${food.fat}</p>
+
+<p>🌾 Fiber:
+${food.fiber}</p>
+
+<p>💊 Vitamins:
+${food.vitamins}</p>
+
+
+<h3>Ingredients</h3>
+
+<ul>
+
+${food.ingredients.map(item =>
+`<li>${item}</li>`
+).join("")}
+
+</ul>
+
+
+<h3>Recipe</h3>
 
 <p>${food.recipe}</p>
-`;
 
-}
 
-else{
+<h3>Alternative</h3>
 
-result.innerHTML=
-"Recipe not found. Try banana shake, chicken rice, oats, omelette or salad.";
+<p>${food.alternative}</p>
 
-}
 
-}
-
-
-
-// Personal Plan Calculator
-
-
-function calculatePlan(){
-
-
-let name =
-document.getElementById("name").value;
-
-
-let age =
-document.getElementById("age").value;
-
-
-let height =
-document.getElementById("height").value;
-
-
-let weight =
-document.getElementById("weight").value;
-
-
-let goal =
-document.getElementById("goal").value;
-
-
-
-let calories;
-
-
-let advice;
-
-
-
-if(goal=="gain"){
-
-
-calories = Number(weight)*35;
-
-
-advice=
-
-`
-<h3>Hello ${name} ❤️</h3>
-
-<p>
-Your goal is weight gain.
-</p>
-
-<p>
-Daily calories target:
-${calories} kcal
-</p>
-
-<p>
-Eat more protein, healthy fats,
-milk, eggs, rice, nuts and smoothies.
-</p>
-
-<p>
-Follow this plan consistently for 3 months.
-</p>
-`;
-
-
-
-}
-
-else{
-
-
-calories = Number(weight)*25;
-
-
-advice=
-
-`
-<h3>Hello ${name} ❤️</h3>
-
-<p>
-Your goal is weight loss.
-</p>
-
-<p>
-Daily calories target:
-${calories} kcal
-</p>
-
-<p>
-Eat vegetables, lean protein,
-fruits, oats and stay hydrated.
-</p>
-
-<p>
-Follow this plan consistently for 3 months.
-</p>
-`;
-
-}
-
-
-
-document.getElementById("plan").innerHTML=advice;
-
-
-
-saveHistory(name,age,weight,goal);
-
-
-}
-
-
-
-
-// History Saving
-
-
-function saveHistory(name,age,weight,goal){
-
-
-let history =
-JSON.parse(localStorage.getItem("history")) || [];
-
-
-history.push({
-
-name:name,
-age:age,
-weight:weight,
-goal:goal
-
-});
-
-
-localStorage.setItem(
-"history",
-JSON.stringify(history)
-);
-
-
-showHistory();
-
-}
-
-
-
-function showHistory(){
-
-
-let history =
-JSON.parse(localStorage.getItem("history")) || [];
-
-
-let box =
-document.getElementById("history");
-
-
-if(history.length==0){
-
-box.innerHTML="No history yet.";
-
-return;
-
-}
-
-
-box.innerHTML="";
-
-
-history.forEach((item)=>{
-
-
-box.innerHTML +=
-
-`
-<p>
-
-<b>${item.name}</b>
-
-<br>
-
-Age: ${item.age}
-
-<br>
-
-Weight: ${item.weight} kg
-
-<br>
-
-Goal: ${item.goal}
-
-</p>
-
-<hr>
+</div>
 
 `;
 
@@ -2039,24 +1894,22 @@ Goal: ${item.goal}
 
 }
 
-
-showHistory();
-
+else{
 
 
-// Buttons
+result.innerHTML = `
 
-function showGain(){
+<h3>No recipe found 😢</h3>
 
-document.getElementById("gain")
-.scrollIntoView();
+<p>
+Try searching:
+<br>
+Chicken, Rice, Shake, Salad, Egg, Oats, Pasta, Soup, Drink
+</p>
+
+`;
 
 }
 
-
-function showLoss(){
-
-document.getElementById("loss")
-.scrollIntoView();
 
 }
