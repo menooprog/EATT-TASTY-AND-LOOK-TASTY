@@ -1910,6 +1910,268 @@ Chicken, Rice, Shake, Salad, Egg, Oats, Pasta, Soup, Drink
 `;
 
 }
+const weightGainPlan = [
+
+{
+day:"Day 1",
+breakfast:"Oats + Banana + Milk + Peanut Butter",
+brunch:"Dry fruit shake",
+lunch:"Chicken rice + Yogurt",
+snack:"Dates + Nuts",
+dinner:"Chicken curry + Chapati"
+},
+
+{
+day:"Day 2",
+breakfast:"Egg omelette + Toast + Milk",
+brunch:"Banana shake",
+lunch:"Beef pulao + Salad",
+snack:"Peanut butter sandwich",
+dinner:"Fish + Rice"
+},
+
+{
+day:"Day 3",
+breakfast:"Paratha + Egg + Yogurt",
+brunch:"Mango shake",
+lunch:"Chicken karahi + Rice",
+snack:"Trail mix",
+dinner:"Keema + Chapati"
+},
+
+{
+day:"Day 4",
+breakfast:"Oats smoothie + Nuts",
+brunch:"Cheese sandwich",
+lunch:"Chicken pasta",
+snack:"Milk + Dates",
+dinner:"Chicken tikka + Chapati"
+},
+
+{
+day:"Day 5",
+breakfast:"French toast + Milk",
+brunch:"Almond shake",
+lunch:"Biryani + Raita",
+snack:"Peanut butter toast",
+dinner:"Beef curry + Rice"
+},
+
+{
+day:"Day 6",
+breakfast:"Egg sandwich + Fruit",
+brunch:"Chocolate milkshake",
+lunch:"Chicken burger",
+snack:"Dry fruits",
+dinner:"Pasta + Chicken"
+},
+
+{
+day:"Day 7",
+breakfast:"Omelette + Paratha",
+brunch:"Banana oats shake",
+lunch:"Pulao + Chicken",
+snack:"Nuts",
+dinner:"Qorma + Chapati"
+},
+
+// Repeat pattern with new meals
+
+{
+day:"Day 8",
+breakfast:"Milk oats + Banana",
+brunch:"Nut smoothie",
+lunch:"Chicken shawarma",
+snack:"Dates",
+dinner:"Rice + Curry"
+},
+
+{
+day:"Day 9",
+breakfast:"Eggs + Toast",
+brunch:"Mango shake",
+lunch:"Beef steak + Rice",
+snack:"Cheese sandwich",
+dinner:"Chicken curry"
+},
+
+{
+day:"Day 10",
+breakfast:"Pancakes + Milk",
+brunch:"Dry fruit shake",
+lunch:"Chicken biryani",
+snack:"Nuts",
+dinner:"Fish + Chapati"
+},
+
+{
+day:"Day 11",
+breakfast:"Oats bowl",
+brunch:"Peanut butter smoothie",
+lunch:"Keema rice",
+snack:"Fruit shake",
+dinner:"Chicken karahi"
+},
+
+{
+day:"Day 12",
+breakfast:"Cheese omelette",
+brunch:"Milkshake",
+lunch:"Pasta",
+snack:"Dates",
+dinner:"Beef curry"
+},
+
+{
+day:"Day 13",
+breakfast:"Paratha + Eggs",
+brunch:"Almond milkshake",
+lunch:"Chicken pulao",
+snack:"Trail mix",
+dinner:"Chicken tikka"
+},
+
+{
+day:"Day 14",
+breakfast:"French toast",
+brunch:"Banana shake",
+lunch:"Biryani",
+snack:"Dry fruits",
+dinner:"Qorma + Rice"
+}
+
+];
+
+
+const weightLossPlan = [
+
+{
+day:"Day 1",
+breakfast:"Oats + Green Tea",
+brunch:"Apple + Yogurt",
+lunch:"Grilled Chicken + Salad",
+snack:"Roasted Chickpeas",
+dinner:"Vegetable Soup"
+},
+
+{
+day:"Day 2",
+breakfast:"Boiled Eggs + Fruit",
+brunch:"Green Smoothie",
+lunch:"Brown Rice + Fish",
+snack:"Nuts",
+dinner:"Chicken Salad"
+},
+
+{
+day:"Day 3",
+breakfast:"Greek Yogurt + Oats",
+brunch:"Lemon Water + Fruit",
+lunch:"Chicken Wrap",
+snack:"Popcorn",
+dinner:"Soup + Vegetables"
+},
+
+{
+day:"Day 4",
+breakfast:"Vegetable Omelette",
+brunch:"Fruit Bowl",
+lunch:"Quinoa Bowl",
+snack:"Green Tea",
+dinner:"Grilled Fish"
+},
+
+{
+day:"Day 5",
+breakfast:"Apple Oatmeal",
+brunch:"Yogurt",
+lunch:"Chicken Salad",
+snack:"Roasted Chickpeas",
+dinner:"Vegetable Soup"
+},
+
+{
+day:"Day 6",
+breakfast:"Smoothie Bowl",
+brunch:"Green Tea",
+lunch:"Brown Rice + Chicken",
+snack:"Fruit",
+dinner:"Salad"
+},
+
+{
+day:"Day 7",
+breakfast:"Eggs + Toast",
+brunch:"Berry Smoothie",
+lunch:"Fish + Vegetables",
+snack:"Nuts",
+dinner:"Soup"
+},
+
+{
+day:"Day 8",
+breakfast:"Chia Pudding",
+brunch:"Fruit Bowl",
+lunch:"Chicken Salad",
+snack:"Green Tea",
+dinner:"Vegetable Stir Fry"
+},
+
+{
+day:"Day 9",
+breakfast:"Oats",
+brunch:"Apple",
+lunch:"Grilled Chicken",
+snack:"Popcorn",
+dinner:"Soup"
+},
+
+{
+day:"Day 10",
+breakfast:"Boiled Eggs",
+brunch:"Smoothie",
+lunch:"Tuna Sandwich",
+snack:"Yogurt",
+dinner:"Salad"
+},
+
+{
+day:"Day 11",
+breakfast:"Greek Yogurt Bowl",
+brunch:"Fruit",
+lunch:"Quinoa Bowl",
+snack:"Nuts",
+dinner:"Vegetables"
+},
+
+{
+day:"Day 12",
+breakfast:"Vegetable Omelette",
+brunch:"Green Tea",
+lunch:"Fish + Rice",
+snack:"Chickpeas",
+dinner:"Soup"
+},
+
+{
+day:"Day 13",
+breakfast:"Oats + Fruits",
+brunch:"Yogurt",
+lunch:"Chicken Wrap",
+snack:"Fruit",
+dinner:"Salad"
+},
+
+{
+day:"Day 14",
+breakfast:"Eggs + Toast",
+brunch:"Berry Smoothie",
+lunch:"Grilled Protein + Vegetables",
+snack:"Green Tea",
+dinner:"Soup"
+}
+
+];
 function calculatePlan(){
 
 let name = document.getElementById("name").value;
@@ -2040,6 +2302,39 @@ advice = "<p>Please select a goal.</p>";
 
 }
 
+let selectedPlan;
+
+if(goal=="gain"){
+selectedPlan = weightGainPlan;
+}
+else{
+selectedPlan = weightLossPlan;
+}
+
+
+selectedPlan.forEach(item=>{
+
+advice += `
+
+<div class="day-card">
+
+<h3>${item.day}</h3>
+
+<p>🍳 Breakfast: ${item.breakfast}</p>
+
+<p>🥤 Brunch: ${item.brunch}</p>
+
+<p>🍛 Lunch: ${item.lunch}</p>
+
+<p>🍎 Snack: ${item.snack}</p>
+
+<p>🌙 Dinner: ${item.dinner}</p>
+
+</div>
+
+`;
+
+});
 
 document.getElementById("planResult").innerHTML = advice;
 
