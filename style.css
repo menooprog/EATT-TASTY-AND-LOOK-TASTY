@@ -261,4 +261,26 @@ display:block;
 
 }
 
+.recipe-card{
+
+background:#ffe8f0;
+padding:25px;
+margin:20px;
+border-radius:25px;
+border:2px solid black;
+
+}
+
+
+.recipe-card h2{
+
+font-family:'Pacifico',cursive;
+
+}
+
+
+.recipe-card li{
+
+margin:5px;
+
 }
