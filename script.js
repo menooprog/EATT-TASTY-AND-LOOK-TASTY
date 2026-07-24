@@ -1910,6 +1910,139 @@ Chicken, Rice, Shake, Salad, Egg, Oats, Pasta, Soup, Drink
 `;
 
 }
+function calculatePlan(){
+
+let name = document.getElementById("name").value;
+let age = document.getElementById("age").value;
+let height = document.getElementById("height").value;
+let weight = document.getElementById("weight").value;
+let goal = document.getElementById("goal").value;
+
+let calories;
+let advice;
+
+
+if(goal === "gain"){
+
+calories = Number(weight) * 35;
+
+advice = `
+
+<div class="plan-card">
+
+<h2>Hello ${name} ❤️</h2>
+
+<p>Age: ${age} years</p>
+<p>Height: ${height} cm</p>
+<p>Current Weight: ${weight} kg</p>
+
+<h2>💪 Weight Gain Plan (3 Months)</h2>
+
+<h3>Daily Target</h3>
+<p>Calories: ${calories} kcal/day</p>
+<p>Focus: Protein + Healthy Fats + Complex Carbs</p>
+
+
+<h3>🍳 Breakfast</h3>
+<p>Eggs + Oats + Banana + Milk</p>
+
+
+<h3>🥪 Brunch</h3>
+<p>Peanut Butter Shake + Nuts + Dates</p>
+
+
+<h3>🍛 Lunch</h3>
+<p>Rice + Chicken/Beef + Vegetables + Yogurt</p>
+
+
+<h3>🥤 Evening Snack</h3>
+<p>Dry Fruit Shake or Smoothie Bowl</p>
+
+
+<h3>🍲 Dinner</h3>
+<p>Chapati + Chicken Curry + Salad</p>
+
+
+<p>
+Gain goal: Increase calories gradually and stay consistent for 3 months.
+</p>
+
+</div>
+
+`;
+
+}
+
+
+
+else if(goal === "loss"){
+
+calories = Number(weight) * 25;
+
+
+advice = `
+
+<div class="plan-card">
+
+<h2>Hello ${name} ❤️</h2>
+
+<p>Age: ${age} years</p>
+<p>Height: ${height} cm</p>
+<p>Current Weight: ${weight} kg</p>
+
+
+<h2>🥗 Weight Loss Plan (3 Months)</h2>
+
+
+<h3>Daily Target</h3>
+
+<p>Calories: ${calories} kcal/day</p>
+
+<p>Focus: Protein + Fibre + Balanced Meals</p>
+
+
+<h3>🍳 Breakfast</h3>
+<p>Oats + Boiled Eggs + Green Tea</p>
+
+
+<h3>🥗 Brunch</h3>
+<p>Fruit Bowl + Greek Yogurt</p>
+
+
+<h3>🍱 Lunch</h3>
+<p>Grilled Chicken/Fish + Brown Rice + Salad</p>
+
+
+<h3>☕ Evening Snack</h3>
+<p>Green Tea + Roasted Chickpeas</p>
+
+
+<h3>🍲 Dinner</h3>
+<p>Vegetable Soup + Protein Source</p>
+
+
+<p>
+Weight loss goal: Maintain a calorie deficit and stay active for 3 months.
+</p>
+
+
+</div>
+
+`;
+
+}
+
+
+
+else{
+
+advice = "<p>Please select a goal.</p>";
+
+}
+
+
+document.getElementById("planResult").innerHTML = advice;
 
 
 }
+
