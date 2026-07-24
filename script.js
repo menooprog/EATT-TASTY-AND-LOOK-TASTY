@@ -1,55 +1,165 @@
+
+
 // Recipe Database
+
 const recipes = {
 
-"banana shake":
-{
+"omelette":{
+name:"Vegetable Omelette",
+calories:"220 kcal",
+protein:"14 g",
+carbs:"3 g",
+fat:"17 g",
+fiber:"1 g",
+vitamins:"Vitamin A, D, B12",
+recipe:"Beat 2 eggs, add chopped onion, tomato and capsicum. Cook in 1 tsp olive oil for 3-4 minutes.",
+alternative:"Use spinach, mushrooms or cheese instead of capsicum."
+},
+
+"omelet":{
+name:"Vegetable Omelette",
+calories:"220 kcal",
+protein:"14 g",
+carbs:"3 g",
+fat:"17 g",
+fiber:"1 g",
+vitamins:"Vitamin A, D, B12",
+recipe:"Beat 2 eggs, add chopped onion, tomato and capsicum. Cook in 1 tsp olive oil.",
+alternative:"Use spinach or mushrooms."
+},
+
+"protein shake":{
+name:"Protein Shake",
+calories:"320 kcal",
+protein:"30 g",
+carbs:"18 g",
+fat:"8 g",
+fiber:"3 g",
+vitamins:"Calcium, Vitamin D",
+recipe:"Blend 1 scoop protein powder, 250 ml milk and 1 banana.",
+alternative:"Use yogurt instead of milk."
+},
+
+"banana shake":{
 name:"Banana Shake",
 calories:"350 kcal",
-protein:"12g",
-carbs:"55g",
-fat:"10g",
-recipe:"Blend 2 bananas + 1 glass milk + 1 spoon peanut butter."
+protein:"12 g",
+carbs:"55 g",
+fat:"10 g",
+fiber:"4 g",
+vitamins:"Vitamin B6, C",
+recipe:"Blend 2 bananas with milk and honey.",
+alternative:"Use dates instead of honey."
 },
 
-"chicken rice":
-{
-name:"Chicken Rice",
-calories:"550 kcal",
-protein:"35g",
-carbs:"70g",
-fat:"15g",
-recipe:"Cook rice with grilled chicken and vegetables."
-},
-
-"oats":
-{
+"oats":{
 name:"Oats Bowl",
 calories:"300 kcal",
-protein:"12g",
-carbs:"45g",
-fat:"8g",
-recipe:"Mix oats with milk, fruits and nuts."
+protein:"12 g",
+carbs:"45 g",
+fat:"8 g",
+fiber:"7 g",
+vitamins:"B Vitamins",
+recipe:"Cook oats in milk. Add fruits and nuts.",
+alternative:"Use almond milk."
 },
 
-"omelette":
-{
-name:"Omelette",
-calories:"220 kcal",
-protein:"14g",
-carbs:"3g",
-fat:"17g",
-recipe:"Cook 2 eggs with vegetables."
+"chicken rice":{
+name:"Chicken Rice",
+calories:"550 kcal",
+protein:"35 g",
+carbs:"70 g",
+fat:"15 g",
+fiber:"4 g",
+vitamins:"Vitamin B6",
+recipe:"Cook grilled chicken with steamed rice.",
+alternative:"Use brown rice."
 },
 
-"salad":
-{
-name:"Healthy Salad",
+"grilled chicken":{
+name:"Grilled Chicken",
+calories:"240 kcal",
+protein:"38 g",
+carbs:"0 g",
+fat:"8 g",
+fiber:"0 g",
+vitamins:"Vitamin B6",
+recipe:"Season chicken and grill for 15 minutes.",
+alternative:"Use turkey breast."
+},
+
+"salad":{
+name:"Garden Salad",
 calories:"150 kcal",
-protein:"5g",
-carbs:"20g",
-fat:"4g",
-recipe:"Mix cucumber, tomato, lettuce and yogurt dressing."
-}
+protein:"5 g",
+carbs:"18 g",
+fat:"4 g",
+fiber:"6 g",
+vitamins:"Vitamin A, C, K",
+recipe:"Mix lettuce, cucumber, tomato and carrots.",
+alternative:"Add broccoli or spinach."
+},
+
+"biryani":{
+name:"Chicken Biryani",
+calories:"480 kcal",
+protein:"22 g",
+carbs:"55 g",
+fat:"18 g",
+fiber:"3 g",
+vitamins:"Iron, B Vitamins",
+recipe:"Cook rice with chicken, spices and yogurt.",
+alternative:"Use brown rice."
+},
+
+"pasta":{
+name:"Chicken Pasta",
+calories:"430 kcal",
+protein:"24 g",
+carbs:"52 g",
+fat:"12 g",
+fiber:"4 g",
+vitamins:"Vitamin B",
+recipe:"Cook pasta and mix with grilled chicken and vegetables.",
+alternative:"Use whole wheat pasta."
+},
+
+"pizza":{
+name:"Healthy Pizza",
+calories:"310 kcal",
+protein:"15 g",
+carbs:"34 g",
+fat:"12 g",
+fiber:"3 g",
+vitamins:"Calcium",
+recipe:"Use whole wheat base, cheese and vegetables.",
+alternative:"Use chicken instead of pepperoni."
+},
+
+"apple":{
+name:"Apple",
+calories:"95 kcal",
+protein:"0.5 g",
+carbs:"25 g",
+fat:"0.3 g",
+fiber:"4.4 g",
+vitamins:"Vitamin C",
+recipe:"Wash and eat fresh.",
+alternative:"Pear."
+},
+
+"milk":{
+name:"Whole Milk",
+calories:"150 kcal",
+protein:"8 g",
+carbs:"12 g",
+fat:"8 g",
+fiber:"0 g",
+vitamins:"Calcium, Vitamin D",
+recipe:"Serve chilled.",
+alternative:"Soy milk."
+},
+
 "egg sandwich":{
 name:"Egg Sandwich",
 calories:"320 kcal",
@@ -240,7 +350,392 @@ fiber:"4 g",
 vitamins:"B6",
 recipe:"Mix banana, egg and oats. Cook on a pan.",
 alternative:"Use blueberries."
-}
+},
+
+"banana shake":
+{
+name:"Banana Shake",
+calories:"350 kcal",
+protein:"12g",
+carbs:"55g",
+fat:"10g",
+recipe:"Blend 2 bananas + 1 glass milk + 1 spoon peanut butter."
+},
+
+"chicken rice":
+{
+name:"Chicken Rice",
+calories:"550 kcal",
+protein:"35g",
+carbs:"70g",
+fat:"15g",
+recipe:"Cook rice with grilled chicken and vegetables."
+},
+
+"oats":
+{
+name:"Oats Bowl",
+calories:"300 kcal",
+protein:"12g",
+carbs:"45g",
+fat:"8g",
+recipe:"Mix oats with milk, fruits and nuts."
+},
+
+"omelette":
+{
+name:"Omelette",
+calories:"220 kcal",
+protein:"14g",
+carbs:"3g",
+fat:"17g",
+recipe:"Cook 2 eggs with vegetables."
+},
+
+"salad":
+{
+name:"Healthy Salad",
+calories:"150 kcal",
+protein:"5g",
+carbs:"20g",
+fat:"4g",
+recipe:"Mix cucumber, tomato, lettuce and yogurt dressing."
+},
+"banana shake":{
+category:"Weight Gain",
+name:"Banana Shake",
+calories:"350 kcal",
+protein:"12 g",
+carbs:"55 g",
+fat:"10 g",
+fiber:"4 g",
+vitamins:"B6, C",
+ingredients:["2 Bananas","250ml Milk","1 tbsp Honey"],
+recipe:"Blend all ingredients until smooth.",
+alternative:"Use dates instead of honey."
+},
+
+"protein shake":{
+category:"Weight Gain",
+name:"Protein Shake",
+calories:"320 kcal",
+protein:"30 g",
+carbs:"18 g",
+fat:"8 g",
+fiber:"2 g",
+vitamins:"D, Calcium",
+ingredients:["1 Scoop Protein","250ml Milk","1 Banana"],
+recipe:"Blend all ingredients together.",
+alternative:"Use yogurt instead of milk."
+},
+
+"mango shake":{
+category:"Weight Gain",
+name:"Mango Shake",
+calories:"370 kcal",
+protein:"10 g",
+carbs:"60 g",
+fat:"11 g",
+fiber:"4 g",
+vitamins:"A,C",
+ingredients:["1 Mango","250ml Milk","Honey"],
+recipe:"Blend until creamy.",
+alternative:"Add ice cream."
+},
+
+"dates shake":{
+category:"Weight Gain",
+name:"Dates Shake",
+calories:"410 kcal",
+protein:"12 g",
+carbs:"65 g",
+fat:"12 g",
+fiber:"5 g",
+vitamins:"Potassium",
+ingredients:["8 Dates","250ml Milk"],
+recipe:"Blend dates with milk.",
+alternative:"Add almonds."
+},
+
+"peanut butter toast":{
+category:"Weight Gain",
+name:"Peanut Butter Toast",
+calories:"340 kcal",
+protein:"13 g",
+carbs:"30 g",
+fat:"18 g",
+fiber:"5 g",
+vitamins:"Vitamin E",
+ingredients:["2 Bread Slices","2 tbsp Peanut Butter"],
+recipe:"Toast bread and spread peanut butter.",
+alternative:"Use almond butter."
+},
+
+"egg sandwich":{
+category:"Weight Gain",
+name:"Egg Sandwich",
+calories:"320 kcal",
+protein:"18 g",
+carbs:"28 g",
+fat:"14 g",
+fiber:"3 g",
+vitamins:"A,D",
+ingredients:["2 Eggs","Bread","Tomato"],
+recipe:"Fill bread with cooked eggs.",
+alternative:"Use cheese."
+},
+
+"chicken sandwich":{
+category:"Weight Gain",
+name:"Chicken Sandwich",
+calories:"390 kcal",
+protein:"28 g",
+carbs:"34 g",
+fat:"13 g",
+fiber:"4 g",
+vitamins:"B6",
+ingredients:["Chicken","Bread","Lettuce"],
+recipe:"Fill bread with grilled chicken.",
+alternative:"Use turkey."
+},
+
+"chicken rice":{
+category:"Weight Gain",
+name:"Chicken Rice",
+calories:"550 kcal",
+protein:"35 g",
+carbs:"70 g",
+fat:"15 g",
+fiber:"4 g",
+vitamins:"B6",
+ingredients:["Rice","Chicken","Vegetables"],
+recipe:"Cook chicken and serve over rice.",
+alternative:"Use brown rice."
+},
+
+"chicken biryani":{
+category:"Weight Gain",
+name:"Chicken Biryani",
+calories:"480 kcal",
+protein:"22 g",
+carbs:"55 g",
+fat:"18 g",
+fiber:"3 g",
+vitamins:"Iron",
+ingredients:["Rice","Chicken","Yogurt","Spices"],
+recipe:"Cook rice with marinated chicken.",
+alternative:"Use brown rice."
+},
+
+"pasta":{
+category:"Weight Gain",
+name:"Chicken Pasta",
+calories:"430 kcal",
+protein:"24 g",
+carbs:"52 g",
+fat:"12 g",
+fiber:"4 g",
+vitamins:"B",
+ingredients:["Pasta","Chicken","Sauce"],
+recipe:"Cook pasta and mix with chicken.",
+alternative:"Whole wheat pasta."
+},
+
+"pizza":{
+category:"Weight Gain",
+name:"Healthy Pizza",
+calories:"310 kcal",
+protein:"15 g",
+carbs:"34 g",
+fat:"12 g",
+fiber:"3 g",
+vitamins:"Calcium",
+ingredients:["Pizza Base","Cheese","Vegetables"],
+recipe:"Bake until cheese melts.",
+alternative:"Whole wheat base."
+},
+
+"banana pancakes":{
+category:"Weight Gain",
+name:"Banana Pancakes",
+calories:"360 kcal",
+protein:"12 g",
+carbs:"55 g",
+fat:"10 g",
+fiber:"4 g",
+vitamins:"B6",
+ingredients:["Banana","Egg","Oats"],
+recipe:"Cook pancake batter on pan.",
+alternative:"Add blueberries."
+},
+
+"mixed nuts":{
+category:"Weight Gain",
+name:"Mixed Nuts",
+calories:"607 kcal",
+protein:"20 g",
+carbs:"21 g",
+fat:"54 g",
+fiber:"8 g",
+vitamins:"E",
+ingredients:["Almonds","Walnuts","Cashews"],
+recipe:"Eat as a snack.",
+alternative:"Add raisins."
+},
+
+"oats":{
+category:"Weight Loss",
+name:"Oats Bowl",
+calories:"300 kcal",
+protein:"12 g",
+carbs:"45 g",
+fat:"8 g",
+fiber:"7 g",
+vitamins:"B",
+ingredients:["Oats","Milk","Fruits"],
+recipe:"Cook oats and top with fruits.",
+alternative:"Use almond milk."
+},
+
+"greek yogurt":{
+category:"Weight Loss",
+name:"Greek Yogurt",
+calories:"120 kcal",
+protein:"17 g",
+carbs:"6 g",
+fat:"3 g",
+fiber:"0 g",
+vitamins:"Calcium",
+ingredients:["Greek Yogurt","Honey"],
+recipe:"Serve chilled.",
+alternative:"Add berries."
+},
+
+"grilled chicken":{
+category:"Weight Loss",
+name:"Grilled Chicken",
+calories:"240 kcal",
+protein:"38 g",
+carbs:"0 g",
+fat:"8 g",
+fiber:"0 g",
+vitamins:"B6",
+ingredients:["Chicken","Pepper","Salt"],
+recipe:"Grill chicken until cooked.",
+alternative:"Turkey breast."
+},
+
+"grilled fish":{
+category:"Weight Loss",
+name:"Grilled Fish",
+calories:"220 kcal",
+protein:"30 g",
+carbs:"0 g",
+fat:"9 g",
+fiber:"0 g",
+vitamins:"Omega-3",
+ingredients:["Fish","Lemon","Salt"],
+recipe:"Grill fish for 10 minutes.",
+alternative:"Salmon."
+},
+
+"salad":{
+category:"Weight Loss",
+name:"Garden Salad",
+calories:"150 kcal",
+protein:"5 g",
+carbs:"18 g",
+fat:"4 g",
+fiber:"6 g",
+vitamins:"A,C,K",
+ingredients:["Lettuce","Tomato","Cucumber"],
+recipe:"Mix vegetables together.",
+alternative:"Add spinach."
+},
+
+"vegetable soup":{
+category:"Weight Loss",
+name:"Vegetable Soup",
+calories:"110 kcal",
+protein:"4 g",
+carbs:"18 g",
+fat:"2 g",
+fiber:"5 g",
+vitamins:"A,C",
+ingredients:["Mixed Vegetables","Water"],
+recipe:"Boil vegetables for 20 minutes.",
+alternative:"Add beans."
+},
+
+"lentil soup":{
+category:"Weight Loss",
+name:"Lentil Soup",
+calories:"180 kcal",
+protein:"12 g",
+carbs:"28 g",
+fat:"2 g",
+fiber:"9 g",
+vitamins:"Iron",
+ingredients:["Lentils","Onion","Garlic"],
+recipe:"Cook lentils until soft.",
+alternative:"Use chickpeas."
+},
+
+"fruit salad":{
+category:"Weight Loss",
+name:"Fruit Salad",
+calories:"180 kcal",
+protein:"2 g",
+carbs:"45 g",
+fat:"1 g",
+fiber:"6 g",
+vitamins:"A,C",
+ingredients:["Apple","Orange","Banana"],
+recipe:"Mix fruits together.",
+alternative:"Add berries."
+},
+
+"brown rice":{
+category:"Weight Loss",
+name:"Brown Rice",
+calories:"216 kcal",
+protein:"5 g",
+carbs:"45 g",
+fat:"2 g",
+fiber:"3.5 g",
+vitamins:"B",
+ingredients:["Brown Rice"],
+recipe:"Cook until soft.",
+alternative:"Quinoa."
+},
+
+"boiled eggs":{
+category:"Weight Loss",
+name:"Boiled Eggs",
+calories:"155 kcal",
+protein:"13 g",
+carbs:"1 g",
+fat:"11 g",
+fiber:"0 g",
+vitamins:"A,D",
+ingredients:["Eggs"],
+recipe:"Boil eggs for 10 minutes.",
+alternative:"Poached eggs."
+},
+
+"chickpea salad":{
+category:"Weight Loss",
+name:"Chickpea Salad",
+calories:"260 kcal",
+protein:"12 g",
+carbs:"35 g",
+fat:"7 g",
+fiber:"9 g",
+vitamins:"Folate",
+ingredients:["Chickpeas","Tomato","Onion"],
+recipe:"Mix all ingredients.",
+alternative:"Kidney beans."
+},
 "avocado toast":{
 category:"Weight Loss",
 name:"Avocado Toast",
@@ -589,7 +1084,7 @@ vitamins:"B Vitamins",
 ingredients:["Oats","Honey","Nuts"],
 recipe:"Bake oats, honey and nuts until golden.",
 alternative:"Add pumpkin seeds."
-}
+},
 "chicken tikka":{
 category:"Weight Gain",
 name:"Chicken Tikka",
@@ -938,7 +1433,7 @@ vitamins:"A, D",
 ingredients:["Eggs","Spinach","Tomato"],
 recipe:"Cook eggs with vegetables.",
 alternative:"Add mushrooms."
-}
+},
 "chia pudding":{
 category:"Weight Loss",
 name:"Chia Pudding",
@@ -1288,6 +1783,7 @@ ingredients:["Milk","Cocoa"],
 recipe:"Heat milk and cocoa.",
 alternative:"Dark chocolate."
 }
+
 };
 
 
