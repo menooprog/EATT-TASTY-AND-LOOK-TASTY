@@ -1,123 +1,394 @@
+/* ==========================
+   EAT TASTY AND LOOK TASTY
+   Witchy Theme CSS
+========================== */
+
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:'Georgia',serif;
 }
+
 
 body{
-background:#F5E6D3;
-color:#2F241D;
+
+background:
+linear-gradient(
+135deg,
+#1b120c,
+#26351f,
+#d8c3a5
+);
+
+min-height:100vh;
+color:#2b1b12;
+
+padding:20px;
+
 }
+
+
+
+/* Website Header */
 
 header{
-background:#3B2A22;
-padding:30px;
+
+background:#2b1b12;
+
+color:#f3e5c8;
+
 text-align:center;
-border-bottom:4px solid #1F3A2E;
+
+padding:25px;
+
+border-radius:25px;
+
+box-shadow:0 10px 25px #00000055;
+
+margin-bottom:25px;
+
 }
+
 
 header h1{
-font-family:'Pacifico',cursive;
-font-size:42px;
-color:#F8F3EC;
+
+font-size:38px;
+
+letter-spacing:3px;
+
+font-weight:bold;
+
 }
+
+
 
 header p{
-color:#D7C2A3;
-font-weight:bold;
-margin-top:8px;
+
+font-size:18px;
+
+margin-top:10px;
+
+color:#d8c3a5;
+
 }
 
-.hero{
-background:#D8C3A5;
-margin:25px;
-padding:25px;
-border-radius:20px;
-border:3px solid #1F3A2E;
-}
+
+
+
+/* Main Sections */
+
 
 .container{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
-gap:20px;
-padding:20px;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:25px;
+
 }
+
+
+
+/* Category Boxes */
+
 
 .card{
-background:#EFE4D2;
-border:3px solid #3B2A22;
+
+background:#ead7b7;
+
+padding:25px;
+
 border-radius:25px;
-padding:20px;
-box-shadow:6px 6px #1F3A2E;
+
+border:3px solid #3b2417;
+
+box-shadow:0 8px 20px #00000055;
+
 }
+
+
 
 .card h2{
-color:#1F3A2E;
+
+background:#20351d;
+
+color:#f5e6c8;
+
+padding:15px;
+
+border-radius:15px;
+
+text-align:center;
+
 }
 
-input,
-select{
+
+
+
+/* Inputs */
+
+
+input,select{
+
 width:100%;
-padding:14px;
+
+padding:12px;
+
 margin:10px 0;
-background:#FFF8F0;
-border:2px solid #3B2A22;
-border-radius:12px;
-color:#2F241D;
+
+border-radius:15px;
+
+border:2px solid #3b2417;
+
+background:#fff3df;
+
+font-size:16px;
+
 }
+
+
+
+
+/* Buttons */
+
 
 button{
+
 width:100%;
+
 padding:15px;
-background:#1F3A2E;
-color:white;
+
+margin-top:15px;
+
 border:none;
-border-radius:15px;
-font-size:17px;
+
+border-radius:20px;
+
+background:#3b2417;
+
+color:#f5e6c8;
+
+font-size:18px;
+
 font-weight:bold;
+
 cursor:pointer;
+
 transition:.3s;
+
 }
+
+
 
 button:hover{
-background:#3B2A22;
+
+background:#20351d;
+
 transform:scale(1.03);
+
 }
+
+
+
+
+/* Recipe Cards */
+
 
 .recipe-card{
-background:#D8C3A5;
-border:2px solid #3B2A22;
-border-radius:20px;
+
+background:#f1dfc2;
+
+margin:20px 0;
+
 padding:20px;
-margin-top:20px;
+
+border-radius:20px;
+
+border-left:8px solid #20351d;
+
+box-shadow:0 6px 15px #00000044;
+
 }
+
+
 
 .recipe-card h2{
-font-family:'Pacifico',cursive;
-color:#1F3A2E;
+
+color:#3b2417;
+
 }
 
-.plan-card{
-background:#E8DCC8;
-border:2px solid #1F3A2E;
-border-radius:20px;
-padding:20px;
-margin-top:20px;
+
+
+
+.recipe-card h3{
+
+color:#20351d;
+
+margin-top:15px;
+
 }
+
+
+
+.recipe-card p{
+
+line-height:1.6;
+
+}
+
+
+
+/* Planner Cards */
+
 
 .day-card{
-background:#F8F3EC;
-border-left:8px solid #1F3A2E;
-padding:15px;
-margin-top:15px;
-border-radius:15px;
+
+background:#fff0d5;
+
+margin:15px 0;
+
+padding:20px;
+
+border-radius:20px;
+
+border:2px solid #654321;
+
 }
 
+
+
+.day-card h3{
+
+background:#20351d;
+
+color:#f5e6c8;
+
+padding:10px;
+
+border-radius:12px;
+
+}
+
+
+
+.day-card p{
+
+margin:8px 0;
+
+}
+
+
+
+
+/* Search Box */
+
+
+#searchBox{
+
+background:#fff6e6;
+
+border:3px solid #20351d;
+
+}
+
+
+
+
+/* Results Area */
+
+
+#result,
+#planResult{
+
+margin-top:25px;
+
+}
+
+
+
+
+/* Food Category Labels */
+
+
+.gain{
+
+background:#6b3e26;
+
+color:white;
+
+padding:8px;
+
+border-radius:15px;
+
+}
+
+
+
+.loss{
+
+background:#20351d;
+
+color:white;
+
+padding:8px;
+
+border-radius:15px;
+
+}
+
+
+
+
+/* Footer */
+
+
 footer{
-background:#3B2A22;
-color:#F8F3EC;
+
+margin-top:30px;
+
 text-align:center;
-padding:20px;
-margin-top:40px;
+
+background:#2b1b12;
+
+color:#f3e5c8;
+
+padding:15px;
+
+border-radius:20px;
+
+font-size:16px;
+
+}
+
+
+
+/* Mobile Design */
+
+
+@media(max-width:600px){
+
+header h1{
+
+font-size:25px;
+
+}
+
+
+body{
+
+padding:10px;
+
+}
+
+
+.card{
+
+padding:15px;
+
+}
+
 }
