@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,7 +9,8 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -17,420 +19,102 @@
 
 <h1>EAT TASTY AND LOOK TASTY</h1>
 
-<p class="creator">Created by Syeda Manahil</p>
-
-<nav>
-
-<a href="#home">Home</a>
-
-<a href="#gain">Weight Gain</a>
-
-<a href="#loss">Weight Loss</a>
-
-<a href="#planner">Diet Planner</a>
-
-<a href="#search">Recipes</a>
-
-<a href="#profile">Profile</a>
-
-</nav>
+<p>Created by Syeda Manahil</p>
 
 </header>
 
-<section class="hero" id="home">
 
-<h2>Eat Healthy, Feel Happy ❤️</h2>
+<section class="hero">
+
+<h2>Your Healthy Journey Starts Here ❤️</h2>
 
 <p>
-
-Choose your fitness goal and explore healthy foods,
-meal plans and delicious recipes.
-
+Choose Weight Gain or Weight Loss, search healthy recipes,
+and generate your own personalized plan.
 </p>
 
-<div class="buttons">
-
-<button onclick="showGain()">Weight Gain</button>
-
-<button onclick="showLoss()">Weight Loss</button>
-
-</div>
-
-</section>
-
-<section id="gain" class="card">
-
-<h2>🍗 Best Foods for Weight Gain</h2>
-
-<div class="food-grid">
-
-<div class="food">
-
-<h3>Banana</h3>
-
-<p>Calories : 89</p>
-
-<p>Protein : 1.1 g</p>
-
-<p>Carbs : 23 g</p>
-
-<p>Fat : 0.3 g</p>
-
-<p>Fiber : 2.6 g</p>
-
-<p>Vitamin : B6 & C</p>
-
-</div>
-
-<div class="food">
-
-<h3>Whole Milk</h3>
-
-<p>Calories : 61</p>
-
-<p>Protein : 3.2 g</p>
-
-<p>Carbs : 4.8 g</p>
-
-<p>Fat : 3.3 g</p>
-
-<p>Calcium Rich</p>
-
-</div>
-
-<div class="food">
-
-<h3>Peanut Butter</h3>
-
-<p>Calories : 588</p>
-
-<p>Protein : 25 g</p>
-
-<p>Carbs : 20 g</p>
-
-<p>Fat : 50 g</p>
-
-<p>Fiber : 6 g</p>
-
-</div>
-
-<div class="food">
-
-<h3>Rice</h3>
-
-<p>Calories : 130</p>
-
-<p>Protein : 2.7 g</p>
-
-<p>Carbs : 28 g</p>
-
-<p>Fat : 0.3 g</p>
-
-</div>
-
-<div class="food">
-
-<h3>Eggs</h3>
-
-<p>Calories : 155</p>
-
-<p>Protein : 13 g</p>
-
-<p>Fat : 11 g</p>
-
-<p>Vitamin D</p>
-
-</div>
-
-<div class="food">
-
-<h3>Chicken</h3>
-
-<p>Calories : 239</p>
-
-<p>Protein : 27 g</p>
-
-<p>Fat : 14 g</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="loss" class="card">
-
-<h2>🥗 Best Foods for Weight Loss</h2>
-
-<div class="food-grid">
-
-<div class="food">
-
-<h3>Oats</h3>
-
-<p>Calories : 389</p>
-
-<p>Protein : 17 g</p>
-
-<p>Carbs : 66 g</p>
-
-<p>Fiber : 11 g</p>
-
-</div>
-
-<div class="food">
-
-<h3>Broccoli</h3>
-
-<p>Calories : 34</p>
-
-<p>Protein : 2.8 g</p>
-
-<p>Fiber : 2.6 g</p>
-
-<p>Vitamin C</p>
-
-</div>
-
-<div class="food">
-
-<h3>Apple</h3>
-
-<p>Calories : 52</p>
-
-<p>Fiber : 2.4 g</p>
-
-<p>Vitamin C</p>
-
-</div>
-
-<div class="food">
-
-<h3>Greek Yogurt</h3>
-
-<p>Calories : 59</p>
-
-<p>Protein : 10 g</p>
-
-</div>
-
-<div class="food">
-
-<h3>Spinach</h3>
-
-<p>Calories : 23</p>
-
-<p>Iron Rich</p>
-
-<p>Vitamin A</p>
-
-</div>
-
-<div class="food">
-
-<h3>Chicken Breast</h3>
-
-<p>Calories : 165</p>
-
-<p>Protein : 31 g</p>
-
-<p>Fat : 3.6 g</p>
-
-</div>
-
-</div>
-
-</section>
-<section id="planner" class="card">
-
-<h2>📅 7 Day Diet Planner</h2>
-
-<div class="planner">
-
-<div class="day">
-<h3>Monday</h3>
-<p><b>Breakfast:</b> Oats + Banana + Milk</p>
-<p><b>Brunch:</b> Nuts & Yogurt</p>
-<p><b>Lunch:</b> Chicken Rice</p>
-<p><b>Dinner:</b> Vegetable Salad + Eggs</p>
-</div>
-
-<div class="day">
-<h3>Tuesday</h3>
-<p><b>Breakfast:</b> Omelette + Toast</p>
-<p><b>Brunch:</b> Fruit Bowl</p>
-<p><b>Lunch:</b> Lentils + Rice</p>
-<p><b>Dinner:</b> Chicken Sandwich</p>
-</div>
-
-<div class="day">
-<h3>Wednesday</h3>
-<p><b>Breakfast:</b> Peanut Butter Toast</p>
-<p><b>Brunch:</b> Smoothie</p>
-<p><b>Lunch:</b> Fish + Vegetables</p>
-<p><b>Dinner:</b> Soup + Salad</p>
-</div>
-
-<div class="day">
-<h3>Thursday</h3>
-<p><b>Breakfast:</b> Eggs + Milk</p>
-<p><b>Brunch:</b> Dates Shake</p>
-<p><b>Lunch:</b> Chicken Pasta</p>
-<p><b>Dinner:</b> Yogurt Bowl</p>
-</div>
-
-<div class="day">
-<h3>Friday</h3>
-<p><b>Breakfast:</b> Oatmeal</p>
-<p><b>Brunch:</b> Fruits</p>
-<p><b>Lunch:</b> Brown Rice + Chicken</p>
-<p><b>Dinner:</b> Vegetables + Protein</p>
-</div>
-
-<div class="day">
-<h3>Saturday</h3>
-<p><b>Breakfast:</b> Pancakes</p>
-<p><b>Brunch:</b> Nuts</p>
-<p><b>Lunch:</b> Homemade Burger</p>
-<p><b>Dinner:</b> Salad</p>
-</div>
-
-<div class="day">
-<h3>Sunday</h3>
-<p><b>Breakfast:</b> Smoothie Bowl</p>
-<p><b>Brunch:</b> Boiled Eggs</p>
-<p><b>Lunch:</b> Biryani (balanced portion)</p>
-<p><b>Dinner:</b> Soup</p>
-</div>
-
-</div>
-
 </section>
 
 
-<section id="search" class="card">
+<div class="container">
+
+
+<div class="card">
 
 <h2>🔍 Recipe Search</h2>
 
-<input type="text" id="searchBox" placeholder="Search your favorite food...">
+<input
+type="text"
+id="searchBox"
+placeholder="Search recipe..."
+>
 
-<button onclick="searchRecipe()">Search</button>
+<button onclick="searchRecipe()">
 
-<div id="result">
+Search
 
-</div>
+</button>
 
-</section>
-
-
-<section class="card">
-
-<h2>🥤 Healthy Drinks</h2>
-
-<div class="drink">
-
-<h3>Weight Gain Drinks</h3>
-
-<p>
-Banana Milkshake - High calories, protein and energy
-</p>
-
-<p>
-Dates Shake - Natural sugar and minerals
-</p>
-
-<p>
-Peanut Butter Smoothie - Healthy fats
-</p>
+<div id="result"></div>
 
 </div>
 
 
-<div class="drink">
 
-<h3>Weight Loss Drinks</h3>
+<div class="card">
 
-<p>
-Green Tea - Low calorie drink
-</p>
+<h2>📋 Personal Diet Planner</h2>
 
-<p>
-Lemon Mint Water - Refreshing hydration
-</p>
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+>
 
-<p>
-Black Coffee - Almost zero calories
-</p>
+<input
+type="number"
+id="age"
+placeholder="Age"
+>
 
-</div>
+<input
+type="number"
+id="height"
+placeholder="Height (cm)"
+>
 
-</section>
-
-
-<section id="profile" class="card">
-
-<h2>👤 Personal Guide</h2>
-
-<input id="name" placeholder="Your Name">
-
-<input id="age" placeholder="Age">
-
-<input id="height" placeholder="Height in cm">
-
-<input id="weight" placeholder="Current Weight kg">
-
+<input
+type="number"
+id="weight"
+placeholder="Weight (kg)"
+>
 
 <select id="goal">
 
 <option value="gain">
-I want to gain weight
+Weight Gain
 </option>
 
 <option value="loss">
-I want to lose weight
+Weight Loss
 </option>
 
 </select>
 
-
 <button onclick="calculatePlan()">
+
 Generate My Plan
+
 </button>
 
 <div id="planResult"></div>
 
-
-</section>
-
-
-<section class="card">
-
-<h2>📜 History</h2>
-
-<div id="history">
-
-No history yet.
-
 </div>
 
-</section>
-
-
-<footer>
-
-<h3>
-EAT TASTY AND LOOK TASTY
-</h3>
-
-<p>
-Created by Syeda Manahil ❤
-</p>
-
-</footer>
+</div>
 
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
