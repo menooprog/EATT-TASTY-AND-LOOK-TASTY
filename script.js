@@ -1228,3 +1228,467 @@ result.innerHTML = found;
 }
 
 }
+// =========================
+// 14 DAY WEIGHT GAIN PLAN
+// =========================
+
+const weightGainPlan = [
+
+{
+day:"Day 1",
+calories:"2500 kcal",
+breakfast:"Oats + Banana + Milk + Peanut Butter",
+brunch:"Dry Fruit Shake",
+lunch:"Chicken Rice + Yogurt",
+snack:"Dates + Nuts",
+dinner:"Chicken Curry + Chapati"
+},
+
+{
+day:"Day 2",
+calories:"2600 kcal",
+breakfast:"Egg Omelette + Toast + Milk",
+brunch:"Mango Shake",
+lunch:"Chicken Biryani",
+snack:"Peanut Butter Sandwich",
+dinner:"Fish + Rice"
+},
+
+{
+day:"Day 3",
+calories:"2550 kcal",
+breakfast:"Paratha + Eggs + Yogurt",
+brunch:"Banana Oats Shake",
+lunch:"Chicken Karahi + Rice",
+snack:"Trail Mix",
+dinner:"Keema + Chapati"
+},
+
+{
+day:"Day 4",
+calories:"2500 kcal",
+breakfast:"French Toast + Milk",
+brunch:"Almond Shake",
+lunch:"White Sauce Pasta",
+snack:"Fruit Yogurt Bowl",
+dinner:"Chicken Tikka + Rice"
+},
+
+{
+day:"Day 5",
+calories:"2700 kcal",
+breakfast:"Cheese Omelette + Bread",
+brunch:"Chocolate Milkshake",
+lunch:"Beef Pulao",
+snack:"Dry Fruits",
+dinner:"Qorma + Chapati"
+},
+
+{
+day:"Day 6",
+calories:"2600 kcal",
+breakfast:"Banana Oats Bowl",
+brunch:"Protein Shake",
+lunch:"Chicken Burger",
+snack:"Peanut Butter Toast",
+dinner:"Pasta + Chicken"
+},
+
+{
+day:"Day 7",
+calories:"2500 kcal",
+breakfast:"Egg Sandwich + Milk",
+brunch:"Mango Lassi",
+lunch:"Chicken Pulao",
+snack:"Nuts",
+dinner:"Chicken Curry"
+},
+
+{
+day:"Day 8",
+calories:"2600 kcal",
+breakfast:"Chocolate Oats",
+brunch:"Dates Shake",
+lunch:"Fried Rice + Egg",
+snack:"Cheese Sandwich",
+dinner:"Chicken Karahi"
+},
+
+{
+day:"Day 9",
+calories:"2500 kcal",
+breakfast:"Pancakes + Milk",
+brunch:"Dry Fruit Shake",
+lunch:"Chicken Shawarma",
+snack:"Fruit Bowl",
+dinner:"Rice + Curry"
+},
+
+{
+day:"Day 10",
+calories:"2700 kcal",
+breakfast:"Paratha + Omelette",
+brunch:"Peanut Butter Smoothie",
+lunch:"Biryani",
+snack:"Trail Mix",
+dinner:"Beef Keema"
+},
+
+{
+day:"Day 11",
+calories:"2550 kcal",
+breakfast:"Oats + Fruits",
+brunch:"Hot Chocolate",
+lunch:"Chicken Pasta",
+snack:"Dates",
+dinner:"Chicken Tikka"
+},
+
+{
+day:"Day 12",
+calories:"2650 kcal",
+breakfast:"Cheese Toast + Eggs",
+brunch:"Banana Shake",
+lunch:"Chicken Rice",
+snack:"Nuts",
+dinner:"Qorma + Rice"
+},
+
+{
+day:"Day 13",
+calories:"2500 kcal",
+breakfast:"French Toast",
+brunch:"Mango Shake",
+lunch:"Beef Pulao",
+snack:"Dry Fruits",
+dinner:"Chicken Curry"
+},
+
+{
+day:"Day 14",
+calories:"2700 kcal",
+breakfast:"Eggs + Paratha",
+brunch:"Protein Shake",
+lunch:"Chicken Biryani",
+snack:"Peanut Butter Toast",
+dinner:"Pasta"
+}
+
+];
+
+
+// =========================
+// 14 DAY WEIGHT LOSS PLAN
+// =========================
+
+const weightLossPlan = [
+
+{
+day:"Day 1",
+calories:"1600 kcal",
+breakfast:"Oats + Green Tea",
+brunch:"Apple + Yogurt",
+lunch:"Grilled Chicken + Salad",
+snack:"Roasted Chickpeas",
+dinner:"Vegetable Soup"
+},
+
+{
+day:"Day 2",
+calories:"1500 kcal",
+breakfast:"Boiled Eggs + Fruit",
+brunch:"Green Smoothie",
+lunch:"Brown Rice + Fish",
+snack:"Nuts",
+dinner:"Chicken Salad"
+},
+
+{
+day:"Day 3",
+calories:"1550 kcal",
+breakfast:"Greek Yogurt + Oats",
+brunch:"Lemon Water + Fruit",
+lunch:"Chicken Wrap",
+snack:"Popcorn",
+dinner:"Vegetable Soup"
+},
+
+{
+day:"Day 4",
+calories:"1600 kcal",
+breakfast:"Vegetable Omelette",
+brunch:"Fruit Bowl",
+lunch:"Quinoa Bowl",
+snack:"Green Tea",
+dinner:"Grilled Fish"
+},
+
+{
+day:"Day 5",
+calories:"1500 kcal",
+breakfast:"Apple Oatmeal",
+brunch:"Yogurt",
+lunch:"Chicken Salad",
+snack:"Roasted Chickpeas",
+dinner:"Soup"
+},
+
+{
+day:"Day 6",
+calories:"1600 kcal",
+breakfast:"Smoothie Bowl",
+brunch:"Green Tea",
+lunch:"Brown Rice + Chicken",
+snack:"Fruit",
+dinner:"Vegetable Salad"
+},
+
+{
+day:"Day 7",
+calories:"1550 kcal",
+breakfast:"Egg Toast",
+brunch:"Berry Smoothie",
+lunch:"Fish + Vegetables",
+snack:"Yogurt",
+dinner:"Soup"
+},
+
+{
+day:"Day 8",
+calories:"1500 kcal",
+breakfast:"Chia Pudding",
+brunch:"Apple",
+lunch:"Grilled Chicken",
+snack:"Popcorn",
+dinner:"Vegetable Stir Fry"
+},
+
+{
+day:"Day 9",
+calories:"1600 kcal",
+breakfast:"Overnight Oats",
+brunch:"Fruit Bowl",
+lunch:"Tuna Sandwich",
+snack:"Green Tea",
+dinner:"Salad"
+},
+
+{
+day:"Day 10",
+calories:"1500 kcal",
+breakfast:"Boiled Eggs",
+brunch:"Smoothie",
+lunch:"Quinoa Bowl",
+snack:"Nuts",
+dinner:"Soup"
+},
+
+{
+day:"Day 11",
+calories:"1550 kcal",
+breakfast:"Greek Yogurt Bowl",
+brunch:"Fruit",
+lunch:"Chicken Wrap",
+snack:"Roasted Chickpeas",
+dinner:"Vegetables"
+},
+
+{
+day:"Day 12",
+calories:"1600 kcal",
+breakfast:"Vegetable Omelette",
+brunch:"Green Tea",
+lunch:"Grilled Fish",
+snack:"Fruit",
+dinner:"Soup"
+},
+
+{
+day:"Day 13",
+calories:"1500 kcal",
+breakfast:"Oats + Fruits",
+brunch:"Yogurt",
+lunch:"Chicken Salad",
+snack:"Popcorn",
+dinner:"Vegetables"
+},
+
+{
+day:"Day 14",
+calories:"1550 kcal",
+breakfast:"Eggs + Toast",
+brunch:"Berry Smoothie",
+lunch:"Protein Bowl",
+snack:"Green Tea",
+dinner:"Soup"
+}
+
+];
+
+// =============================
+// PERSONAL DIET PLAN CALCULATOR
+// =============================
+
+function calculatePlan(){
+
+let name = document.getElementById("name").value;
+let age = Number(document.getElementById("age").value);
+let height = Number(document.getElementById("height").value);
+let weight = Number(document.getElementById("weight").value);
+
+let goal = document.getElementById("goal").value;
+
+let result = document.getElementById("planResult");
+
+
+if(name==="" || age==="" || height==="" || weight===""){
+
+result.innerHTML =
+`
+<div class="recipe-card">
+<h2>⚠️ Missing Information</h2>
+<p>Please fill all details first.</p>
+</div>
+`;
+
+return;
+
+}
+
+
+
+let calories;
+
+
+let plan;
+
+
+
+if(goal==="gain"){
+
+calories = Math.round(weight * 35);
+
+plan = weightGainPlan;
+
+}
+
+
+else if(goal==="loss"){
+
+calories = Math.round(weight * 25);
+
+plan = weightLossPlan;
+
+}
+
+
+else{
+
+result.innerHTML =
+`
+<div class="recipe-card">
+<h2>Select Goal</h2>
+<p>Please choose Weight Gain or Weight Loss.</p>
+</div>
+`;
+
+return;
+
+}
+
+
+
+
+let html = `
+
+<div class="recipe-card">
+
+<h2>Hello ${name} ❤️</h2>
+
+<p>Age: ${age} years</p>
+
+<p>Height: ${height} cm</p>
+
+<p>Current Weight: ${weight} kg</p>
+
+
+<h3>
+Your Goal:
+${goal==="gain" ? "💪 Weight Gain" : "🥗 Weight Loss"}
+</h3>
+
+
+<h3>
+Daily Calories Target:
+🔥 ${calories} kcal
+</h3>
+
+
+<hr>
+
+<h2>14 Day Diet Planner</h2>
+
+`;
+
+
+
+plan.forEach(day=>{
+
+
+html += `
+
+<div class="day-card">
+
+<h3>${day.day}</h3>
+
+<p>
+🔥 Calories:
+${day.calories}
+</p>
+
+<p>
+🍳 Breakfast:
+${day.breakfast}
+</p>
+
+<p>
+🥤 Brunch:
+${day.brunch}
+</p>
+
+<p>
+🍛 Lunch:
+${day.lunch}
+</p>
+
+<p>
+🍎 Snack:
+${day.snack}
+</p>
+
+<p>
+🌙 Dinner:
+${day.dinner}
+</p>
+
+
+</div>
+
+`;
+
+});
+
+
+
+html += `
+
+</div>
+
+`;
+
+
+
+result.innerHTML = html;
+
+
+}
