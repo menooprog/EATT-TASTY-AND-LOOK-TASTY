@@ -2019,47 +2019,48 @@ fat:50
 
 };
 
-
-
 function calculateCalories(){
 
-
-let food =
-document
+let food = document
 .getElementById("foodName")
 .value
 .toLowerCase()
-.replace(" ","");
+.trim()
+.replace(/\s+/g,"");
 
 
-let amount =
-Number(
-document.getElementById("foodAmount")
-.value
+let amount = Number(
+document.getElementById("foodAmount").value
 );
 
 
-
-let result =
-document.getElementById("calorieResult");
+let result = document.getElementById("calorieResult");
 
 
+if(!food || !amount){
 
-if(!nutritionDatabase[food] || amount<=0){
+result.innerHTML = `
+<div class="recipe-card">
+<h3>⚠️ Enter food name and amount</h3>
+</div>
+`;
+
+return;
+
+}
 
 
-result.innerHTML=
 
-`
+if(!nutritionDatabase[food]){
+
+result.innerHTML = `
 <div class="recipe-card">
 
-<h3>
-Food not found
-</h3>
+<h3>❌ Food not found</h3>
 
 <p>
 Try:
-banana, egg, milk, rice, chicken, oats, apple, potato
+banana, egg, milk, rice, chicken, oats, apple, potato, bread, peanut butter, almonds
 </p>
 
 </div>
@@ -2071,76 +2072,48 @@ return;
 
 
 
-let item =
-nutritionDatabase[food];
+let item = nutritionDatabase[food];
+
+
+let multiplier = amount / 100;
+
+
+let calories = 
+(item.calories * multiplier).toFixed(1);
+
+
+let protein = 
+(item.protein * multiplier).toFixed(1);
+
+
+let carbs = 
+(item.carbs * multiplier).toFixed(1);
+
+
+let fat = 
+(item.fat * multiplier).toFixed(1);
 
 
 
-let factor =
-amount/100;
-
-
-
-let calories =
-(item.calories*factor).toFixed(1);
-
-
-let protein =
-(item.protein*factor).toFixed(1);
-
-
-let carbs =
-(item.carbs*factor).toFixed(1);
-
-
-let fat =
-(item.fat*factor).toFixed(1);
-
-
-
-result.innerHTML=
-
-`
+result.innerHTML = `
 
 <div class="recipe-card">
 
-<h2>
-${food.toUpperCase()}
-</h2>
+<h2>${food}</h2>
 
+<p>⚖️ Amount: ${amount} g/ml</p>
 
-<p>
-Amount:
-${amount} g/ml
-</p>
+<p>🔥 Calories: ${calories} kcal</p>
 
+<p>💪 Protein: ${protein} g</p>
 
-<p>
-🔥 Calories:
-${calories} kcal
-</p>
+<p>🍚 Carbohydrates: ${carbs} g</p>
 
-
-<p>
-💪 Protein:
-${protein} g
-</p>
-
-
-<p>
-🍚 Carbohydrates:
-${carbs} g
-</p>
-
-
-<p>
-🥑 Fat:
-${fat} g
-</p>
-
+<p>🥑 Fat: ${fat} g</p>
 
 </div>
 
 `;
 
 }
+
