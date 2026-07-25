@@ -1692,3 +1692,147 @@ result.innerHTML = html;
 
 
 }
+// ============================
+// 3 MONTH PROGRESS TRACKER
+// ============================
+
+
+function saveProgress(){
+
+
+let name =
+document.getElementById("historyName").value;
+
+
+let start =
+Number(document.getElementById("startWeight").value);
+
+
+let current =
+Number(document.getElementById("currentWeight").value);
+
+
+let goal =
+document.getElementById("historyGoal").value;
+
+
+
+let result =
+document.getElementById("historyResult");
+
+
+
+if(name==="" || start==="" || current==="" || goal===""){
+
+result.innerHTML=
+`
+<div class="recipe-card">
+<h3>⚠️ Fill all details</h3>
+</div>
+`;
+
+return;
+
+}
+
+
+
+let difference =
+current - start;
+
+
+let message;
+
+
+
+if(goal==="gain"){
+
+
+if(difference>0){
+
+message=
+`Amazing! You gained ${difference.toFixed(1)} kg.
+Keep following your calorie surplus diet. 💪`;
+
+}
+
+else{
+
+message=
+`Try increasing healthy calories like nuts, milk, eggs and shakes.`;
+
+}
+
+
+}
+
+
+
+else if(goal==="loss"){
+
+
+if(difference<0){
+
+message=
+`Great! You lost ${Math.abs(difference).toFixed(1)} kg.
+Keep maintaining a balanced diet. 🌿`;
+
+}
+
+else{
+
+message=
+`Increase protein, vegetables and maintain calorie control.`;
+
+}
+
+
+}
+
+
+
+result.innerHTML=
+
+`
+
+<div class="recipe-card">
+
+<h2>
+Hello ${name} 🌙
+</h2>
+
+
+<p>
+Starting Weight:
+${start} kg
+</p>
+
+
+<p>
+Current Weight:
+${current} kg
+</p>
+
+
+<p>
+Goal:
+${goal==="gain" ? "💪 Weight Gain" : "🥗 Weight Loss"}
+</p>
+
+
+<p>
+Progress:
+${difference.toFixed(1)} kg
+</p>
+
+
+<h3>
+${message}
+</h3>
+
+
+</div>
+
+`;
+
+}
