@@ -2116,4 +2116,82 @@ result.innerHTML = `
 `;
 
 }
+// ===============================
+// SHOW 14 DAY PLANNERS AUTOMATICALLY
+// ===============================
 
+
+function showDietPlans(){
+
+
+let gainBox =
+document.getElementById("gainPlanner");
+
+
+let lossBox =
+document.getElementById("lossPlanner");
+
+
+
+if(gainBox){
+
+
+gainBox.innerHTML = weightGainPlan.map(day=>`
+
+<div class="day-card">
+
+<h3>${day.day}</h3>
+
+<p>🔥 Calories: ${day.calories}</p>
+
+<p>🍳 Breakfast: ${day.breakfast}</p>
+
+<p>🥤 Brunch: ${day.brunch}</p>
+
+<p>🍛 Lunch: ${day.lunch}</p>
+
+<p>🍎 Snack: ${day.snack}</p>
+
+<p>🌙 Dinner: ${day.dinner}</p>
+
+</div>
+
+`).join("");
+
+}
+
+
+
+if(lossBox){
+
+
+lossBox.innerHTML = weightLossPlan.map(day=>`
+
+<div class="day-card">
+
+<h3>${day.day}</h3>
+
+<p>🔥 Calories: ${day.calories}</p>
+
+<p>🍳 Breakfast: ${day.breakfast}</p>
+
+<p>🥤 Brunch: ${day.brunch}</p>
+
+<p>🍛 Lunch: ${day.lunch}</p>
+
+<p>🍎 Snack: ${day.snack}</p>
+
+<p>🌙 Dinner: ${day.dinner}</p>
+
+</div>
+
+`).join("");
+
+}
+
+
+}
+
+
+
+window.addEventListener("load", showDietPlans);
