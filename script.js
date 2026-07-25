@@ -1697,6 +1697,12 @@ result.innerHTML = html;
 // ============================
 
 
+// ============================
+// 3 MONTH PROGRESS TRACKER
+// WITH LOCAL STORAGE
+// ============================
+
+
 function saveProgress(){
 
 
@@ -1722,12 +1728,18 @@ document.getElementById("historyResult");
 
 
 
-if(name==="" || start==="" || current==="" || goal===""){
+if(name==="" || start===0 || current===0 || goal===""){
+
 
 result.innerHTML=
+
 `
 <div class="recipe-card">
-<h3>⚠️ Fill all details</h3>
+
+<h3>
+⚠️ Please fill all details
+</h3>
+
 </div>
 `;
 
@@ -1738,7 +1750,36 @@ return;
 
 
 let difference =
-current - start;
+current-start;
+
+
+let progressData = {
+
+
+name:name,
+
+startWeight:start,
+
+currentWeight:current,
+
+goal:goal,
+
+progress:difference,
+
+date:new Date().toLocaleDateString()
+
+
+};
+
+
+
+// Save data
+
+localStorage.setItem(
+"eatTastyProgress",
+JSON.stringify(progressData)
+);
+
 
 
 let message;
@@ -1750,16 +1791,16 @@ if(goal==="gain"){
 
 if(difference>0){
 
-message=
-`Amazing! You gained ${difference.toFixed(1)} kg.
-Keep following your calorie surplus diet. 💪`;
+message =
+`You gained ${difference.toFixed(1)} kg 🎉
+Keep following your calorie surplus plan.`;
 
 }
 
 else{
 
-message=
-`Try increasing healthy calories like nuts, milk, eggs and shakes.`;
+message =
+`Increase protein, healthy fats, milk, nuts and shakes.`;
 
 }
 
@@ -1768,26 +1809,27 @@ message=
 
 
 
-else if(goal==="loss"){
+else{
 
 
 if(difference<0){
 
-message=
-`Great! You lost ${Math.abs(difference).toFixed(1)} kg.
-Keep maintaining a balanced diet. 🌿`;
+message =
+`You lost ${Math.abs(difference).toFixed(1)} kg 🌿
+Keep maintaining your healthy routine.`;
 
 }
 
 else{
 
-message=
-`Increase protein, vegetables and maintain calorie control.`;
+message =
+`Focus on balanced meals and regular activity.`;
 
 }
 
 
 }
+
 
 
 
@@ -1796,6 +1838,7 @@ result.innerHTML=
 `
 
 <div class="recipe-card">
+
 
 <h2>
 Hello ${name} 🌙
@@ -1826,6 +1869,12 @@ ${difference.toFixed(1)} kg
 </p>
 
 
+<p>
+Saved Date:
+${progressData.date}
+</p>
+
+
 <h3>
 ${message}
 </h3>
@@ -1835,4 +1884,40 @@ ${message}
 
 `;
 
+
+
 }
+
+
+
+
+
+// ============================
+// LOAD SAVED HISTORY
+// ============================
+
+
+window.onload=function(){
+
+
+let saved =
+localStorage.getItem("eatTastyProgress");
+
+
+
+if(saved){
+
+
+let data =
+JSON.parse(saved);
+
+
+console.log(
+"Previous Progress:",
+data
+);
+
+
+}
+
+};
