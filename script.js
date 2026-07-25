@@ -1921,3 +1921,226 @@ data
 }
 
 };
+// =============================
+// CALORIE CALCULATOR
+// =============================
+
+
+const nutritionDatabase = {
+
+
+banana:{
+calories:89,
+protein:1.1,
+carbs:23,
+fat:0.3
+},
+
+
+egg:{
+calories:155,
+protein:13,
+carbs:1.1,
+fat:11
+},
+
+
+milk:{
+calories:60,
+protein:3.2,
+carbs:5,
+fat:3.3
+},
+
+
+rice:{
+calories:130,
+protein:2.7,
+carbs:28,
+fat:0.3
+},
+
+
+chicken:{
+calories:165,
+protein:31,
+carbs:0,
+fat:3.6
+},
+
+
+oats:{
+calories:389,
+protein:16.9,
+carbs:66,
+fat:6.9
+},
+
+
+apple:{
+calories:52,
+protein:0.3,
+carbs:14,
+fat:0.2
+},
+
+
+potato:{
+calories:77,
+protein:2,
+carbs:17,
+fat:0.1
+},
+
+
+bread:{
+calories:265,
+protein:9,
+carbs:49,
+fat:3.2
+},
+
+
+peanutbutter:{
+calories:588,
+protein:25,
+carbs:20,
+fat:50
+},
+
+
+almonds:{
+calories:579,
+protein:21,
+carbs:22,
+fat:50
+}
+
+
+};
+
+
+
+function calculateCalories(){
+
+
+let food =
+document
+.getElementById("foodName")
+.value
+.toLowerCase()
+.replace(" ","");
+
+
+let amount =
+Number(
+document.getElementById("foodAmount")
+.value
+);
+
+
+
+let result =
+document.getElementById("calorieResult");
+
+
+
+if(!nutritionDatabase[food] || amount<=0){
+
+
+result.innerHTML=
+
+`
+<div class="recipe-card">
+
+<h3>
+Food not found
+</h3>
+
+<p>
+Try:
+banana, egg, milk, rice, chicken, oats, apple, potato
+</p>
+
+</div>
+`;
+
+return;
+
+}
+
+
+
+let item =
+nutritionDatabase[food];
+
+
+
+let factor =
+amount/100;
+
+
+
+let calories =
+(item.calories*factor).toFixed(1);
+
+
+let protein =
+(item.protein*factor).toFixed(1);
+
+
+let carbs =
+(item.carbs*factor).toFixed(1);
+
+
+let fat =
+(item.fat*factor).toFixed(1);
+
+
+
+result.innerHTML=
+
+`
+
+<div class="recipe-card">
+
+<h2>
+${food.toUpperCase()}
+</h2>
+
+
+<p>
+Amount:
+${amount} g/ml
+</p>
+
+
+<p>
+🔥 Calories:
+${calories} kcal
+</p>
+
+
+<p>
+💪 Protein:
+${protein} g
+</p>
+
+
+<p>
+🍚 Carbohydrates:
+${carbs} g
+</p>
+
+
+<p>
+🥑 Fat:
+${fat} g
+</p>
+
+
+</div>
+
+`;
+
+}
