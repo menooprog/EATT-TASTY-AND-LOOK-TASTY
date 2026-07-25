@@ -1,47 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>EAT TASTY AND LOOK TASTY</title>
+<title>
+EAT TASTY AND LOOK TASTY
+</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
 </head>
+
 
 <body>
 
+
 <header>
 
-<h1>EAT TASTY AND LOOK TASTY</h1>
+<h1>
+EAT TASTY AND LOOK TASTY
+</h1>
 
-<p>Created by Syeda Manahil</p>
+<p>
+Created by Syeda Manahil
+</p>
+
+<p>
+Your personal guide for healthy weight gain & weight loss
+</p>
 
 </header>
 
-
-<section class="hero">
-
-<h2>Your Healthy Journey Starts Here ❤️</h2>
-
-<p>
-Choose Weight Gain or Weight Loss, search healthy recipes,
-and generate your own personalized plan.
-</p>
-
-</section>
 
 
 <div class="container">
 
 
+
+<!-- RECIPE SEARCH -->
+
 <div class="card">
 
-<h2>🔍 Recipe Search</h2>
+<h2>
+🔮 Recipe Search
+</h2>
+
 
 <input 
 type="text"
@@ -49,57 +52,165 @@ id="searchBox"
 placeholder="Search food, recipe, ingredient..."
 >
 
-button onclick="searchRecipe()">
 
-Search
-
+<button onclick="searchRecipe()">
+Search Recipe
 </button>
 
+
 <div id="result"></div>
+
 
 </div>
 
 
 
+
+
+<!-- WEIGHT GAIN -->
+
 <div class="card">
 
-<h2>📋 Personal Diet Planner</h2>
 
-<input
-type="text"
+<h2>
+💪 Weight Gain
+</h2>
+
+
+<p>
+Foods for healthy weight gain:
+</p>
+
+
+<ul>
+
+<li>🥛 Milk & Milkshakes</li>
+<li>🥜 Nuts & Peanut Butter</li>
+<li>🍌 Bananas</li>
+<li>🍚 Rice</li>
+<li>🥚 Eggs</li>
+<li>🍗 Chicken</li>
+<li>🥑 Healthy Fats</li>
+<li>🥣 Oats</li>
+
+</ul>
+
+
+<span class="gain">
+High calorie nutritious foods
+</span>
+
+
+</div>
+
+
+
+
+
+<!-- WEIGHT LOSS -->
+
+<div class="card">
+
+
+<h2>
+🥗 Weight Loss
+</h2>
+
+
+<p>
+Foods for healthy weight loss:
+</p>
+
+
+<ul>
+
+<li>🥦 Vegetables</li>
+<li>🍎 Fruits</li>
+<li>🥗 Salads</li>
+<li>🐟 Grilled Protein</li>
+<li>🌾 Whole Grains</li>
+<li>🥚 Eggs</li>
+<li>🥣 Oats</li>
+<li>🍵 Green Tea</li>
+
+</ul>
+
+
+<span class="loss">
+Low calorie nutritious foods
+</span>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- PERSONAL PLAN -->
+
+<div class="card">
+
+
+<h2>
+✨ Create Your 3 Month Plan
+</h2>
+
+
+<input 
 id="name"
-placeholder="Your Name"
+type="text"
+placeholder="Enter your name"
 >
 
-<input
-type="number"
+
+<input 
 id="age"
-placeholder="Age"
+type="number"
+placeholder="Enter your age"
 >
 
-<input
-type="number"
+
+<input 
 id="height"
-placeholder="Height (cm)"
+type="number"
+placeholder="Height in cm"
 >
 
-<input
-type="number"
+
+<input 
 id="weight"
-placeholder="Weight (kg)"
+type="number"
+placeholder="Current weight in kg"
 >
+
+
 
 <select id="goal">
 
-<option value="gain">
-Weight Gain
+
+<option value="">
+Select Your Goal
 </option>
+
+
+<option value="gain">
+💪 Weight Gain
+</option>
+
 
 <option value="loss">
-Weight Loss
+🥗 Weight Loss
 </option>
 
+
 </select>
+
+
 
 <button onclick="calculatePlan()">
 
@@ -107,14 +218,103 @@ Generate My Plan
 
 </button>
 
+
+
 <div id="planResult"></div>
 
-</div>
 
 </div>
+
+
+
+
+
+
+
+<!-- DRINK SECTION -->
+
+<div class="container">
+
+
+<div class="card">
+
+
+<h2>
+🥤 Weight Gain Drinks
+</h2>
+
+
+<ul>
+
+<li>Banana Peanut Butter Shake</li>
+
+<li>Mango Lassi</li>
+
+<li>Dates Milkshake</li>
+
+<li>Almond Shake</li>
+
+<li>Chocolate Milk</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<h2>
+🌿 Weight Loss Drinks
+</h2>
+
+
+<ul>
+
+<li>Green Tea</li>
+
+<li>Lemon Water</li>
+
+<li>Detox Water</li>
+
+<li>Black Coffee</li>
+
+<li>Cucumber Mint Water</li>
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 EAT AND LOOK TASTY
+</p>
+
+<p>
+Created by Syeda Manahil
+</p>
+
+</footer>
+
 
 
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
