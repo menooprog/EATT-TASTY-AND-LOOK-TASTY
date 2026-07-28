@@ -1,436 +1,128 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-EAT TASTY AND LOOK TASTY
-</title>
+<title>EAT AND LOOK TASTY</title>
 
 <link rel="stylesheet" href="style.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
 
-
 <header>
 
-<h1>
-EAT TASTY AND LOOK TASTY
-</h1>
+<h1>EAT AND LOOK TASTY</h1>
 
-<p>
+<p class="creator">
 Created by Syeda Manahil
-</p>
-
-<p>
-Your personal guide for healthy weight gain & weight loss
 </p>
 
 </header>
 
-
-
-<div class="container">
-
-
-
-<!-- RECIPE SEARCH -->
-
-<div class="card">
+<section class="hero">
 
 <h2>
-🔮 Recipe Search
+Eat Healthy. Look Healthy.
 </h2>
-
-
-<input 
-type="text"
-id="searchBox"
-placeholder="Search food, recipe, ingredient..."
->
-
-
-<button onclick="searchRecipe()">
-Search Recipe
-</button>
-
-
-<div id="result"></div>
-
-
-</div>
-
-<!-- CALORIE CALCULATOR -->
-
-<div class="card">
-
-<h2>
-🧮 Food Calorie Calculator
-</h2>
-
-
-<input 
-id="foodName"
-type="text"
-placeholder="Enter food (example: banana, egg, milk)"
->
-
-
-<input 
-id="foodAmount"
-type="number"
-placeholder="Enter amount (grams/ml)"
->
-
-
-<button onclick="calculateCalories()">
-Calculate Nutrition
-</button>
-
-
-<div id="calorieResult"></div>
-
-
-</div>
-
-
-
-
-<!-- WEIGHT GAIN -->
-
-<div class="card">
-
-
-<h2>
-💪 Weight Gain
-</h2>
-
 
 <p>
-Foods for healthy weight gain:
+
+Whether your goal is healthy weight gain or sustainable weight loss,
+your personalized diet journey starts here.
+
 </p>
 
+<div class="buttons">
 
-<ul>
+<button id="gainBtn">
+Weight Gain
+</button>
 
-<li>🥛 Milk & Milkshakes</li>
-<li>🥜 Nuts & Peanut Butter</li>
-<li>🍌 Bananas</li>
-<li>🍚 Rice</li>
-<li>🥚 Eggs</li>
-<li>🍗 Chicken</li>
-<li>🥑 Healthy Fats</li>
-<li>🥣 Oats</li>
-
-</ul>
-
-
-<span class="gain">
-High calorie nutritious foods
-</span>
-
+<button id="lossBtn">
+Weight Loss
+</button>
 
 </div>
 
+</section>
 
-
-
-
-<!-- WEIGHT LOSS -->
+<section class="features">
 
 <div class="card">
 
-
-<h2>
-🥗 Weight Loss
-</h2>
-
+<h3>🥗 Weight Gain</h3>
 
 <p>
-Foods for healthy weight loss:
+
+High-calorie foods, healthy meals,
+protein-rich recipes and
+3-month planner.
+
 </p>
 
-
-<ul>
-
-<li>🥦 Vegetables</li>
-<li>🍎 Fruits</li>
-<li>🥗 Salads</li>
-<li>🐟 Grilled Protein</li>
-<li>🌾 Whole Grains</li>
-<li>🥚 Eggs</li>
-<li>🥣 Oats</li>
-<li>🍵 Green Tea</li>
-
-</ul>
-
-
-<span class="loss">
-Low calorie nutritious foods
-</span>
-
-
 </div>
-
-
-
-</div>
-
-
-
-
-
-<!-- PERSONAL PLAN -->
 
 <div class="card">
 
+<h3>🥬 Weight Loss</h3>
 
-<h2>
-✨ Create Your 3 Month Plan
-</h2>
+<p>
 
-<!-- 3 MONTH PROGRESS TRACKER -->
+Low-calorie nutritious meals,
+healthy recipes and
+fat-loss planner.
+
+</p>
+
+</div>
 
 <div class="card">
 
-<h2>
-📜 3 Month Progress Tracker
-</h2>
+<h3>🔍 Recipe Search</h3>
 
+<p>
 
-<input 
-id="historyName"
-type="text"
-placeholder="Your Name"
->
+Search any food and instantly see
+calories,
+protein,
+carbs,
+fat,
+fiber and recipe.
 
-
-<input 
-id="startWeight"
-type="number"
-placeholder="Starting Weight (kg)"
->
-
-
-<input 
-id="currentWeight"
-type="number"
-placeholder="Current Weight (kg)"
->
-
-
-<select id="historyGoal">
-
-<option value="">
-Select Goal
-</option>
-
-<option value="gain">
-💪 Weight Gain
-</option>
-
-<option value="loss">
-🥗 Weight Loss
-</option>
-
-</select>
-
-
-<button onclick="saveProgress()">
-Save Progress
-</button>
-
-
-<div id="historyResult"></div>
-
+</p>
 
 </div>
-
-<input 
-id="name"
-type="text"
-placeholder="Enter your name"
->
-
-
-<input 
-id="age"
-type="number"
-placeholder="Enter your age"
->
-
-
-<input 
-id="height"
-type="number"
-placeholder="Height in cm"
->
-
-
-<input 
-id="weight"
-type="number"
-placeholder="Current weight in kg"
->
-
-
-
-<select id="goal">
-
-
-<option value="">
-Select Your Goal
-</option>
-
-
-<option value="gain">
-💪 Weight Gain
-</option>
-
-
-<option value="loss">
-🥗 Weight Loss
-</option>
-
-
-</select>
-
-
-
-<button onclick="calculatePlan()">
-
-Generate My Plan
-
-</button>
-
-
-
-<div id="planResult"></div>
-
-
-</div>
-
-<!-- 14 DAY PLANNERS -->
-
-<div class="container">
-
 
 <div class="card">
 
-<h2>
-💪 14 Day Weight Gain Planner
-</h2>
+<h3>📈 Progress Tracker</h3>
 
-<div id="gainPlanner"></div>
+<p>
 
-</div>
+Track your weekly weight journey
+for 3 months.
 
-
-
-<div class="card">
-
-<h2>
-🥗 14 Day Weight Loss Planner
-</h2>
-
-<div id="lossPlanner"></div>
+</p>
 
 </div>
 
-
-</div>
-
-
-
-
-
-<!-- DRINK SECTION -->
-
-<div class="container">
-
-
-<div class="card">
-
-
-<h2>
-🥤 Weight Gain Drinks
-</h2>
-
-
-<ul>
-
-<li>Banana Peanut Butter Shake</li>
-
-<li>Mango Lassi</li>
-
-<li>Dates Milkshake</li>
-
-<li>Almond Shake</li>
-
-<li>Chocolate Milk</li>
-
-</ul>
-
-
-</div>
-
-
-
-
-<div class="card">
-
-
-<h2>
-🌿 Weight Loss Drinks
-</h2>
-
-
-<ul>
-
-<li>Green Tea</li>
-
-<li>Lemon Water</li>
-
-<li>Detox Water</li>
-
-<li>Black Coffee</li>
-
-<li>Cucumber Mint Water</li>
-
-</ul>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
+</section>
 
 <footer>
 
 <p>
-© 2026 EAT AND LOOK TASTY
-</p>
 
-<p>
-Created by Syeda Manahil
+© 2026 EAT AND LOOK TASTY
+
 </p>
 
 </footer>
 
-
-
 <script src="script.js"></script>
 
-
 </body>
-
 </html>
