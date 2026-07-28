@@ -1,147 +1,77 @@
-const foods=[
-
-{
-
-name:"Oats",
-
-calories:"389 kcal /100g",
-
-protein:"17g",
-
-carbs:"66g",
-
-fat:"7g",
-
-fiber:"10g",
-
-vitamins:"Vitamin B1, Magnesium",
-
-recipe:"Cook oats in milk. Add honey, banana and almonds.",
-
-alternative:"Cornflakes or Muesli"
-
-},
-
-{
-
-name:"Banana",
-
-calories:"89 kcal /100g",
-
-protein:"1.1g",
-
-carbs:"23g",
-
-fat:"0.3g",
-
-fiber:"2.6g",
-
-vitamins:"Vitamin B6, Vitamin C",
-
-recipe:"Eat fresh or blend into a milkshake.",
-
-alternative:"Mango"
-
-},
-
-{
-
-name:"Eggs",
-
-calories:"155 kcal /100g",
-
-protein:"13g",
-
-carbs:"1g",
-
-fat:"11g",
-
-fiber:"0g",
-
-vitamins:"Vitamin D, B12",
-
-recipe:"Boiled, scrambled or omelette.",
-
-alternative:"Chicken Breast"
-
-},
-
-{
-
-name:"Rice",
-
-calories:"130 kcal /100g cooked",
-
-protein:"2.7g",
-
-carbs:"28g",
-
-fat:"0.3g",
-
-fiber:"0.4g",
-
-vitamins:"B Vitamins",
-
-recipe:"Serve with chicken and vegetables.",
-
-alternative:"Potatoes"
-
-},
-
-{
-
-name:"Peanut Butter",
-
-calories:"588 kcal /100g",
-
-protein:"25g",
-
-carbs:"20g",
-
-fat:"50g",
-
-fiber:"6g",
-
-vitamins:"Vitamin E",
-
-recipe:"Spread on whole wheat bread.",
-
-alternative:"Almond Butter"
-
-}
-
-];
-
-let html="";
-
-foods.forEach(food=>{
-
-html+=`
-
-<div class="foodCard">
-
-<h2>${food.name}</h2>
-
-<p><b>Calories:</b> ${food.calories}</p>
-
-<p><b>Protein:</b> ${food.protein}</p>
-
-<p><b>Carbs:</b> ${food.carbs}</p>
-
-<p><b>Fat:</b> ${food.fat}</p>
-
-<p><b>Fiber:</b> ${food.fiber}</p>
-
-<p><b>Vitamins:</b> ${food.vitamins}</p>
-
-<p><b>Recipe:</b> ${food.recipe}</p>
-
-<p><b>Alternative:</b> ${food.alternative}</p>
-
-</div>
-
-`;
-
-});
-
-document.getElementById("foods").innerHTML=html;
+const DATABASE = {
+  gainFoods: [
+    {
+      id: 1,
+      name: "Banana",
+      serving: "100 g",
+      calories: 89,
+      protein: 1.1,
+      carbs: 22.8,
+      fat: 0.3,
+      fiber: 2.6,
+      vitamins: "Vitamin B6, Vitamin C",
+      recipe: "Eat fresh or blend with milk, oats, and honey.",
+      alternative: "Mango"
+    },
+    {
+      id: 2,
+      name: "Oats",
+      serving: "100 g",
+      calories: 389,
+      protein: 16.9,
+      carbs: 66.3,
+      fat: 6.9,
+      fiber: 10.6,
+      vitamins: "Vitamin B1, Iron",
+      recipe: "Cook with milk and top with banana and almonds.",
+      alternative: "Muesli"
+    },
+    {
+      id: 3,
+      name: "Whole Milk",
+      serving: "250 mL",
+      calories: 150,
+      protein: 8,
+      carbs: 12,
+      fat: 8,
+      fiber: 0,
+      vitamins: "Vitamin D, Calcium",
+      recipe: "Drink plain or make a banana milkshake.",
+      alternative: "Soy Milk"
+    },
+    {
+      id: 4,
+      name: "Eggs",
+      serving: "100 g",
+      calories: 155,
+      protein: 13,
+      carbs: 1.1,
+      fat: 11,
+      fiber: 0,
+      vitamins: "Vitamin D, Vitamin B12",
+      recipe: "Boiled, scrambled, or omelette.",
+      alternative: "Chicken Breast"
+    },
+    {
+      id: 5,
+      name: "Peanut Butter",
+      serving: "100 g",
+      calories: 588,
+      protein: 25,
+      carbs: 20,
+      fat: 50,
+      fiber: 6,
+      vitamins: "Vitamin E",
+      recipe: "Spread on whole wheat bread.",
+      alternative: "Almond Butter"
+    }
+  ],
+
+  lossFoods: [],
+
+  recipes: [],
+
+  drinks: [],
+
+  snacks: []
+};
