@@ -1,18 +1,35 @@
 const container = document.getElementById("foods");
 
+let html = "";
+
 DATABASE.gainFoods.forEach(food => {
-  container.innerHTML += `
-    <div class="foodCard">
-      <h2>${food.name}</h2>
-      <p><strong>Serving:</strong> ${food.serving}</p>
-      <p><strong>Calories:</strong> ${food.calories} kcal</p>
-      <p><strong>Protein:</strong> ${food.protein} g</p>
-      <p><strong>Carbs:</strong> ${food.carbs} g</p>
-      <p><strong>Fat:</strong> ${food.fat} g</p>
-      <p><strong>Fiber:</strong> ${food.fiber} g</p>
-      <p><strong>Vitamins:</strong> ${food.vitamins}</p>
-      <p><strong>Recipe:</strong> ${food.recipe}</p>
-      <p><strong>Alternative:</strong> ${food.alternative}</p>
-    </div>
-  `;
+
+html += `
+<div class="foodCard">
+
+<h2>${food.name}</h2>
+
+<p><b>Serving:</b> ${food.serving}</p>
+
+<p><b>Calories:</b> ${food.calories} kcal</p>
+
+<p><b>Protein:</b> ${food.protein} g</p>
+
+<p><b>Carbs:</b> ${food.carbs} g</p>
+
+<p><b>Fat:</b> ${food.fat} g</p>
+
+<p><b>Fiber:</b> ${food.fiber} g</p>
+
+<p><b>Vitamins:</b> ${food.vitamins}</p>
+
+<p><b>Recipe:</b> ${food.recipe}</p>
+
+<p><b>Alternative:</b> ${food.alternative}</p>
+
+</div>
+`;
+
 });
+
+container.innerHTML = html;
