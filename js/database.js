@@ -10,68 +10,34 @@ const DATABASE = {
       fat: 0.3,
       fiber: 2.6,
       vitamins: "Vitamin B6, Vitamin C",
-      recipe: "Eat fresh or blend with milk, oats, and honey.",
+      recipe: "Eat fresh or blend into a banana milkshake.",
       alternative: "Mango"
     },
     {
       id: 2,
-      name: "Oats",
-      serving: "100 g",
-      calories: 389,
-      protein: 16.9,
-      carbs: 66.3,
-      fat: 6.9,
-      fiber: 10.6,
-      vitamins: "Vitamin B1, Iron",
-      recipe: "Cook with milk and top with banana and almonds.",
-      alternative: "Muesli"
-    },
-    {
-      id: 3,
-      name: "Whole Milk",
-      serving: "250 mL",
-      calories: 150,
-      protein: 8,
-      carbs: 12,
-      fat: 8,
-      fiber: 0,
-      vitamins: "Vitamin D, Calcium",
-      recipe: "Drink plain or make a banana milkshake.",
-      alternative: "Soy Milk"
-    },
-    {
-      id: 4,
-      name: "Eggs",
+      name: "Egg",
       serving: "100 g",
       calories: 155,
       protein: 13,
       carbs: 1.1,
       fat: 11,
       fiber: 0,
-      vitamins: "Vitamin D, Vitamin B12",
-      recipe: "Boiled, scrambled, or omelette.",
+      vitamins: "Vitamin D, B12",
+      recipe: "Boiled or omelette.",
       alternative: "Chicken Breast"
     },
     {
-      id: 5,
-      name: "Peanut Butter",
+      id: 3,
+      name: "Rice",
       serving: "100 g",
-      calories: 588,
-      protein: 25,
-      carbs: 20,
-      fat: 50,
-      fiber: 6,
-      vitamins: "Vitamin E",
-      recipe: "Spread on whole wheat bread.",
-      alternative: "Almond Butter"
+      calories: 130,
+      protein: 2.7,
+      carbs: 28,
+      fat: 0.3,
+      fiber: 0.4,
+      vitamins: "Vitamin B",
+      recipe: "Serve with chicken.",
+      alternative: "Potato"
     }
-  ],
-
-  lossFoods: [],
-
-  recipes: [],
-
-  drinks: [],
-
-  snacks: []
+  ]
 };
