@@ -1,89 +1,131 @@
 function generatePlan(){
 
+let name = document.getElementById("userName").value;
 
-let name =
-document.getElementById("userName").value;
+let goal = document.getElementById("goal").value;
 
-
-let weight =
-Number(document.getElementById("weight").value);
+let plan = document.getElementById("planResult");
 
 
-let goal =
-document.getElementById("goal").value;
+let mealsGain = [
+
+{
+breakfast:"Oats with milk, banana and almonds",
+lunch:"Chicken rice with vegetables",
+snack:"Peanut butter sandwich",
+dinner:"Egg omelette with roti and yogurt",
+calories:"2500 kcal"
+},
+
+{
+breakfast:"Eggs with toast and avocado",
+lunch:"Beef/chicken pasta",
+snack:"Dates milkshake",
+dinner:"Rice with chicken curry",
+calories:"2600 kcal"
+},
+
+{
+breakfast:"Banana smoothie with oats",
+lunch:"Potatoes with chicken",
+snack:"Nuts and milk",
+dinner:"Fish with rice",
+calories:"2550 kcal"
+}
+
+];
 
 
+let mealsLoss = [
 
-let plan =
-document.getElementById("planResult");
+{
+breakfast:"Boiled eggs with fruit",
+lunch:"Grilled chicken salad",
+snack:"Greek yogurt",
+dinner:"Vegetable soup with protein",
+calories:"1500 kcal"
+},
 
+{
+breakfast:"Oats with berries",
+lunch:"Chicken wrap with vegetables",
+snack:"Apple and nuts",
+dinner:"Fish with salad",
+calories:"1600 kcal"
+},
+
+{
+breakfast:"Green smoothie",
+lunch:"Brown rice with vegetables",
+snack:"Low fat yogurt",
+dinner:"Chicken soup",
+calories:"1550 kcal"
+}
+
+];
+
+
+let meals;
 
 
 if(goal==="gain"){
 
-
-plan.innerHTML = `
-
-<div class="foodCard">
-
-<h2>${name}'s Weight Gain Plan</h2>
-
-
-<h3>Day 1</h3>
-
-
-<p><b>Breakfast:</b> Oats + Milk + Banana + Nuts</p>
-
-<p><b>Lunch:</b> Rice + Chicken + Vegetables</p>
-
-<p><b>Snack:</b> Peanut Butter Sandwich</p>
-
-<p><b>Dinner:</b> Eggs + Roti + Yogurt</p>
-
-
-<p>Target: Increase healthy calories and protein intake.</p>
-
-
-</div>
-
-`;
-
-
+meals = mealsGain;
 
 }
-
-
 
 else{
 
+meals = mealsLoss;
 
-plan.innerHTML = `
+}
+
+
+
+let output = `
 
 <div class="foodCard">
 
-<h2>${name}'s Weight Loss Plan</h2>
+<h2>${name}'s 90 Day Diet Plan</h2>
+
+`;
 
 
-<h3>Day 1</h3>
+
+for(let day=1; day<=90; day++){
 
 
-<p><b>Breakfast:</b> Eggs + Fruit + Green Tea</p>
-
-<p><b>Lunch:</b> Grilled Chicken Salad</p>
-
-<p><b>Snack:</b> Yogurt + Nuts</p>
-
-<p><b>Dinner:</b> Soup + Vegetables</p>
+let meal = meals[(day-1)%3];
 
 
-<p>Target: Balanced calories with high nutrition.</p>
+output += `
+
+<hr>
+
+<h3>Day ${day}</h3>
 
 
-</div>
+<p><b>Breakfast:</b> ${meal.breakfast}</p>
+
+<p><b>Lunch:</b> ${meal.lunch}</p>
+
+<p><b>Snack:</b> ${meal.snack}</p>
+
+<p><b>Dinner:</b> ${meal.dinner}</p>
+
+<p><b>Daily Calories:</b> ${meal.calories}</p>
+
 
 `;
 
 }
+
+
+
+output += `</div>`;
+
+
+plan.innerHTML = output;
 
 
 }
