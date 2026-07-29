@@ -43,6 +43,146 @@ ${recipe.name}
 
 }
 
+function generatePlan(){
+
+
+let name=document.getElementById("userName").value;
+let age=document.getElementById("userAge").value;
+let weight=document.getElementById("userWeight").value;
+let height=document.getElementById("userHeight").value;
+let goal=document.getElementById("goal").value;
+let target=document.getElementById("targetWeight").value;
+
+
+
+let userData={
+
+name:name,
+age:age,
+weight:weight,
+height:height,
+goal:goal,
+target:target
+
+};
+
+
+// Save history
+
+localStorage.setItem(
+"userFitnessHistory",
+JSON.stringify(userData)
+);
+
+
+
+createPlan(userData);
+
+
+}
+
+
+
+function createPlan(userData){
+
+
+let bmi=(
+userData.weight/
+((userData.height/100)*(userData.height/100))
+).toFixed(1);
+
+
+
+let result=document.getElementById("planResult");
+
+
+
+if(userData.goal==="gain"){
+
+
+result.innerHTML=`
+
+<h2>💪 ${userData.name}'s Weight Gain Plan</h2>
+
+<p>
+Age: ${userData.age}<br>
+Current Weight: ${userData.weight} kg<br>
+Target Weight: ${userData.target} kg<br>
+BMI: ${bmi}
+</p>
+
+
+<h3>Month 1 - Healthy Increase</h3>
+
+<p>
+Eat 5 meals daily.<br>
+Add milk, eggs, rice, nuts and protein foods.
+</p>
+
+
+<h3>Month 2 - Strength Phase</h3>
+
+<p>
+Increase calories gradually.
+Add protein with every meal.
+</p>
+
+
+<h3>Month 3 - Progress Phase</h3>
+
+<p>
+Maintain routine and track weekly changes.
+</p>
+
+`;
+
+}
+
+
+
+else{
+
+
+result.innerHTML=`
+
+<h2>🥗 ${userData.name}'s Weight Loss Plan</h2>
+
+<p>
+Age: ${userData.age}<br>
+Current Weight: ${userData.weight} kg<br>
+Target Weight: ${userData.target} kg<br>
+BMI: ${bmi}
+</p>
+
+
+<h3>Month 1 - Healthy Routine</h3>
+
+<p>
+Reduce processed foods.
+Add vegetables, protein and water.
+</p>
+
+
+<h3>Month 2 - Fat Loss Phase</h3>
+
+<p>
+Control portions and stay active.
+</p>
+
+
+<h3>Month 3 - Maintenance</h3>
+
+<p>
+Maintain balanced meals and habits.
+</p>
+
+`;
+
+}
+
+
+}
+
 
 function displayRecipes(){
 
@@ -253,3 +393,38 @@ document.getElementById("recipePopup").style.display="none";
 
 
 displayRecipes();
+
+window.onload=function(){
+
+
+let savedData=localStorage.getItem("userFitnessHistory");
+
+
+if(savedData){
+
+
+let userData=JSON.parse(savedData);
+
+
+
+document.getElementById("userName").value=userData.name;
+
+document.getElementById("userAge").value=userData.age;
+
+document.getElementById("userWeight").value=userData.weight;
+
+document.getElementById("userHeight").value=userData.height;
+
+document.getElementById("goal").value=userData.goal;
+
+document.getElementById("targetWeight").value=userData.target;
+
+
+
+createPlan(userData);
+
+
+}
+
+
+};
