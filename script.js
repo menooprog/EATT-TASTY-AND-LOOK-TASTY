@@ -1,261 +1,80 @@
 
-document.getElementById("gainBtn").onclick = function(){};
+// ===================================
+// EAT AND LOOK TASTY
+// MAIN JAVASCRIPT
+// ===================================
 
-document.getElementById("lossBtn").onclick = function(){};
+
+
+// DISPLAY FOODS
+
+function displayFoods(){
+
+let gainBox=document.getElementById("gainFoods");
+let lossBox=document.getElementById("lossFoods");
+
+
+if(!gainBox || !lossBox) return;
+
+
+
+weightGainFoods.forEach(food=>{
+
+
+gainBox.innerHTML += `
+
+<div class="food-card" onclick="showFood('${food.name}')">
+
+${food.name}
+
+</div>
+
+`;
+
+});
+
+
+
+weightLossFoods.forEach(food=>{
+
+
+lossBox.innerHTML += `
+
+<div class="food-card" onclick="showFood('${food.name}')">
+
+${food.name}
+
+</div>
+
+`;
+
+});
+
+
+}
+
+
+
+
+// DISPLAY RECIPES
+
+
 function displayRecipes(){
 
 
 let gainBox=document.getElementById("gainRecipes");
+
 let lossBox=document.getElementById("lossRecipes");
 
 
+if(!gainBox || !lossBox) return;
 
-gainRecipes.forEach(recipe=>{
 
-gainBox.innerHTML += `
 
-<div class="recipe-card" onclick="showRecipe('${recipe.name}')">
+weightGainRecipes.forEach(recipe=>{
 
-${recipe.name}
 
-</div>
-
-`;
-
-});
-
-
-
-lossRecipes.forEach(recipe=>{
-
-lossBox.innerHTML += `
-
-<div class="recipe-card" onclick="showRecipe('${recipe.name}')">
-
-${recipe.name}
-
-</div>
-
-`;
-
-});
-
-
-}
-
-function generatePlan(){
-
-
-let name=document.getElementById("userName").value;
-let age=document.getElementById("userAge").value;
-let weight=document.getElementById("userWeight").value;
-let height=document.getElementById("userHeight").value;
-let goal=document.getElementById("goal").value;
-let target=document.getElementById("targetWeight").value;
-
-
-
-let userData={
-
-name:name,
-age:age,
-weight:weight,
-height:height,
-goal:goal,
-target:target
-
-};
-
-
-// Save history
-
-localStorage.setItem(
-"userFitnessHistory",
-JSON.stringify(userData)
-);
-
-
-
-createPlan(userData);
-
-
-}
-
-
-
-function createPlan(userData){
-
-
-let bmi=(
-userData.weight/
-((userData.height/100)*(userData.height/100))
-).toFixed(1);
-
-
-
-let result=document.getElementById("planResult");
-
-
-
-if(userData.goal==="gain"){
-
-
-result.innerHTML=`
-
-<h2>💪 ${userData.name}'s Weight Gain Plan</h2>
-
-<p>
-Age: ${userData.age}<br>
-Current Weight: ${userData.weight} kg<br>
-Target Weight: ${userData.target} kg<br>
-BMI: ${bmi}
-</p>
-
-
-<h3>Month 1 - Healthy Increase</h3>
-
-<p>
-Eat 5 meals daily.<br>
-Add milk, eggs, rice, nuts and protein foods.
-</p>
-
-
-<h3>Month 2 - Strength Phase</h3>
-
-<p>
-Increase calories gradually.
-Add protein with every meal.
-</p>
-
-
-<h3>Month 3 - Progress Phase</h3>
-
-<p>
-Maintain routine and track weekly changes.
-</p>
-
-`;
-
-}
-
-
-
-else{
-
-
-result.innerHTML=`
-
-<h2>🥗 ${userData.name}'s Weight Loss Plan</h2>
-
-<p>
-Age: ${userData.age}<br>
-Current Weight: ${userData.weight} kg<br>
-Target Weight: ${userData.target} kg<br>
-BMI: ${bmi}
-</p>
-
-
-<h3>Month 1 - Healthy Routine</h3>
-
-<p>
-Reduce processed foods.
-Add vegetables, protein and water.
-</p>
-
-
-<h3>Month 2 - Fat Loss Phase</h3>
-
-<p>
-Control portions and stay active.
-</p>
-
-
-<h3>Month 3 - Maintenance</h3>
-
-<p>
-Maintain balanced meals and habits.
-</p>
-
-`;
-
-}
-
-
-}
-
-
-function displayRecipes(){
-
-let gainContainer = document.getElementById("gainRecipes");
-let lossContainer = document.getElementById("lossRecipes");
-
-
-// Weight Gain
-
-weightGainRecipes.forEach(recipe => {
-
-gainContainer.innerHTML += `
-
-<div class="recipe-card" onclick="showRecipe(${recipe.id}, 'gain')">
-
-${recipe.name}
-
-</div>
-
-`;
-
-});
-
-
-
-// Weight Loss
-
-weightLossRecipes.forEach(recipe => {
-
-lossContainer.innerHTML += `
-
-<div class="recipe-card" onclick="showRecipe(${recipe.id}, 'loss')">
-
-${recipe.name}
-
-</div>
-
-`;
-
-});
-
-
-}
-function searchRecipes(){
-
-
-let input = document.getElementById("recipeSearch").value.toLowerCase();
-
-
-let gainContainer = document.getElementById("gainRecipes");
-
-let lossContainer = document.getElementById("lossRecipes");
-
-
-
-gainContainer.innerHTML="";
-
-lossContainer.innerHTML="";
-
-
-
-// Search weight gain
-
-weightGainRecipes
-.filter(recipe => 
-recipe.name.toLowerCase().includes(input)
-||
-recipe.ingredients.join(" ").toLowerCase().includes(input)
-)
-.forEach(recipe=>{
-
-
-gainContainer.innerHTML += `
+gainBox.innerHTML +=`
 
 <div class="recipe-card"
 onclick="showRecipe(${recipe.id},'gain')">
@@ -271,18 +90,10 @@ ${recipe.name}
 
 
 
-// Search weight loss
-
-weightLossRecipes
-.filter(recipe => 
-recipe.name.toLowerCase().includes(input)
-||
-recipe.ingredients.join(" ").toLowerCase().includes(input)
-)
-.forEach(recipe=>{
+weightLossRecipes.forEach(recipe=>{
 
 
-lossContainer.innerHTML += `
+lossBox.innerHTML +=`
 
 <div class="recipe-card"
 onclick="showRecipe(${recipe.id},'loss')">
@@ -300,77 +111,49 @@ ${recipe.name}
 
 
 
-function showRecipe(id,type){
+
+// SHOW FOOD DETAILS
 
 
-let recipe;
+function showFood(name){
 
 
-if(type==="gain"){
+let food=[
 
-recipe = weightGainRecipes.find(item=>item.id===id);
+...weightGainFoods,
 
-}
+...weightLossFoods
 
-else{
-
-recipe = weightLossRecipes.find(item=>item.id===id);
-
-}
+].find(item=>item.name===name);
 
 
 
-document.getElementById("recipeName").innerHTML = recipe.name;
+document.getElementById("popupTitle").innerHTML=food.name;
 
 
-document.getElementById("recipeInfo").innerHTML = `
+document.getElementById("popupBody").innerHTML=`
 
-
-🍽️ <b>Meal:</b> ${recipe.meal}<br><br>
-
-
-🥘 <b>Ingredients:</b><br>
-${recipe.ingredients.join(", ")}
-<br><br>
-
-
-👩‍🍳 <b>Recipe:</b><br>
-${recipe.recipe}
-
-<br><br>
-
-
-🍴 <b>Serving:</b> ${recipe.serving}
-
-<br><br>
-
-
-🔥 Calories: ${recipe.calories} kcal
+🔥 Calories: ${food.calories} kcal
 
 <br>
 
-💪 Protein: ${recipe.protein} g
+💪 Protein: ${food.protein} g
 
 <br>
 
-🍚 Carbohydrates: ${recipe.carbs} g
+🍚 Carbohydrates: ${food.carbs} g
 
 <br>
 
-🥑 Fat: ${recipe.fat} g
+🥑 Fat: ${food.fat} g
 
 <br>
 
-🌿 Fibre: ${recipe.fiber} g
+🌿 Fibre: ${food.fiber} g
 
 <br>
 
-🍊 Vitamins: ${recipe.vitamins}
-
-<br><br>
-
-🔄 Alternative:
-${recipe.alternative}
+🍊 Vitamins: ${food.vitamins}
 
 `;
 
@@ -384,152 +167,370 @@ document.getElementById("recipePopup").style.display="block";
 
 
 
-function closeRecipe(){
+// SHOW RECIPE DETAILS
 
-document.getElementById("recipePopup").style.display="none";
+
+function showRecipe(id,type){
+
+
+let recipe;
+
+
+
+if(type==="gain"){
+
+recipe=weightGainRecipes.find(r=>r.id===id);
+
+}
+
+else{
+
+recipe=weightLossRecipes.find(r=>r.id===id);
 
 }
 
 
 
-displayRecipes();
+document.getElementById("popupTitle").innerHTML=recipe.name;
+
+
+
+document.getElementById("popupBody").innerHTML=`
+
+🍽 Meal:
+${recipe.meal}
+
+<br><br>
+
+🥘 Ingredients:
+
+<br>
+
+${recipe.ingredients.join(", ")}
+
+
+<br><br>
+
+
+👩‍🍳 Recipe:
+
+<br>
+
+${recipe.recipe}
+
+
+<br><br>
+
+
+🔥 Calories:
+${recipe.calories} kcal
+
+<br>
+
+💪 Protein:
+${recipe.protein} g
+
+<br>
+
+🍚 Carbs:
+${recipe.carbs} g
+
+<br>
+
+🥑 Fat:
+${recipe.fat} g
+
+<br>
+
+🌿 Fibre:
+${recipe.fiber} g
+
+<br>
+
+🍊 Vitamins:
+${recipe.vitamins}
+
+
+<br><br>
+
+🔄 Alternative:
+${recipe.alternative}
+
+
+`;
+
+
+
+document.getElementById("recipePopup").style.display="block";
+
+
+}
+
+
+
+
+
+// CLOSE POPUP
+
+
+document.getElementById("closePopup").onclick=function(){
+
+document.getElementById("recipePopup").style.display="none";
+
+};
+
+
+
+
+
+// SEARCH ENGINE
+
+
+document.getElementById("searchBtn").onclick=function(){
+
+
+let search=document
+.getElementById("recipeSearch")
+.value
+.toLowerCase();
+
+
+
+let gain=document.getElementById("gainRecipes");
+
+let loss=document.getElementById("lossRecipes");
+
+
+
+gain.innerHTML="";
+
+loss.innerHTML="";
+
+
+
+
+weightGainRecipes
+.filter(r=>r.name.toLowerCase().includes(search))
+.forEach(recipe=>{
+
+
+gain.innerHTML+=`
+
+<div class="recipe-card"
+onclick="showRecipe(${recipe.id},'gain')">
+
+${recipe.name}
+
+</div>
+
+`;
+
+});
+
+
+
+
+
+weightLossRecipes
+.filter(r=>r.name.toLowerCase().includes(search))
+.forEach(recipe=>{
+
+
+loss.innerHTML+=`
+
+<div class="recipe-card"
+onclick="showRecipe(${recipe.id},'loss')">
+
+${recipe.name}
+
+</div>
+
+`;
+
+});
+
+
+};
+
+
+
+
+
+// PERSONAL PLAN + SAVE HISTORY
+
+
+document.getElementById("planBtn").onclick=function(){
+
+
+let data={
+
+
+name:document.getElementById("name").value,
+
+age:document.getElementById("age").value,
+
+height:document.getElementById("height").value,
+
+weight:document.getElementById("weight").value,
+
+target:
+document.getElementById("targetWeight").value,
+
+goal:
+document.getElementById("goal").value
+
+
+};
+
+
+
+localStorage.setItem(
+"EAT_LOOK_HISTORY",
+JSON.stringify(data)
+);
+
+
+
+generatePlan(data);
+
+
+};
+
+
+
+
+
+function generatePlan(data){
+
+
+
+let result=document.getElementById("planResult");
+
+
+
+let bmi=(data.weight/
+((data.height/100)*(data.height/100)))
+.toFixed(1);
+
+
+
+if(data.goal==="gain"){
+
+
+result.innerHTML=`
+
+<h2>💪 ${data.name}'s Weight Gain Plan</h2>
+
+<p>
+
+BMI: ${bmi}
+
+</p>
+
+
+<h3>Month 1</h3>
+
+Eat 5 meals daily.
+Add milk, eggs, rice, nuts and protein.
+
+
+<h3>Month 2</h3>
+
+Increase calories and strength training.
+
+
+<h3>Month 3</h3>
+
+Maintain routine and track progress.
+
+
+`;
+
+}
+
+
+else{
+
+
+result.innerHTML=`
+
+<h2>🥗 ${data.name}'s Weight Loss Plan</h2>
+
+
+<p>
+
+BMI: ${bmi}
+
+</p>
+
+
+<h3>Month 1</h3>
+
+Reduce processed foods and sugary drinks.
+
+
+<h3>Month 2</h3>
+
+Increase protein and activity.
+
+
+<h3>Month 3</h3>
+
+Maintain healthy lifestyle.
+
+
+`;
+
+}
+
+
+}
+
+
+
+
+
+// LOAD SAVED DATA
+
 
 window.onload=function(){
 
 
-let savedData=localStorage.getItem("userFitnessHistory");
+displayFoods();
 
-
-if(savedData){
-
-
-let userData=JSON.parse(savedData);
+displayRecipes();
 
 
 
-document.getElementById("userName").value=userData.name;
-
-document.getElementById("userAge").value=userData.age;
-
-document.getElementById("userWeight").value=userData.weight;
-
-document.getElementById("userHeight").value=userData.height;
-
-document.getElementById("goal").value=userData.goal;
-
-document.getElementById("targetWeight").value=userData.target;
+let saved=
+localStorage.getItem("EAT_LOOK_HISTORY");
 
 
 
-createPlan(userData);
+if(saved){
+
+
+let data=JSON.parse(saved);
+
+
+
+document.getElementById("name").value=data.name;
+
+document.getElementById("age").value=data.age;
+
+document.getElementById("height").value=data.height;
+
+document.getElementById("weight").value=data.weight;
+
+document.getElementById("targetWeight").value=data.target;
+
+document.getElementById("goal").value=data.goal;
+
+
+generatePlan(data);
 
 
 }
 
 
 };
-
-const weightGainFoods=[
-
-"Peanut Butter",
-"Whole Milk",
-"Eggs",
-"Chicken Breast",
-"Rice",
-"Potatoes",
-"Sweet Potatoes",
-"Avocado",
-"Bananas",
-"Dates",
-"Almonds",
-"Walnuts",
-"Cashews",
-"Cheese",
-"Paneer",
-"Yogurt",
-"Oats",
-"Peanut Chikki",
-"Olive Oil",
-"Butter",
-"Salmon",
-"Beef",
-"Lentils",
-"Chickpeas",
-"Pasta",
-"Whole Wheat Bread"
-
-];
-
-
-const weightLossFoods=[
-
-"Spinach",
-"Broccoli",
-"Cucumber",
-"Lettuce",
-"Tomatoes",
-"Carrots",
-"Egg Whites",
-"Chicken Breast",
-"Fish",
-"Greek Yogurt",
-"Oats",
-"Apples",
-"Oranges",
-"Berries",
-"Green Tea",
-"Brown Rice",
-"Quinoa",
-"Lentils",
-"Beans",
-"Soup",
-"Almonds",
-"Chia Seeds",
-"Flax Seeds",
-"Sweet Potato",
-"Avocado"
-
-];
-
-
-
-function showFoods(){
-
-
-let gain=document.getElementById("gainFoods");
-
-let loss=document.getElementById("lossFoods");
-
-
-
-weightGainFoods.forEach(food=>{
-
-gain.innerHTML +=`
-
-<div class="food-item">
-${food}
-</div>
-
-`;
-
-});
-
-
-
-weightLossFoods.forEach(food=>{
-
-loss.innerHTML +=`
-
-<div class="food-item">
-${food}
-</div>
-
-`;
-
-});
-
-
-}
-
-
-showFoods();
