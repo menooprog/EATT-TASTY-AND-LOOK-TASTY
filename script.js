@@ -428,3 +428,108 @@ createPlan(userData);
 
 
 };
+
+const weightGainFoods=[
+
+"Peanut Butter",
+"Whole Milk",
+"Eggs",
+"Chicken Breast",
+"Rice",
+"Potatoes",
+"Sweet Potatoes",
+"Avocado",
+"Bananas",
+"Dates",
+"Almonds",
+"Walnuts",
+"Cashews",
+"Cheese",
+"Paneer",
+"Yogurt",
+"Oats",
+"Peanut Chikki",
+"Olive Oil",
+"Butter",
+"Salmon",
+"Beef",
+"Lentils",
+"Chickpeas",
+"Pasta",
+"Whole Wheat Bread"
+
+];
+
+
+const weightLossFoods=[
+
+"Spinach",
+"Broccoli",
+"Cucumber",
+"Lettuce",
+"Tomatoes",
+"Carrots",
+"Egg Whites",
+"Chicken Breast",
+"Fish",
+"Greek Yogurt",
+"Oats",
+"Apples",
+"Oranges",
+"Berries",
+"Green Tea",
+"Brown Rice",
+"Quinoa",
+"Lentils",
+"Beans",
+"Soup",
+"Almonds",
+"Chia Seeds",
+"Flax Seeds",
+"Sweet Potato",
+"Avocado"
+
+];
+
+
+
+function showFoods(){
+
+
+let gain=document.getElementById("gainFoods");
+
+let loss=document.getElementById("lossFoods");
+
+
+
+weightGainFoods.forEach(food=>{
+
+gain.innerHTML +=`
+
+<div class="food-item">
+${food}
+</div>
+
+`;
+
+});
+
+
+
+weightLossFoods.forEach(food=>{
+
+loss.innerHTML +=`
+
+<div class="food-item">
+${food}
+</div>
+
+`;
+
+});
+
+
+}
+
+
+showFoods();
