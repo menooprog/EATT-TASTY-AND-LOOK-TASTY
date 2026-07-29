@@ -1,21 +1,24 @@
 function searchFood(){
 
 
-let input=document
+let input = document
 .getElementById("searchBox")
 .value
 .toLowerCase();
 
 
 
-let result=document
-.getElementById("result");
+let result =
+document.getElementById("result");
 
 
 
-let food = DATABASE.gainFoods.find(item =>
-item.name.toLowerCase()
+let food = ALL_FOODS.find(item =>
+
+item.name
+.toLowerCase()
 .includes(input)
+
 );
 
 
@@ -23,31 +26,32 @@ item.name.toLowerCase()
 if(food){
 
 
-result.innerHTML=`
+result.innerHTML = `
 
 <div class="foodCard">
 
 <h2>${food.name}</h2>
 
-<p>Calories: ${food.calories} kcal</p>
+<p><b>Serving:</b> ${food.serving}</p>
 
-<p>Protein: ${food.protein} g</p>
+<p><b>Calories:</b> ${food.calories} kcal</p>
 
-<p>Carbs: ${food.carbs} g</p>
+<p><b>Protein:</b> ${food.protein} g</p>
 
-<p>Fat: ${food.fat} g</p>
+<p><b>Carbohydrates:</b> ${food.carbs} g</p>
 
-<p>Fiber: ${food.fiber} g</p>
+<p><b>Fat:</b> ${food.fat} g</p>
 
-<p>Vitamins: ${food.vitamins}</p>
+<p><b>Fiber:</b> ${food.fiber} g</p>
 
-<p>Recipe: ${food.recipe}</p>
+<p><b>Vitamins:</b> ${food.vitamins}</p>
 
-<p>Alternative: ${food.alternative}</p>
+<p><b>Recipe:</b> ${food.recipe}</p>
+
+<p><b>Alternative:</b> ${food.alternative}</p>
 
 
 </div>
-
 
 `;
 
@@ -56,11 +60,11 @@ result.innerHTML=`
 else{
 
 
-result.innerHTML=
-"<h3>Food not found</h3>";
+result.innerHTML =
+
+"<h3>Sorry, food not available yet.</h3>";
 
 }
-
 
 
 }
