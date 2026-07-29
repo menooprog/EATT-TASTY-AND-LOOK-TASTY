@@ -6,6 +6,14 @@ let goal = document.getElementById("goal").value;
 
 let plan = document.getElementById("planResult");
 
+let weight = Number(document.getElementById("weight").value);
+
+let height = Number(document.getElementById("height").value);
+
+let age = Number(document.getElementById("age").value);
+
+let activity = document.getElementById("activity").value;
+
 
 let mealsGain = [
 
