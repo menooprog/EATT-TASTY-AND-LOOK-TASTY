@@ -3617,8 +3617,3223 @@ vitamins:"Iron, Magnesium",
 alternative:"Use brown rice"
 },
 
-w
+{
+id:211,
+name:"Chicken Avocado Salad",
+meal:"Lunch",
+ingredients:["Chicken Breast","Avocado","Lettuce","Cucumber"],
+recipe:"Mix grilled chicken with vegetables and avocado.",
+serving:"1 bowl",
+calories:360,
+protein:42,
+carbs:18,
+fat:15,
+fiber:9,
+vitamins:"Vitamin E, Vitamin C",
+alternative:"Use boiled eggs instead of chicken"
+},
 
+
+{
+id:212,
+name:"Vegetable Stir Fry",
+meal:"Dinner",
+ingredients:["Broccoli","Carrot","Capsicum","Mushrooms"],
+recipe:"Stir fry vegetables with light seasoning.",
+serving:"1 plate",
+calories:220,
+protein:8,
+carbs:35,
+fat:6,
+fiber:10,
+vitamins:"Vitamin A, Vitamin C",
+alternative:"Add tofu for extra protein"
+},
+
+
+{
+id:213,
+name:"Tuna Cucumber Salad",
+meal:"Lunch",
+ingredients:["Tuna","Cucumber","Lettuce","Lemon"],
+recipe:"Mix tuna with fresh vegetables and lemon.",
+serving:"1 bowl",
+calories:280,
+protein:35,
+carbs:12,
+fat:10,
+fiber:5,
+vitamins:"Omega-3, Vitamin C",
+alternative:"Use grilled chicken"
+},
+
+
+{
+id:214,
+name:"Egg White Veggie Bowl",
+meal:"Breakfast",
+ingredients:["Egg Whites","Spinach","Tomatoes","Capsicum"],
+recipe:"Cook egg whites with vegetables.",
+serving:"1 bowl",
+calories:220,
+protein:25,
+carbs:15,
+fat:5,
+fiber:5,
+vitamins:"Vitamin D, Iron",
+alternative:"Use whole eggs"
+},
+
+
+{
+id:215,
+name:"Brown Rice Chicken Bowl",
+meal:"Lunch",
+ingredients:["Brown Rice","Chicken","Vegetables"],
+recipe:"Serve grilled chicken with brown rice and vegetables.",
+serving:"1 bowl",
+calories:420,
+protein:45,
+carbs:55,
+fat:8,
+fiber:10,
+vitamins:"Iron, Vitamin B6",
+alternative:"Use quinoa instead of rice"
+},
+
+
+{
+id:216,
+name:"Cucumber Yogurt Dip Plate",
+meal:"Snack",
+ingredients:["Yogurt","Cucumber","Mint","Spices"],
+recipe:"Mix yogurt with cucumber and mint.",
+serving:"1 bowl",
+calories:180,
+protein:15,
+carbs:18,
+fat:5,
+fiber:3,
+vitamins:"Calcium, Vitamin C",
+alternative:"Use low-fat yogurt"
+},
+
+
+{
+id:217,
+name:"Grilled Chicken Sandwich",
+meal:"Lunch",
+ingredients:["Whole Wheat Bread","Chicken","Lettuce","Tomato"],
+recipe:"Fill bread with grilled chicken and vegetables.",
+serving:"1 sandwich",
+calories:350,
+protein:40,
+carbs:35,
+fat:8,
+fiber:7,
+vitamins:"Vitamin B12",
+alternative:"Use egg filling"
+},
+
+
+{
+id:218,
+name:"Spinach Mushroom Omelette",
+meal:"Breakfast",
+ingredients:["Eggs","Spinach","Mushrooms"],
+recipe:"Cook omelette with vegetables.",
+serving:"2 eggs",
+calories:240,
+protein:20,
+carbs:8,
+fat:15,
+fiber:4,
+vitamins:"Iron, Vitamin D",
+alternative:"Use egg whites"
+},
+
+
+{
+id:219,
+name:"Chickpea Salad",
+meal:"Lunch",
+ingredients:["Chickpeas","Cucumber","Tomato","Lemon"],
+recipe:"Mix boiled chickpeas with vegetables.",
+serving:"1 bowl",
+calories:320,
+protein:18,
+carbs:50,
+fat:6,
+fiber:12,
+vitamins:"Folate, Iron",
+alternative:"Use beans"
+},
+
+
+{
+id:220,
+name:"Vegetable Clear Soup",
+meal:"Dinner",
+ingredients:["Carrot","Cabbage","Beans","Spices"],
+recipe:"Boil vegetables and make light soup.",
+serving:"1 bowl",
+calories:150,
+protein:6,
+carbs:25,
+fat:2,
+fiber:7,
+vitamins:"Vitamin A, Vitamin C",
+alternative:"Add chicken pieces"
+},
+
+
+{
+id:221,
+name:"Grilled Chicken Tikka Salad",
+meal:"Lunch",
+ingredients:["Chicken Tikka","Lettuce","Onion","Cucumber"],
+recipe:"Serve grilled chicken tikka with salad.",
+serving:"1 plate",
+calories:340,
+protein:45,
+carbs:15,
+fat:10,
+fiber:6,
+vitamins:"Vitamin B6",
+alternative:"Use fish tikka"
+},
+
+
+{
+id:222,
+name:"Berry Protein Smoothie",
+meal:"Breakfast",
+ingredients:["Berries","Yogurt","Milk","Chia Seeds"],
+recipe:"Blend all ingredients together.",
+serving:"1 glass",
+calories:300,
+protein:25,
+carbs:40,
+fat:7,
+fiber:9,
+vitamins:"Vitamin C, Calcium",
+alternative:"Use strawberries"
+},
+
+
+{
+id:223,
+name:"Lentil Salad Bowl",
+meal:"Lunch",
+ingredients:["Lentils","Cucumber","Tomato","Lemon"],
+recipe:"Mix cooked lentils with vegetables.",
+serving:"1 bowl",
+calories:310,
+protein:22,
+carbs:45,
+fat:5,
+fiber:13,
+vitamins:"Iron, Folate",
+alternative:"Use chickpeas"
+},
+
+
+{
+id:224,
+name:"Zucchini Egg Scramble",
+meal:"Breakfast",
+ingredients:["Eggs","Zucchini","Pepper"],
+recipe:"Scramble eggs with zucchini.",
+serving:"1 plate",
+calories:230,
+protein:18,
+carbs:10,
+fat:14,
+fiber:3,
+vitamins:"Vitamin D",
+alternative:"Use spinach"
+},
+
+
+{
+id:225,
+name:"Chicken Vegetable Soup",
+meal:"Dinner",
+ingredients:["Chicken","Carrots","Celery","Vegetables"],
+recipe:"Cook chicken with vegetables as soup.",
+serving:"1 bowl",
+calories:280,
+protein:38,
+carbs:25,
+fat:6,
+fiber:6,
+vitamins:"Vitamin A, Iron",
+alternative:"Use tofu"
+},
+
+
+{
+id:226,
+name:"Oats Berry Bowl",
+meal:"Breakfast",
+ingredients:["Oats","Berries","Yogurt"],
+recipe:"Mix oats with yogurt and berries.",
+serving:"1 bowl",
+calories:320,
+protein:18,
+carbs:55,
+fat:6,
+fiber:10,
+vitamins:"Vitamin C, Calcium",
+alternative:"Use apple"
+},
+
+
+{
+id:227,
+name:"Turkey Lettuce Wrap",
+meal:"Lunch",
+ingredients:["Turkey","Lettuce","Vegetables"],
+recipe:"Wrap turkey with fresh vegetables.",
+serving:"4 wraps",
+calories:290,
+protein:35,
+carbs:15,
+fat:9,
+fiber:5,
+vitamins:"Vitamin B12",
+alternative:"Use chicken"
+},
+
+
+{
+id:228,
+name:"Cauliflower Rice Bowl",
+meal:"Dinner",
+ingredients:["Cauliflower","Chicken","Vegetables"],
+recipe:"Use cauliflower rice with chicken.",
+serving:"1 bowl",
+calories:330,
+protein:40,
+carbs:25,
+fat:10,
+fiber:9,
+vitamins:"Vitamin C",
+alternative:"Use brown rice"
+},
+
+
+{
+id:229,
+name:"Peanut Butter Apple Slices",
+meal:"Snack",
+ingredients:["Apple","Peanut Butter"],
+recipe:"Slice apple and serve with peanut butter.",
+serving:"1 plate",
+calories:250,
+protein:8,
+carbs:30,
+fat:12,
+fiber:7,
+vitamins:"Vitamin E",
+alternative:"Use almond butter"
+},
+
+
+{
+id:230,
+name:"Salmon Vegetable Plate",
+meal:"Dinner",
+ingredients:["Salmon","Vegetables","Lemon"],
+recipe:"Grill salmon and serve with vegetables.",
+serving:"1 plate",
+calories:400,
+protein:45,
+carbs:20,
+fat:18,
+fiber:7,
+vitamins:"Omega-3, Vitamin D",
+alternative:"Use white fish"
+},
+{
+id:231,
+name:"Chicken Caesar Salad Light",
+meal:"Lunch",
+ingredients:["Chicken Breast","Lettuce","Yogurt Dressing"],
+recipe:"Mix grilled chicken with lettuce and light yogurt dressing.",
+serving:"1 bowl",
+calories:330,
+protein:42,
+carbs:18,
+fat:10,
+fiber:6,
+vitamins:"Vitamin A, Calcium",
+alternative:"Use tofu instead of chicken"
+},
+
+
+{
+id:232,
+name:"Moong Dal Soup",
+meal:"Dinner",
+ingredients:["Moong Dal","Spinach","Spices"],
+recipe:"Cook lentils with spinach and spices.",
+serving:"1 bowl",
+calories:260,
+protein:18,
+carbs:40,
+fat:4,
+fiber:12,
+vitamins:"Iron, Folate",
+alternative:"Use masoor dal"
+},
+
+
+{
+id:233,
+name:"Avocado Egg Toast",
+meal:"Breakfast",
+ingredients:["Whole Wheat Bread","Egg","Avocado"],
+recipe:"Top toast with avocado and boiled egg.",
+serving:"2 slices",
+calories:340,
+protein:18,
+carbs:35,
+fat:16,
+fiber:8,
+vitamins:"Vitamin E, Vitamin D",
+alternative:"Use cucumber instead of avocado"
+},
+
+
+{
+id:234,
+name:"Grilled Fish Tacos",
+meal:"Lunch",
+ingredients:["Fish","Corn Tortilla","Vegetables"],
+recipe:"Fill tortillas with grilled fish and vegetables.",
+serving:"2 tacos",
+calories:380,
+protein:40,
+carbs:45,
+fat:10,
+fiber:7,
+vitamins:"Omega-3, Vitamin C",
+alternative:"Use chicken"
+},
+
+
+{
+id:235,
+name:"Vegetable Quinoa Bowl",
+meal:"Lunch",
+ingredients:["Quinoa","Vegetables","Lemon"],
+recipe:"Mix cooked quinoa with vegetables.",
+serving:"1 bowl",
+calories:350,
+protein:15,
+carbs:55,
+fat:8,
+fiber:10,
+vitamins:"Magnesium, Iron",
+alternative:"Use brown rice"
+},
+
+
+{
+id:236,
+name:"Low Calorie Chicken Pasta",
+meal:"Dinner",
+ingredients:["Whole Wheat Pasta","Chicken","Vegetables"],
+recipe:"Cook pasta with grilled chicken and vegetables.",
+serving:"1 bowl",
+calories:430,
+protein:45,
+carbs:55,
+fat:8,
+fiber:10,
+vitamins:"Vitamin B6",
+alternative:"Use tuna"
+},
+
+
+{
+id:237,
+name:"Cottage Cheese Fruit Bowl",
+meal:"Snack",
+ingredients:["Cottage Cheese","Apple","Berries"],
+recipe:"Mix cottage cheese with fruits.",
+serving:"1 bowl",
+calories:280,
+protein:25,
+carbs:35,
+fat:6,
+fiber:7,
+vitamins:"Calcium, Vitamin C",
+alternative:"Use yogurt"
+},
+
+
+{
+id:238,
+name:"Tomato Egg Soup",
+meal:"Dinner",
+ingredients:["Eggs","Tomatoes","Vegetables"],
+recipe:"Cook tomato soup and add eggs.",
+serving:"1 bowl",
+calories:220,
+protein:18,
+carbs:20,
+fat:8,
+fiber:5,
+vitamins:"Vitamin A, Vitamin C",
+alternative:"Add chicken pieces"
+},
+
+
+{
+id:239,
+name:"Chicken Vegetable Wrap",
+meal:"Lunch",
+ingredients:["Whole Wheat Wrap","Chicken","Vegetables"],
+recipe:"Fill wrap with chicken and vegetables.",
+serving:"1 wrap",
+calories:360,
+protein:40,
+carbs:40,
+fat:8,
+fiber:8,
+vitamins:"Iron, Vitamin B12",
+alternative:"Use beans"
+},
+
+
+{
+id:240,
+name:"Green Detox Smoothie",
+meal:"Breakfast",
+ingredients:["Spinach","Apple","Cucumber","Lemon"],
+recipe:"Blend all ingredients with water.",
+serving:"1 glass",
+calories:160,
+protein:4,
+carbs:35,
+fat:1,
+fiber:8,
+vitamins:"Vitamin C, Vitamin K",
+alternative:"Add yogurt for protein"
+},
+
+
+{
+id:241,
+name:"Chicken Lentil Bowl",
+meal:"Lunch",
+ingredients:["Chicken","Lentils","Vegetables"],
+recipe:"Combine grilled chicken with cooked lentils.",
+serving:"1 bowl",
+calories:390,
+protein:50,
+carbs:45,
+fat:8,
+fiber:12,
+vitamins:"Iron, Folate",
+alternative:"Use chickpeas"
+},
+
+
+{
+id:242,
+name:"Egg Spinach Toast",
+meal:"Breakfast",
+ingredients:["Whole Wheat Bread","Egg","Spinach"],
+recipe:"Top toast with spinach egg mixture.",
+serving:"2 slices",
+calories:300,
+protein:22,
+carbs:35,
+fat:10,
+fiber:6,
+vitamins:"Iron, Vitamin D",
+alternative:"Use mushrooms"
+},
+
+
+{
+id:243,
+name:"Vegetable Chickpea Wrap",
+meal:"Lunch",
+ingredients:["Wrap","Chickpeas","Vegetables"],
+recipe:"Fill wrap with chickpea mixture.",
+serving:"1 wrap",
+calories:340,
+protein:18,
+carbs:55,
+fat:7,
+fiber:12,
+vitamins:"Folate, Vitamin C",
+alternative:"Use lentils"
+},
+
+
+{
+id:244,
+name:"Chicken Mushroom Soup",
+meal:"Dinner",
+ingredients:["Chicken","Mushrooms","Vegetables"],
+recipe:"Cook chicken mushroom soup.",
+serving:"1 bowl",
+calories:270,
+protein:38,
+carbs:20,
+fat:7,
+fiber:5,
+vitamins:"Vitamin B",
+alternative:"Use tofu"
+},
+
+
+{
+id:245,
+name:"Banana Cinnamon Oat Bowl",
+meal:"Breakfast",
+ingredients:["Oats","Banana","Cinnamon"],
+recipe:"Cook oats with banana and cinnamon.",
+serving:"1 bowl",
+calories:300,
+protein:12,
+carbs:55,
+fat:5,
+fiber:9,
+vitamins:"Potassium, Calcium",
+alternative:"Use apple"
+},
+
+
+{
+id:246,
+name:"Tuna Whole Wheat Sandwich",
+meal:"Lunch",
+ingredients:["Whole Wheat Bread","Tuna","Vegetables"],
+recipe:"Prepare sandwich with tuna filling.",
+serving:"1 sandwich",
+calories:350,
+protein:35,
+carbs:40,
+fat:8,
+fiber:7,
+vitamins:"Omega-3, Vitamin B12",
+alternative:"Use chicken"
+},
+
+
+{
+id:247,
+name:"Roasted Vegetable Plate",
+meal:"Dinner",
+ingredients:["Broccoli","Carrots","Capsicum"],
+recipe:"Roast vegetables with light seasoning.",
+serving:"1 plate",
+calories:220,
+protein:8,
+carbs:35,
+fat:5,
+fiber:10,
+vitamins:"Vitamin A, Vitamin C",
+alternative:"Add grilled chicken"
+},
+
+
+{
+id:248,
+name:"Yogurt Chia Smoothie",
+meal:"Breakfast",
+ingredients:["Yogurt","Chia Seeds","Berries"],
+recipe:"Blend yogurt with chia and berries.",
+serving:"1 glass",
+calories:280,
+protein:20,
+carbs:35,
+fat:7,
+fiber:10,
+vitamins:"Calcium, Omega-3",
+alternative:"Use flax seeds"
+},
+
+
+{
+id:249,
+name:"Chicken Broccoli Bowl",
+meal:"Dinner",
+ingredients:["Chicken","Broccoli","Brown Rice"],
+recipe:"Serve chicken with broccoli and rice.",
+serving:"1 bowl",
+calories:420,
+protein:45,
+carbs:55,
+fat:8,
+fiber:12,
+vitamins:"Vitamin C, Iron",
+alternative:"Use quinoa"
+},
+
+
+{
+id:250,
+name:"Fruit Salad Bowl",
+meal:"Snack",
+ingredients:["Apple","Orange","Berries","Pomegranate"],
+recipe:"Mix fresh fruits together.",
+serving:"1 bowl",
+calories:220,
+protein:4,
+carbs:50,
+fat:1,
+fiber:10,
+vitamins:"Vitamin C, Antioxidants",
+alternative:"Use seasonal fruits"
+},
+{
+id:251,
+name:"Grilled Chicken Quinoa Salad",
+meal:"Lunch",
+ingredients:["Chicken Breast","Quinoa","Cucumber","Lettuce"],
+recipe:"Mix grilled chicken with cooked quinoa and vegetables.",
+serving:"1 bowl",
+calories:390,
+protein:45,
+carbs:45,
+fat:8,
+fiber:10,
+vitamins:"Iron, Vitamin C",
+alternative:"Use brown rice instead of quinoa"
+},
+
+
+{
+id:252,
+name:"Spinach Banana Smoothie",
+meal:"Breakfast",
+ingredients:["Spinach","Banana","Yogurt","Milk"],
+recipe:"Blend all ingredients until smooth.",
+serving:"1 glass",
+calories:280,
+protein:18,
+carbs:45,
+fat:5,
+fiber:7,
+vitamins:"Vitamin K, Potassium",
+alternative:"Use apple instead of banana"
+},
+
+
+{
+id:253,
+name:"Vegetable Egg Fried Rice Light",
+meal:"Lunch",
+ingredients:["Brown Rice","Egg","Vegetables"],
+recipe:"Stir fry rice with egg and vegetables using little oil.",
+serving:"1 bowl",
+calories:380,
+protein:20,
+carbs:55,
+fat:8,
+fiber:9,
+vitamins:"Vitamin B, Iron",
+alternative:"Use tofu instead of egg"
+},
+
+
+{
+id:254,
+name:"Chicken Cucumber Bowl",
+meal:"Dinner",
+ingredients:["Chicken","Cucumber","Yogurt","Spices"],
+recipe:"Combine grilled chicken with cucumber yogurt salad.",
+serving:"1 bowl",
+calories:300,
+protein:42,
+carbs:18,
+fat:7,
+fiber:5,
+vitamins:"Vitamin B6, Calcium",
+alternative:"Use fish"
+},
+
+
+{
+id:255,
+name:"Apple Peanut Butter Toast",
+meal:"Snack",
+ingredients:["Whole Wheat Bread","Apple","Peanut Butter"],
+recipe:"Spread peanut butter on toast and add apple slices.",
+serving:"2 slices",
+calories:300,
+protein:10,
+carbs:40,
+fat:12,
+fiber:8,
+vitamins:"Vitamin E, Vitamin C",
+alternative:"Use almond butter"
+},
+
+
+{
+id:256,
+name:"Lemon Herb Fish",
+meal:"Dinner",
+ingredients:["Fish","Lemon","Herbs","Vegetables"],
+recipe:"Grill fish with lemon herbs and serve with vegetables.",
+serving:"1 plate",
+calories:320,
+protein:42,
+carbs:15,
+fat:10,
+fiber:6,
+vitamins:"Omega-3, Vitamin D",
+alternative:"Use chicken breast"
+},
+
+
+{
+id:257,
+name:"Masoor Dal Salad",
+meal:"Lunch",
+ingredients:["Masoor Dal","Cucumber","Tomato","Lemon"],
+recipe:"Mix cooked lentils with fresh vegetables.",
+serving:"1 bowl",
+calories:290,
+protein:20,
+carbs:45,
+fat:5,
+fiber:13,
+vitamins:"Iron, Folate",
+alternative:"Use chickpeas"
+},
+
+
+{
+id:258,
+name:"Oat Egg Muffins",
+meal:"Breakfast",
+ingredients:["Oats","Eggs","Spinach","Capsicum"],
+recipe:"Mix ingredients and bake into muffins.",
+serving:"4 muffins",
+calories:310,
+protein:25,
+carbs:30,
+fat:10,
+fiber:6,
+vitamins:"Vitamin D, Iron",
+alternative:"Use vegetables of choice"
+},
+
+
+{
+id:259,
+name:"Chicken Vegetable Stir Fry",
+meal:"Dinner",
+ingredients:["Chicken","Broccoli","Carrot","Capsicum"],
+recipe:"Stir fry chicken with vegetables.",
+serving:"1 plate",
+calories:350,
+protein:45,
+carbs:25,
+fat:9,
+fiber:10,
+vitamins:"Vitamin A, Vitamin C",
+alternative:"Use tofu"
+},
+
+
+{
+id:260,
+name:"Berry Yogurt Parfait",
+meal:"Breakfast",
+ingredients:["Yogurt","Berries","Oats","Chia Seeds"],
+recipe:"Layer yogurt with berries and oats.",
+serving:"1 glass",
+calories:300,
+protein:22,
+carbs:42,
+fat:6,
+fiber:9,
+vitamins:"Calcium, Antioxidants",
+alternative:"Use apple pieces"
+},
+
+
+{
+id:261,
+name:"Chicken Lettuce Salad Bowl",
+meal:"Lunch",
+ingredients:["Chicken","Lettuce","Tomatoes","Cucumber"],
+recipe:"Mix grilled chicken with fresh salad.",
+serving:"1 bowl",
+calories:280,
+protein:40,
+carbs:15,
+fat:8,
+fiber:6,
+vitamins:"Vitamin A, Vitamin C",
+alternative:"Use boiled eggs"
+},
+
+
+{
+id:262,
+name:"Vegetable Lentil Soup",
+meal:"Dinner",
+ingredients:["Lentils","Carrots","Spinach","Tomatoes"],
+recipe:"Cook lentils with vegetables into soup.",
+serving:"1 bowl",
+calories:270,
+protein:18,
+carbs:45,
+fat:4,
+fiber:12,
+vitamins:"Iron, Vitamin A",
+alternative:"Use beans"
+},
+
+
+{
+id:263,
+name:"Egg Avocado Salad",
+meal:"Lunch",
+ingredients:["Eggs","Avocado","Lettuce","Cucumber"],
+recipe:"Mix boiled eggs with avocado and vegetables.",
+serving:"1 bowl",
+calories:340,
+protein:22,
+carbs:18,
+fat:20,
+fiber:8,
+vitamins:"Vitamin E, Vitamin D",
+alternative:"Use cucumber instead of avocado"
+},
+
+
+{
+id:264,
+name:"Chicken Clear Soup",
+meal:"Dinner",
+ingredients:["Chicken","Carrots","Celery","Spices"],
+recipe:"Boil chicken with vegetables.",
+serving:"1 bowl",
+calories:240,
+protein:35,
+carbs:20,
+fat:5,
+fiber:5,
+vitamins:"Vitamin B6",
+alternative:"Use mushrooms"
+},
+
+
+{
+id:265,
+name:"Cottage Cheese Toast",
+meal:"Breakfast",
+ingredients:["Whole Wheat Bread","Cottage Cheese","Tomato"],
+recipe:"Top toast with cottage cheese and tomato.",
+serving:"2 slices",
+calories:290,
+protein:25,
+carbs:35,
+fat:7,
+fiber:6,
+vitamins:"Calcium, Vitamin C",
+alternative:"Use yogurt spread"
+},
+
+
+{
+id:266,
+name:"Tuna Salad Bowl",
+meal:"Lunch",
+ingredients:["Tuna","Lettuce","Corn","Cucumber"],
+recipe:"Mix tuna with vegetables.",
+serving:"1 bowl",
+calories:330,
+protein:38,
+carbs:25,
+fat:9,
+fiber:7,
+vitamins:"Omega-3, Vitamin B12",
+alternative:"Use chicken"
+},
+
+
+{
+id:267,
+name:"Grilled Vegetable Wrap",
+meal:"Snack",
+ingredients:["Whole Wheat Wrap","Vegetables","Yogurt Sauce"],
+recipe:"Fill wrap with grilled vegetables.",
+serving:"1 wrap",
+calories:320,
+protein:12,
+carbs:55,
+fat:6,
+fiber:10,
+vitamins:"Vitamin C",
+alternative:"Add chicken for protein"
+},
+
+
+{
+id:268,
+name:"Chicken Sweet Potato Bowl",
+meal:"Dinner",
+ingredients:["Chicken","Sweet Potato","Vegetables"],
+recipe:"Combine grilled chicken with roasted sweet potato.",
+serving:"1 bowl",
+calories:410,
+protein:45,
+carbs:55,
+fat:8,
+fiber:11,
+vitamins:"Vitamin A, Iron",
+alternative:"Use normal potato"
+},
+
+
+{
+id:269,
+name:"Cucumber Mint Yogurt",
+meal:"Snack",
+ingredients:["Yogurt","Cucumber","Mint"],
+recipe:"Mix yogurt with cucumber and mint.",
+serving:"1 bowl",
+calories:150,
+protein:12,
+carbs:15,
+fat:4,
+fiber:3,
+vitamins:"Calcium, Vitamin C",
+alternative:"Use low-fat yogurt"
+},
+{
+id:271,
+name:"Chicken Spinach Salad",
+meal:"Lunch",
+ingredients:["Chicken Breast","Spinach","Cucumber","Tomato"],
+recipe:"Mix grilled chicken with fresh spinach and vegetables.",
+serving:"1 bowl",
+calories:310,
+protein:42,
+carbs:18,
+fat:8,
+fiber:7,
+vitamins:"Vitamin A, Iron",
+alternative:"Use boiled eggs instead of chicken"
+},
+
+
+{
+id:272,
+name:"Oats Apple Smoothie",
+meal:"Breakfast",
+ingredients:["Oats","Apple","Yogurt","Milk"],
+recipe:"Blend all ingredients together.",
+serving:"1 glass",
+calories:320,
+protein:18,
+carbs:50,
+fat:6,
+fiber:9,
+vitamins:"Vitamin C, Calcium",
+alternative:"Use banana instead of apple"
+},
+
+
+{
+id:273,
+name:"Grilled Chicken With Vegetables",
+meal:"Dinner",
+ingredients:["Chicken","Broccoli","Carrots","Capsicum"],
+recipe:"Grill chicken and serve with steamed vegetables.",
+serving:"1 plate",
+calories:360,
+protein:48,
+carbs:25,
+fat:10,
+fiber:9,
+vitamins:"Vitamin A, Vitamin C",
+alternative:"Use grilled fish"
+},
+
+
+{
+id:274,
+name:"Chickpea Yogurt Bowl",
+meal:"Lunch",
+ingredients:["Chickpeas","Yogurt","Cucumber","Mint"],
+recipe:"Mix chickpeas with yogurt and vegetables.",
+serving:"1 bowl",
+calories:330,
+protein:20,
+carbs:50,
+fat:6,
+fiber:12,
+vitamins:"Folate, Calcium",
+alternative:"Use lentils"
+},
+
+
+{
+id:275,
+name:"Egg Vegetable Wrap",
+meal:"Breakfast",
+ingredients:["Whole Wheat Wrap","Egg","Spinach","Tomato"],
+recipe:"Fill wrap with egg and vegetables.",
+serving:"1 wrap",
+calories:340,
+protein:24,
+carbs:40,
+fat:10,
+fiber:7,
+vitamins:"Vitamin D, Iron",
+alternative:"Use chicken filling"
+},
+
+
+{
+id:276,
+name:"Fish Salad Bowl",
+meal:"Lunch",
+ingredients:["Grilled Fish","Lettuce","Cucumber","Lemon"],
+recipe:"Serve grilled fish with fresh salad.",
+serving:"1 bowl",
+calories:300,
+protein:40,
+carbs:15,
+fat:10,
+fiber:6,
+vitamins:"Omega-3, Vitamin D",
+alternative:"Use chicken"
+},
+
+
+{
+id:277,
+name:"Vegetable Omelette Bowl",
+meal:"Breakfast",
+ingredients:["Eggs","Onion","Capsicum","Spinach"],
+recipe:"Cook eggs with vegetables.",
+serving:"1 bowl",
+calories:250,
+protein:20,
+carbs:12,
+fat:15,
+fiber:4,
+vitamins:"Vitamin D, Iron",
+alternative:"Use egg whites"
+},
+
+
+{
+id:278,
+name:"Chicken Tomato Soup",
+meal:"Dinner",
+ingredients:["Chicken","Tomatoes","Vegetables"],
+recipe:"Cook chicken with tomato broth.",
+serving:"1 bowl",
+calories:260,
+protein:38,
+carbs:22,
+fat:5,
+fiber:6,
+vitamins:"Vitamin C, Vitamin B6",
+alternative:"Use tofu"
+},
+
+
+{
+id:279,
+name:"Low Calorie Fruit Bowl",
+meal:"Snack",
+ingredients:["Apple","Orange","Berries","Melon"],
+recipe:"Mix fresh fruits together.",
+serving:"1 bowl",
+calories:200,
+protein:4,
+carbs:45,
+fat:1,
+fiber:9,
+vitamins:"Vitamin C, Antioxidants",
+alternative:"Use seasonal fruits"
+},
+
+
+{
+id:280,
+name:"Chicken Bean Salad",
+meal:"Lunch",
+ingredients:["Chicken","Beans","Lettuce","Tomato"],
+recipe:"Mix grilled chicken with beans and vegetables.",
+serving:"1 bowl",
+calories:390,
+protein:45,
+carbs:40,
+fat:8,
+fiber:12,
+vitamins:"Iron, Folate",
+alternative:"Use chickpeas"
+},
+
+
+{
+id:281,
+name:"Greek Yogurt Oats",
+meal:"Breakfast",
+ingredients:["Greek Yogurt","Oats","Chia Seeds"],
+recipe:"Mix yogurt with oats and chia seeds.",
+serving:"1 bowl",
+calories:300,
+protein:25,
+carbs:40,
+fat:7,
+fiber:10,
+vitamins:"Calcium, Omega-3",
+alternative:"Use normal yogurt"
+},
+
+
+{
+id:282,
+name:"Chicken Pepper Stir Fry",
+meal:"Dinner",
+ingredients:["Chicken","Capsicum","Onion","Spices"],
+recipe:"Stir fry chicken with peppers.",
+serving:"1 plate",
+calories:340,
+protein:45,
+carbs:20,
+fat:10,
+fiber:6,
+vitamins:"Vitamin C",
+alternative:"Use tofu"
+},
+
+
+{
+id:283,
+name:"Lentil Vegetable Bowl",
+meal:"Lunch",
+ingredients:["Lentils","Vegetables","Lemon"],
+recipe:"Serve cooked lentils with vegetables.",
+serving:"1 bowl",
+calories:320,
+protein:22,
+carbs:50,
+fat:5,
+fiber:14,
+vitamins:"Iron, Folate",
+alternative:"Use beans"
+},
+
+
+{
+id:284,
+name:"Cinnamon Chia Oats",
+meal:"Breakfast",
+ingredients:["Oats","Chia Seeds","Cinnamon","Milk"],
+recipe:"Cook oats with chia and cinnamon.",
+serving:"1 bowl",
+calories:290,
+protein:15,
+carbs:45,
+fat:7,
+fiber:11,
+vitamins:"Calcium, Magnesium",
+alternative:"Use flax seeds"
+},
+
+
+{
+id:285,
+name:"Grilled Chicken Skewers",
+meal:"Dinner",
+ingredients:["Chicken","Peppers","Onion"],
+recipe:"Grill chicken pieces with vegetables.",
+serving:"6 skewers",
+calories:350,
+protein:50,
+carbs:15,
+fat:10,
+fiber:5,
+vitamins:"Vitamin B6",
+alternative:"Use fish pieces"
+},
+
+
+{
+id:286,
+name:"Tuna Egg Salad",
+meal:"Lunch",
+ingredients:["Tuna","Eggs","Lettuce","Cucumber"],
+recipe:"Combine tuna and eggs with vegetables.",
+serving:"1 bowl",
+calories:360,
+protein:42,
+carbs:12,
+fat:15,
+fiber:5,
+vitamins:"Omega-3, Vitamin D",
+alternative:"Use chicken"
+},
+
+
+{
+id:287,
+name:"Vegetable Barley Soup",
+meal:"Dinner",
+ingredients:["Barley","Carrots","Beans","Spinach"],
+recipe:"Cook barley with vegetables.",
+serving:"1 bowl",
+calories:280,
+protein:12,
+carbs:50,
+fat:4,
+fiber:13,
+vitamins:"Vitamin A, Iron",
+alternative:"Use oats"
+},
+
+
+{
+id:288,
+name:"Apple Yogurt Bowl",
+meal:"Snack",
+ingredients:["Apple","Yogurt","Cinnamon"],
+recipe:"Mix apple pieces with yogurt.",
+serving:"1 bowl",
+calories:230,
+protein:15,
+carbs:35,
+fat:4,
+fiber:6,
+vitamins:"Calcium, Vitamin C",
+alternative:"Use berries"
+},
+
+
+{
+id:289,
+name:"Chicken Lettuce Burger",
+meal:"Lunch",
+ingredients:["Chicken Patty","Lettuce","Tomato"],
+recipe:"Serve chicken patty without bun with vegetables.",
+serving:"1 burger",
+calories:320,
+protein:40,
+carbs:15,
+fat:12,
+fiber:5,
+vitamins:"Vitamin B12",
+alternative:"Use fish patty"
+},
+
+
+{
+id:290,
+name:"Spinach Lentil Soup",
+meal:"Dinner",
+ingredients:["Lentils","Spinach","Tomatoes"],
+recipe:"Cook lentils with spinach and tomatoes.",
+serving:"1 bowl",
+calories:270,
+protein:20,
+carbs:42,
+fat:4,
+fiber:13,
+vitamins:"Iron, Vitamin K",
+alternative:"Use chickpeas"
+},
+
+
+
+{
+id:270,
+name:"Chicken Brown Rice Bowl",
+meal:"Lunch",
+ingredients:["Chicken","Brown Rice","Vegetables"],
+recipe:"Serve grilled chicken with brown rice.",
+serving:"1 bowl",
+calories:430,
+protein:48,
+carbs:60,
+fat:8,
+fiber:12,
+vitamins:"Iron, Magnesium",
+alternative:"Use quinoa"
+},
+{
+id:291,
+name:"Chicken Cabbage Stir Fry",
+meal:"Dinner",
+ingredients:["Chicken","Cabbage","Carrot","Capsicum"],
+recipe:"Stir fry chicken with vegetables using little oil.",
+serving:"1 plate",
+calories:330,
+protein:45,
+carbs:25,
+fat:8,
+fiber:9,
+vitamins:"Vitamin C, Vitamin A",
+alternative:"Use tofu instead of chicken"
+},
+
+
+{
+id:292,
+name:"Protein Yogurt Bowl",
+meal:"Breakfast",
+ingredients:["Yogurt","Oats","Chia Seeds","Berries"],
+recipe:"Mix yogurt with oats and berries.",
+serving:"1 bowl",
+calories:310,
+protein:25,
+carbs:45,
+fat:7,
+fiber:10,
+vitamins:"Calcium, Antioxidants",
+alternative:"Use apple instead of berries"
+},
+
+
+{
+id:293,
+name:"Grilled Chicken Lettuce Bowl",
+meal:"Lunch",
+ingredients:["Chicken","Lettuce","Cucumber","Tomato"],
+recipe:"Combine grilled chicken with fresh vegetables.",
+serving:"1 bowl",
+calories:290,
+protein:42,
+carbs:15,
+fat:8,
+fiber:6,
+vitamins:"Vitamin B6, Vitamin C",
+alternative:"Use boiled eggs"
+},
+
+
+{
+id:294,
+name:"Vegetable Egg Soup",
+meal:"Dinner",
+ingredients:["Eggs","Carrots","Spinach","Broth"],
+recipe:"Prepare vegetable soup and add eggs.",
+serving:"1 bowl",
+calories:240,
+protein:18,
+carbs:22,
+fat:8,
+fiber:5,
+vitamins:"Vitamin D, Iron",
+alternative:"Add chicken pieces"
+},
+
+
+{
+id:295,
+name:"Almond Apple Smoothie",
+meal:"Breakfast",
+ingredients:["Apple","Almonds","Yogurt","Milk"],
+recipe:"Blend all ingredients together.",
+serving:"1 glass",
+calories:320,
+protein:18,
+carbs:45,
+fat:10,
+fiber:8,
+vitamins:"Vitamin E, Calcium",
+alternative:"Use walnuts"
+},
+
+
+{
+id:296,
+name:"Chicken Brown Rice Salad",
+meal:"Lunch",
+ingredients:["Chicken","Brown Rice","Vegetables"],
+recipe:"Mix grilled chicken with brown rice and vegetables.",
+serving:"1 bowl",
+calories:410,
+protein:45,
+carbs:55,
+fat:8,
+fiber:10,
+vitamins:"Iron, Magnesium",
+alternative:"Use quinoa"
+},
+
+
+{
+id:297,
+name:"Roasted Chickpea Snack",
+meal:"Snack",
+ingredients:["Chickpeas","Spices"],
+recipe:"Roast chickpeas until crispy.",
+serving:"1 cup",
+calories:260,
+protein:14,
+carbs:40,
+fat:5,
+fiber:11,
+vitamins:"Iron, Folate",
+alternative:"Use roasted beans"
+},
+
+
+{
+id:298,
+name:"Chicken Vegetable Pasta Salad",
+meal:"Lunch",
+ingredients:["Whole Wheat Pasta","Chicken","Vegetables"],
+recipe:"Mix pasta with chicken and vegetables.",
+serving:"1 bowl",
+calories:390,
+protein:40,
+carbs:50,
+fat:8,
+fiber:9,
+vitamins:"Vitamin B6",
+alternative:"Use tuna"
+},
+
+
+{
+id:299,
+name:"Cucumber Avocado Salad",
+meal:"Snack",
+ingredients:["Cucumber","Avocado","Lemon"],
+recipe:"Mix cucumber with avocado and lemon.",
+serving:"1 bowl",
+calories:250,
+protein:5,
+carbs:20,
+fat:18,
+fiber:8,
+vitamins:"Vitamin E, Vitamin C",
+alternative:"Use tomatoes"
+},
+
+
+{
+id:300,
+name:"Grilled Fish Rice Bowl",
+meal:"Dinner",
+ingredients:["Fish","Brown Rice","Vegetables"],
+recipe:"Serve grilled fish with brown rice.",
+serving:"1 bowl",
+calories:420,
+protein:45,
+carbs:55,
+fat:10,
+fiber:9,
+vitamins:"Omega-3, Vitamin D",
+alternative:"Use chicken"
+},
+
+
+{
+id:301,
+name:"Vegetable Oat Pancakes",
+meal:"Breakfast",
+ingredients:["Oats","Egg","Spinach","Carrot"],
+recipe:"Mix ingredients and cook pancakes.",
+serving:"4 pancakes",
+calories:300,
+protein:20,
+carbs:45,
+fat:7,
+fiber:8,
+vitamins:"Iron, Vitamin A",
+alternative:"Use zucchini"
+},
+
+
+{
+id:302,
+name:"Chicken Tomato Salad",
+meal:"Lunch",
+ingredients:["Chicken","Tomato","Cucumber","Lettuce"],
+recipe:"Mix grilled chicken with vegetables.",
+serving:"1 bowl",
+calories:280,
+protein:40,
+carbs:18,
+fat:7,
+fiber:6,
+vitamins:"Vitamin C",
+alternative:"Use fish"
+},
+
+
+{
+id:303,
+name:"Lemon Herb Chicken",
+meal:"Dinner",
+ingredients:["Chicken","Lemon","Herbs","Vegetables"],
+recipe:"Grill chicken with lemon herbs.",
+serving:"1 plate",
+calories:350,
+protein:50,
+carbs:20,
+fat:9,
+fiber:5,
+vitamins:"Vitamin B6",
+alternative:"Use turkey"
+},
+
+
+{
+id:304,
+name:"Low Fat Fruit Yogurt",
+meal:"Snack",
+ingredients:["Yogurt","Apple","Berries"],
+recipe:"Mix fruits with yogurt.",
+serving:"1 bowl",
+calories:220,
+protein:16,
+carbs:35,
+fat:3,
+fiber:7,
+vitamins:"Calcium, Vitamin C",
+alternative:"Use cottage cheese"
+},
+
+
+{
+id:305,
+name:"Vegetable Brown Rice Bowl",
+meal:"Lunch",
+ingredients:["Brown Rice","Vegetables","Lemon"],
+recipe:"Combine cooked rice with vegetables.",
+serving:"1 bowl",
+calories:350,
+protein:12,
+carbs:60,
+fat:6,
+fiber:11,
+vitamins:"Vitamin A, Magnesium",
+alternative:"Add chicken for protein"
+},
+
+
+{
+id:306,
+name:"Chicken Mushroom Salad",
+meal:"Dinner",
+ingredients:["Chicken","Mushrooms","Lettuce"],
+recipe:"Mix grilled chicken with mushrooms and salad.",
+serving:"1 bowl",
+calories:300,
+protein:42,
+carbs:15,
+fat:8,
+fiber:5,
+vitamins:"Vitamin B",
+alternative:"Use tofu"
+},
+
+
+{
+id:307,
+name:"Chia Berry Bowl",
+meal:"Breakfast",
+ingredients:["Chia Seeds","Berries","Yogurt"],
+recipe:"Mix chia seeds with yogurt and berries.",
+serving:"1 bowl",
+calories:280,
+protein:18,
+carbs:35,
+fat:8,
+fiber:12,
+vitamins:"Omega-3, Calcium",
+alternative:"Use flax seeds"
+},
+
+
+{
+id:308,
+name:"Tuna Vegetable Wrap",
+meal:"Lunch",
+ingredients:["Whole Wheat Wrap","Tuna","Vegetables"],
+recipe:"Fill wrap with tuna and vegetables.",
+serving:"1 wrap",
+calories:340,
+protein:35,
+carbs:40,
+fat:8,
+fiber:8,
+vitamins:"Omega-3, Vitamin B12",
+alternative:"Use chicken"
+},
+
+
+{
+id:309,
+name:"Clear Chicken Noodle Soup",
+meal:"Dinner",
+ingredients:["Chicken","Noodles","Vegetables"],
+recipe:"Cook light chicken noodle soup.",
+serving:"1 bowl",
+calories:300,
+protein:35,
+carbs:40,
+fat:5,
+fiber:6,
+vitamins:"Vitamin B6",
+alternative:"Use rice instead of noodles"
+},
+
+
+{
+id:310,
+name:"Carrot Ginger Soup",
+meal:"Dinner",
+ingredients:["Carrots","Ginger","Vegetable Broth"],
+recipe:"Blend cooked carrots with broth and ginger.",
+serving:"1 bowl",
+calories:180,
+protein:5,
+carbs:35,
+fat:2,
+fiber:8,
+vitamins:"Vitamin A, Vitamin C",
+alternative:"Add lentils for protein"
+},
+
+{
+id:311,
+name:"Chicken Fajita Bowl",
+meal:"Lunch",
+ingredients:["Chicken","Bell Peppers","Brown Rice","Lettuce"],
+recipe:"Cook chicken with peppers and serve with brown rice.",
+serving:"1 bowl",
+calories:400,
+protein:45,
+carbs:55,
+fat:8,
+fiber:10,
+vitamins:"Vitamin C, Iron",
+alternative:"Use tofu instead of chicken"
+},
+
+
+{
+id:312,
+name:"Spinach Banana Oat Smoothie",
+meal:"Breakfast",
+ingredients:["Spinach","Banana","Oats","Milk"],
+recipe:"Blend all ingredients until smooth.",
+serving:"1 glass",
+calories:300,
+protein:18,
+carbs:50,
+fat:6,
+fiber:8,
+vitamins:"Vitamin K, Potassium",
+alternative:"Use apple instead of banana"
+},
+
+
+{
+id:313,
+name:"Grilled Chicken Salad Wrap",
+meal:"Lunch",
+ingredients:["Whole Wheat Wrap","Chicken","Lettuce","Cucumber"],
+recipe:"Fill wrap with grilled chicken and salad.",
+serving:"1 wrap",
+calories:350,
+protein:42,
+carbs:40,
+fat:8,
+fiber:8,
+vitamins:"Vitamin B6, Vitamin C",
+alternative:"Use grilled fish"
+},
+
+
+{
+id:314,
+name:"Vegetable Lentil Curry",
+meal:"Dinner",
+ingredients:["Lentils","Tomato","Spinach","Spices"],
+recipe:"Cook lentils with vegetables and spices.",
+serving:"1 bowl",
+calories:300,
+protein:20,
+carbs:45,
+fat:5,
+fiber:13,
+vitamins:"Iron, Folate",
+alternative:"Use chickpeas"
+},
+
+
+{
+id:315,
+name:"Boiled Egg Salad",
+meal:"Breakfast",
+ingredients:["Eggs","Lettuce","Cucumber","Tomato"],
+recipe:"Mix boiled eggs with fresh vegetables.",
+serving:"1 bowl",
+calories:280,
+protein:22,
+carbs:12,
+fat:16,
+fiber:5,
+vitamins:"Vitamin D, Vitamin A",
+alternative:"Use egg whites"
+},
+
+
+{
+id:316,
+name:"Chicken Zucchini Bowl",
+meal:"Dinner",
+ingredients:["Chicken","Zucchini","Carrots"],
+recipe:"Cook chicken with zucchini and vegetables.",
+serving:"1 bowl",
+calories:320,
+protein:45,
+carbs:20,
+fat:8,
+fiber:8,
+vitamins:"Vitamin A, Vitamin C",
+alternative:"Use mushrooms"
+},
+
+
+{
+id:317,
+name:"Berry Chia Pudding",
+meal:"Snack",
+ingredients:["Chia Seeds","Milk","Berries"],
+recipe:"Mix chia seeds with milk and berries overnight.",
+serving:"1 cup",
+calories:250,
+protein:12,
+carbs:35,
+fat:8,
+fiber:11,
+vitamins:"Omega-3, Calcium",
+alternative:"Use flax seeds"
+},
+
+
+{
+id:318,
+name:"Chicken Vegetable Rice Soup",
+meal:"Dinner",
+ingredients:["Chicken","Rice","Vegetables"],
+recipe:"Cook chicken rice soup with vegetables.",
+serving:"1 bowl",
+calories:330,
+protein:35,
+carbs:45,
+fat:5,
+fiber:7,
+vitamins:"Vitamin B6",
+alternative:"Use quinoa"
+},
+
+
+{
+id:319,
+name:"Avocado Chicken Toast",
+meal:"Breakfast",
+ingredients:["Whole Wheat Bread","Chicken","Avocado"],
+recipe:"Top toast with chicken and avocado.",
+serving:"2 slices",
+calories:380,
+protein:30,
+carbs:35,
+fat:16,
+fiber:8,
+vitamins:"Vitamin E, Vitamin B12",
+alternative:"Use boiled egg"
+},
+
+
+{
+id:320,
+name:"Vegetable Bean Salad",
+meal:"Lunch",
+ingredients:["Beans","Cucumber","Tomato","Lettuce"],
+recipe:"Mix beans with fresh vegetables.",
+serving:"1 bowl",
+calories:310,
+protein:18,
+carbs:50,
+fat:5,
+fiber:14,
+vitamins:"Iron, Vitamin C",
+alternative:"Use chickpeas"
+},
+
+
+{
+id:321,
+name:"Chicken Tikka Salad Bowl",
+meal:"Lunch",
+ingredients:["Chicken Tikka","Lettuce","Cucumber","Onion"],
+recipe:"Serve chicken tikka with fresh salad.",
+serving:"1 bowl",
+calories:330,
+protein:45,
+carbs:18,
+fat:9,
+fiber:6,
+vitamins:"Vitamin B6",
+alternative:"Use grilled fish"
+},
+
+
+{
+id:322,
+name:"Oats Egg Breakfast Bowl",
+meal:"Breakfast",
+ingredients:["Oats","Egg","Spinach"],
+recipe:"Cook oats and top with egg and spinach.",
+serving:"1 bowl",
+calories:340,
+protein:25,
+carbs:45,
+fat:10,
+fiber:7,
+vitamins:"Iron, Vitamin D",
+alternative:"Use tofu"
+},
+
+
+{
+id:323,
+name:"Fish Vegetable Soup",
+meal:"Dinner",
+ingredients:["Fish","Carrots","Spinach","Broth"],
+recipe:"Cook fish with vegetables in broth.",
+serving:"1 bowl",
+calories:260,
+protein:38,
+carbs:20,
+fat:5,
+fiber:5,
+vitamins:"Omega-3, Vitamin D",
+alternative:"Use chicken"
+},
+
+
+{
+id:324,
+name:"Cottage Cheese Salad",
+meal:"Snack",
+ingredients:["Cottage Cheese","Cucumber","Tomato"],
+recipe:"Mix cottage cheese with vegetables.",
+serving:"1 bowl",
+calories:240,
+protein:25,
+carbs:18,
+fat:7,
+fiber:5,
+vitamins:"Calcium, Vitamin C",
+alternative:"Use yogurt"
+},
+
+
+{
+id:325,
+name:"Chicken Mushroom Stir Fry",
+meal:"Dinner",
+ingredients:["Chicken","Mushrooms","Capsicum"],
+recipe:"Stir fry chicken with mushrooms and vegetables.",
+serving:"1 plate",
+calories:340,
+protein:45,
+carbs:22,
+fat:8,
+fiber:7,
+vitamins:"Vitamin B",
+alternative:"Use tofu"
+},
+
+
+{
+id:326,
+name:"Apple Cinnamon Yogurt",
+meal:"Snack",
+ingredients:["Apple","Yogurt","Cinnamon"],
+recipe:"Mix apple with yogurt and cinnamon.",
+serving:"1 bowl",
+calories:220,
+protein:15,
+carbs:35,
+fat:4,
+fiber:6,
+vitamins:"Calcium, Vitamin C",
+alternative:"Use berries"
+},
+
+
+{
+id:327,
+name:"Turkey Vegetable Bowl",
+meal:"Lunch",
+ingredients:["Turkey","Vegetables","Brown Rice"],
+recipe:"Serve turkey with vegetables and rice.",
+serving:"1 bowl",
+calories:400,
+protein:45,
+carbs:55,
+fat:8,
+fiber:10,
+vitamins:"Iron, Vitamin B12",
+alternative:"Use chicken"
+},
+
+
+{
+id:328,
+name:"Green Vegetable Soup",
+meal:"Dinner",
+ingredients:["Spinach","Broccoli","Beans","Broth"],
+recipe:"Cook vegetables into a light soup.",
+serving:"1 bowl",
+calories:170,
+protein:8,
+carbs:30,
+fat:2,
+fiber:9,
+vitamins:"Vitamin K, Vitamin C",
+alternative:"Add lentils"
+},
+
+
+{
+id:329,
+name:"Peach Yogurt Bowl",
+meal:"Breakfast",
+ingredients:["Peach","Yogurt","Oats"],
+recipe:"Mix yogurt with peach and oats.",
+serving:"1 bowl",
+calories:290,
+protein:18,
+carbs:45,
+fat:5,
+fiber:8,
+vitamins:"Vitamin A, Calcium",
+alternative:"Use apple"
+},
+
+
+{
+id:330,
+name:"Chicken Cauliflower Rice",
+meal:"Dinner",
+ingredients:["Chicken","Cauliflower","Vegetables"],
+recipe:"Cook chicken with cauliflower rice.",
+serving:"1 bowl",
+calories:350,
+protein:45,
+carbs:25,
+fat:9,
+fiber:10,
+vitamins:"Vitamin C, Iron",
+alternative:"Use brown rice"
+},
+
+{
+id:331,
+name:"Chicken Avocado Wrap",
+meal:"Lunch",
+ingredients:["Whole Wheat Wrap","Chicken","Avocado","Lettuce"],
+recipe:"Fill wrap with grilled chicken, avocado and vegetables.",
+serving:"1 wrap",
+calories:370,
+protein:42,
+carbs:40,
+fat:12,
+fiber:9,
+vitamins:"Vitamin E, Vitamin B6",
+alternative:"Use boiled eggs instead of chicken"
+},
+
+
+{
+id:332,
+name:"Vegetable Egg Scramble",
+meal:"Breakfast",
+ingredients:["Eggs","Spinach","Tomato","Capsicum"],
+recipe:"Scramble eggs with vegetables.",
+serving:"1 plate",
+calories:260,
+protein:20,
+carbs:15,
+fat:15,
+fiber:5,
+vitamins:"Vitamin D, Iron",
+alternative:"Use egg whites"
+},
+
+
+{
+id:333,
+name:"Grilled Fish Salad",
+meal:"Lunch",
+ingredients:["Fish","Lettuce","Cucumber","Lemon"],
+recipe:"Serve grilled fish with fresh salad.",
+serving:"1 plate",
+calories:320,
+protein:42,
+carbs:15,
+fat:10,
+fiber:6,
+vitamins:"Omega-3, Vitamin D",
+alternative:"Use chicken breast"
+},
+
+
+{
+id:334,
+name:"Chicken Vegetable Curry Light",
+meal:"Dinner",
+ingredients:["Chicken","Tomatoes","Vegetables","Spices"],
+recipe:"Cook chicken with vegetables using less oil.",
+serving:"1 bowl",
+calories:350,
+protein:45,
+carbs:25,
+fat:9,
+fiber:7,
+vitamins:"Vitamin A, Iron",
+alternative:"Use paneer"
+},
+
+
+{
+id:335,
+name:"Oat Banana Protein Bowl",
+meal:"Breakfast",
+ingredients:["Oats","Banana","Yogurt","Chia Seeds"],
+recipe:"Mix oats with yogurt, banana and chia.",
+serving:"1 bowl",
+calories:330,
+protein:22,
+carbs:55,
+fat:7,
+fiber:10,
+vitamins:"Potassium, Calcium",
+alternative:"Use apple"
+},
+
+
+{
+id:336,
+name:"Chicken Corn Salad",
+meal:"Lunch",
+ingredients:["Chicken","Corn","Lettuce","Cucumber"],
+recipe:"Mix grilled chicken with vegetables and corn.",
+serving:"1 bowl",
+calories:340,
+protein:40,
+carbs:35,
+fat:8,
+fiber:8,
+vitamins:"Vitamin C, Vitamin B6",
+alternative:"Use beans instead of corn"
+},
+
+
+{
+id:337,
+name:"Tomato Cucumber Detox Salad",
+meal:"Snack",
+ingredients:["Tomato","Cucumber","Lemon","Mint"],
+recipe:"Mix vegetables with lemon and mint.",
+serving:"1 bowl",
+calories:120,
+protein:4,
+carbs:25,
+fat:1,
+fiber:6,
+vitamins:"Vitamin C",
+alternative:"Add yogurt for protein"
+},
+
+
+{
+id:338,
+name:"Chicken Quinoa Soup",
+meal:"Dinner",
+ingredients:["Chicken","Quinoa","Vegetables"],
+recipe:"Cook chicken quinoa soup with vegetables.",
+serving:"1 bowl",
+calories:360,
+protein:40,
+carbs:45,
+fat:7,
+fiber:9,
+vitamins:"Iron, Magnesium",
+alternative:"Use brown rice"
+},
+
+
+{
+id:339,
+name:"Berry Oat Smoothie",
+meal:"Breakfast",
+ingredients:["Berries","Oats","Milk","Yogurt"],
+recipe:"Blend all ingredients together.",
+serving:"1 glass",
+calories:310,
+protein:20,
+carbs:50,
+fat:6,
+fiber:9,
+vitamins:"Vitamin C, Calcium",
+alternative:"Use apple"
+},
+
+
+{
+id:340,
+name:"Chicken Lettuce Tacos",
+meal:"Lunch",
+ingredients:["Chicken","Lettuce","Tomato","Yogurt Sauce"],
+recipe:"Use lettuce leaves as taco shells.",
+serving:"3 tacos",
+calories:300,
+protein:42,
+carbs:18,
+fat:8,
+fiber:6,
+vitamins:"Vitamin B6",
+alternative:"Use fish filling"
+},
+
+
+{
+id:341,
+name:"Spinach Mushroom Soup",
+meal:"Dinner",
+ingredients:["Spinach","Mushrooms","Vegetable Broth"],
+recipe:"Cook vegetables into a light soup.",
+serving:"1 bowl",
+calories:190,
+protein:10,
+carbs:25,
+fat:4,
+fiber:7,
+vitamins:"Iron, Vitamin K",
+alternative:"Add chicken"
+},
+
+
+{
+id:342,
+name:"Egg White Chicken Omelette",
+meal:"Breakfast",
+ingredients:["Egg Whites","Chicken","Spinach"],
+recipe:"Make omelette with chicken and spinach.",
+serving:"1 omelette",
+calories:280,
+protein:35,
+carbs:8,
+fat:10,
+fiber:3,
+vitamins:"Vitamin D, Iron",
+alternative:"Use tofu"
+},
+
+
+{
+id:343,
+name:"Lentil Chicken Bowl",
+meal:"Lunch",
+ingredients:["Lentils","Chicken","Vegetables"],
+recipe:"Combine cooked lentils with grilled chicken.",
+serving:"1 bowl",
+calories:410,
+protein:50,
+carbs:45,
+fat:8,
+fiber:13,
+vitamins:"Iron, Folate",
+alternative:"Use chickpeas"
+},
+
+
+{
+id:344,
+name:"Cucumber Tuna Bowl",
+meal:"Lunch",
+ingredients:["Tuna","Cucumber","Lettuce","Lemon"],
+recipe:"Mix tuna with fresh vegetables.",
+serving:"1 bowl",
+calories:290,
+protein:38,
+carbs:12,
+fat:10,
+fiber:5,
+vitamins:"Omega-3, Vitamin B12",
+alternative:"Use chicken"
+},
+
+
+{
+id:345,
+name:"Vegetable Stuffed Bell Peppers",
+meal:"Dinner",
+ingredients:["Bell Peppers","Rice","Vegetables"],
+recipe:"Stuff peppers with vegetables and bake.",
+serving:"2 peppers",
+calories:280,
+protein:10,
+carbs:45,
+fat:5,
+fiber:9,
+vitamins:"Vitamin C, Vitamin A",
+alternative:"Add chicken for protein"
+},
+
+
+{
+id:346,
+name:"Yogurt Berry Chia Cup",
+meal:"Snack",
+ingredients:["Yogurt","Berries","Chia Seeds"],
+recipe:"Layer yogurt with berries and chia.",
+serving:"1 cup",
+calories:270,
+protein:20,
+carbs:35,
+fat:7,
+fiber:10,
+vitamins:"Calcium, Omega-3",
+alternative:"Use flax seeds"
+},
+
+
+{
+id:347,
+name:"Chicken Vegetable Skewers",
+meal:"Dinner",
+ingredients:["Chicken","Onion","Capsicum"],
+recipe:"Grill chicken with vegetables on skewers.",
+serving:"5 skewers",
+calories:330,
+protein:48,
+carbs:18,
+fat:8,
+fiber:5,
+vitamins:"Vitamin B6",
+alternative:"Use fish"
+},
+
+
+{
+id:348,
+name:"Apple Oat Cookies Healthy",
+meal:"Snack",
+ingredients:["Oats","Apple","Cinnamon"],
+recipe:"Mix ingredients and bake cookies.",
+serving:"4 cookies",
+calories:240,
+protein:8,
+carbs:45,
+fat:4,
+fiber:8,
+vitamins:"Vitamin C, Magnesium",
+alternative:"Use banana"
+},
+
+
+{
+id:349,
+name:"Chicken Broccoli Bowl",
+meal:"Lunch",
+ingredients:["Chicken","Broccoli","Brown Rice"],
+recipe:"Serve chicken with broccoli and brown rice.",
+serving:"1 bowl",
+calories:420,
+protein:48,
+carbs:55,
+fat:8,
+fiber:12,
+vitamins:"Vitamin C, Iron",
+alternative:"Use quinoa"
+},
+
+
+{
+id:350,
+name:"Vegetable Clear Noodle Soup",
+meal:"Dinner",
+ingredients:["Noodles","Carrots","Cabbage","Broth"],
+recipe:"Cook noodles with vegetables in clear broth.",
+serving:"1 bowl",
+calories:260,
+protein:10,
+carbs:45,
+fat:4,
+fiber:7,
+vitamins:"Vitamin A, Vitamin C",
+alternative:"Use rice noodles"
+},
+
+{
+id:351,
+name:"Grilled Chicken Caesar Bowl",
+meal:"Lunch",
+ingredients:["Chicken","Lettuce","Yogurt Dressing","Tomatoes"],
+recipe:"Mix grilled chicken with lettuce and light dressing.",
+serving:"1 bowl",
+calories:340,
+protein:45,
+carbs:20,
+fat:9,
+fiber:7,
+vitamins:"Vitamin A, Calcium",
+alternative:"Use tofu instead of chicken"
+},
+
+
+{
+id:352,
+name:"Vegetable Chickpea Soup",
+meal:"Dinner",
+ingredients:["Chickpeas","Carrots","Spinach","Tomatoes"],
+recipe:"Cook chickpeas with vegetables into soup.",
+serving:"1 bowl",
+calories:300,
+protein:18,
+carbs:50,
+fat:5,
+fiber:13,
+vitamins:"Iron, Vitamin C",
+alternative:"Use lentils"
+},
+
+
+{
+id:353,
+name:"Peanut Banana Oat Smoothie Light",
+meal:"Breakfast",
+ingredients:["Banana","Oats","Peanut Butter","Milk"],
+recipe:"Blend all ingredients with low-fat milk.",
+serving:"1 glass",
+calories:350,
+protein:20,
+carbs:55,
+fat:9,
+fiber:8,
+vitamins:"Potassium, Vitamin E",
+alternative:"Use almond butter"
+},
+
+
+{
+id:354,
+name:"Chicken Cabbage Bowl",
+meal:"Lunch",
+ingredients:["Chicken","Cabbage","Carrots","Spices"],
+recipe:"Cook chicken with cabbage and vegetables.",
+serving:"1 bowl",
+calories:310,
+protein:42,
+carbs:25,
+fat:7,
+fiber:9,
+vitamins:"Vitamin C, Vitamin A",
+alternative:"Use tofu"
+},
+
+
+{
+id:355,
+name:"Egg Tomato Breakfast Bowl",
+meal:"Breakfast",
+ingredients:["Eggs","Tomatoes","Spinach"],
+recipe:"Cook eggs with tomatoes and spinach.",
+serving:"1 bowl",
+calories:260,
+protein:22,
+carbs:12,
+fat:15,
+fiber:4,
+vitamins:"Vitamin D, Iron",
+alternative:"Use egg whites"
+},
+
+
+{
+id:356,
+name:"Grilled Fish With Vegetables",
+meal:"Dinner",
+ingredients:["Fish","Broccoli","Carrots"],
+recipe:"Grill fish and serve with vegetables.",
+serving:"1 plate",
+calories:330,
+protein:45,
+carbs:20,
+fat:10,
+fiber:7,
+vitamins:"Omega-3, Vitamin D",
+alternative:"Use chicken"
+},
+
+
+{
+id:357,
+name:"Low Calorie Chicken Pasta",
+meal:"Lunch",
+ingredients:["Whole Wheat Pasta","Chicken","Vegetables"],
+recipe:"Cook pasta with chicken and vegetables.",
+serving:"1 bowl",
+calories:420,
+protein:45,
+carbs:55,
+fat:8,
+fiber:10,
+vitamins:"Vitamin B6",
+alternative:"Use tuna"
+},
+
+
+{
+id:358,
+name:"Cucumber Hummus Plate",
+meal:"Snack",
+ingredients:["Cucumber","Hummus","Carrots"],
+recipe:"Serve vegetables with hummus dip.",
+serving:"1 plate",
+calories:220,
+protein:10,
+carbs:30,
+fat:8,
+fiber:9,
+vitamins:"Vitamin C, Iron",
+alternative:"Use yogurt dip"
+},
+
+
+{
+id:359,
+name:"Chicken Spinach Wrap",
+meal:"Lunch",
+ingredients:["Whole Wheat Wrap","Chicken","Spinach"],
+recipe:"Fill wrap with chicken and spinach.",
+serving:"1 wrap",
+calories:360,
+protein:42,
+carbs:40,
+fat:8,
+fiber:8,
+vitamins:"Iron, Vitamin B6",
+alternative:"Use fish"
+},
+
+
+{
+id:360,
+name:"Apple Chia Pudding",
+meal:"Breakfast",
+ingredients:["Apple","Chia Seeds","Milk"],
+recipe:"Mix chia seeds with milk and apple pieces.",
+serving:"1 cup",
+calories:240,
+protein:10,
+carbs:35,
+fat:8,
+fiber:12,
+vitamins:"Omega-3, Vitamin C",
+alternative:"Use berries"
+},
+
+
+{
+id:361,
+name:"Chicken Vegetable Soup Bowl",
+meal:"Dinner",
+ingredients:["Chicken","Vegetables","Broth"],
+recipe:"Cook chicken with mixed vegetables.",
+serving:"1 bowl",
+calories:280,
+protein:38,
+carbs:25,
+fat:6,
+fiber:7,
+vitamins:"Vitamin A, Iron",
+alternative:"Use mushrooms"
+},
+
+
+{
+id:362,
+name:"Quinoa Vegetable Salad",
+meal:"Lunch",
+ingredients:["Quinoa","Cucumber","Tomatoes","Lettuce"],
+recipe:"Mix quinoa with fresh vegetables.",
+serving:"1 bowl",
+calories:340,
+protein:15,
+carbs:55,
+fat:7,
+fiber:11,
+vitamins:"Magnesium, Vitamin C",
+alternative:"Use brown rice"
+},
+
+
+{
+id:363,
+name:"Greek Yogurt Apple Bowl",
+meal:"Snack",
+ingredients:["Greek Yogurt","Apple","Cinnamon"],
+recipe:"Mix yogurt with apple slices.",
+serving:"1 bowl",
+calories:230,
+protein:20,
+carbs:35,
+fat:3,
+fiber:6,
+vitamins:"Calcium, Vitamin C",
+alternative:"Use berries"
+},
+
+
+{
+id:364,
+name:"Chicken Pepper Salad",
+meal:"Lunch",
+ingredients:["Chicken","Bell Pepper","Lettuce"],
+recipe:"Mix grilled chicken with peppers.",
+serving:"1 bowl",
+calories:300,
+protein:42,
+carbs:18,
+fat:8,
+fiber:6,
+vitamins:"Vitamin C",
+alternative:"Use turkey"
+},
+
+
+{
+id:365,
+name:"Vegetable Omelette Wrap",
+meal:"Breakfast",
+ingredients:["Egg","Whole Wheat Wrap","Vegetables"],
+recipe:"Wrap vegetable omelette inside tortilla.",
+serving:"1 wrap",
+calories:320,
+protein:22,
+carbs:38,
+fat:10,
+fiber:7,
+vitamins:"Iron, Vitamin D",
+alternative:"Use chicken filling"
+},
+
+
+{
+id:366,
+name:"Lemon Chicken Rice Bowl",
+meal:"Lunch",
+ingredients:["Chicken","Brown Rice","Lemon","Vegetables"],
+recipe:"Serve lemon chicken with brown rice.",
+serving:"1 bowl",
+calories:430,
+protein:48,
+carbs:60,
+fat:8,
+fiber:11,
+vitamins:"Vitamin B6, Iron",
+alternative:"Use quinoa"
+},
+
+
+{
+id:367,
+name:"Vegetable Tofu Stir Fry",
+meal:"Dinner",
+ingredients:["Tofu","Broccoli","Capsicum"],
+recipe:"Stir fry tofu with vegetables.",
+serving:"1 plate",
+calories:300,
+protein:25,
+carbs:30,
+fat:10,
+fiber:8,
+vitamins:"Calcium, Vitamin C",
+alternative:"Use chicken"
+},
+
+
+{
+id:368,
+name:"Berry Protein Bowl",
+meal:"Breakfast",
+ingredients:["Berries","Yogurt","Oats","Chia Seeds"],
+recipe:"Combine all ingredients in a bowl.",
+serving:"1 bowl",
+calories:330,
+protein:25,
+carbs:45,
+fat:8,
+fiber:10,
+vitamins:"Antioxidants, Calcium",
+alternative:"Use apple"
+},
+
+
+{
+id:369,
+name:"Chicken Mushroom Soup",
+meal:"Dinner",
+ingredients:["Chicken","Mushrooms","Vegetables"],
+recipe:"Prepare light chicken mushroom soup.",
+serving:"1 bowl",
+calories:270,
+protein:40,
+carbs:20,
+fat:6,
+fiber:5,
+vitamins:"Vitamin B",
+alternative:"Use tofu"
+},
+
+
+{
+id:370,
+name:"Healthy Fruit Chaat",
+meal:"Snack",
+ingredients:["Apple","Orange","Pomegranate","Lemon"],
+recipe:"Mix fruits with lemon juice.",
+serving:"1 bowl",
+calories:210,
+protein:4,
+carbs:50,
+fat:1,
+fiber:9,
+vitamins:"Vitamin C, Antioxidants",
+alternative:"Use seasonal fruits"
+},
+
+
+{
+id:371,
+name:"Chicken Basil Salad",
+meal:"Lunch",
+ingredients:["Chicken Breast","Basil","Lettuce","Tomato"],
+recipe:"Mix grilled chicken with fresh basil and vegetables.",
+serving:"1 bowl",
+calories:320,
+protein:44,
+carbs:18,
+fat:8,
+fiber:6,
+vitamins:"Vitamin A, Vitamin C",
+alternative:"Use grilled fish"
+},
+
+
+{
+id:372,
+name:"Oat Vegetable Upma",
+meal:"Breakfast",
+ingredients:["Oats","Carrot","Peas","Spices"],
+recipe:"Cook oats with vegetables like traditional upma.",
+serving:"1 bowl",
+calories:280,
+protein:12,
+carbs:45,
+fat:6,
+fiber:9,
+vitamins:"Vitamin A, Iron",
+alternative:"Use semolina instead of oats"
+},
+
+
+{
+id:373,
+name:"Chicken Tikka Lettuce Bowl",
+meal:"Lunch",
+ingredients:["Chicken Tikka","Lettuce","Cucumber","Yogurt"],
+recipe:"Serve chicken tikka with salad and yogurt.",
+serving:"1 bowl",
+calories:350,
+protein:48,
+carbs:20,
+fat:9,
+fiber:6,
+vitamins:"Vitamin B6, Calcium",
+alternative:"Use paneer tikka"
+},
+
+
+{
+id:374,
+name:"Vegetable Dal Soup",
+meal:"Dinner",
+ingredients:["Lentils","Carrots","Spinach","Tomatoes"],
+recipe:"Cook lentils with vegetables into soup.",
+serving:"1 bowl",
+calories:290,
+protein:20,
+carbs:45,
+fat:4,
+fiber:13,
+vitamins:"Iron, Folate",
+alternative:"Use beans"
+},
+
+
+{
+id:375,
+name:"Banana Oat Pancakes Light",
+meal:"Breakfast",
+ingredients:["Banana","Oats","Egg"],
+recipe:"Blend ingredients and cook pancakes.",
+serving:"4 pancakes",
+calories:320,
+protein:18,
+carbs:50,
+fat:7,
+fiber:8,
+vitamins:"Potassium, Vitamin D",
+alternative:"Use apple instead of banana"
+},
+
+
+{
+id:376,
+name:"Grilled Chicken Rice Plate",
+meal:"Lunch",
+ingredients:["Chicken","Brown Rice","Vegetables"],
+recipe:"Serve grilled chicken with brown rice.",
+serving:"1 plate",
+calories:430,
+protein:50,
+carbs:60,
+fat:8,
+fiber:10,
+vitamins:"Iron, Magnesium",
+alternative:"Use quinoa"
+},
+
+
+{
+id:377,
+name:"Carrot Ginger Smoothie",
+meal:"Breakfast",
+ingredients:["Carrot","Ginger","Yogurt","Lemon"],
+recipe:"Blend ingredients into a fresh smoothie.",
+serving:"1 glass",
+calories:200,
+protein:12,
+carbs:35,
+fat:3,
+fiber:7,
+vitamins:"Vitamin A, Vitamin C",
+alternative:"Use orange instead of lemon"
+},
+
+
+{
+id:378,
+name:"Chicken Vegetable Skillet",
+meal:"Dinner",
+ingredients:["Chicken","Broccoli","Capsicum","Onion"],
+recipe:"Cook chicken with mixed vegetables.",
+serving:"1 plate",
+calories:350,
+protein:45,
+carbs:25,
+fat:8,
+fiber:9,
+vitamins:"Vitamin C, Iron",
+alternative:"Use tofu"
+},
+
+
+{
+id:379,
+name:"Tuna Avocado Salad",
+meal:"Lunch",
+ingredients:["Tuna","Avocado","Lettuce","Cucumber"],
+recipe:"Mix tuna with vegetables and avocado.",
+serving:"1 bowl",
+calories:370,
+protein:40,
+carbs:18,
+fat:15,
+fiber:8,
+vitamins:"Omega-3, Vitamin E",
+alternative:"Use chicken"
+},
+
+
+{
+id:380,
+name:"Spinach Oat Bowl",
+meal:"Breakfast",
+ingredients:["Oats","Spinach","Egg","Milk"],
+recipe:"Cook oats with spinach and add egg.",
+serving:"1 bowl",
+calories:330,
+protein:25,
+carbs:45,
+fat:9,
+fiber:8,
+vitamins:"Iron, Calcium",
+alternative:"Use tofu"
+},
+
+
+{
+id:381,
+name:"Chicken Lemon Soup",
+meal:"Dinner",
+ingredients:["Chicken","Lemon","Vegetables","Broth"],
+recipe:"Cook chicken soup with lemon flavor.",
+serving:"1 bowl",
+calories:250,
+protein:35,
+carbs:22,
+fat:5,
+fiber:5,
+vitamins:"Vitamin C, Vitamin B6",
+alternative:"Use fish"
+},
+
+
+{
+id:382,
+name:"Chickpea Vegetable Wrap",
+meal:"Lunch",
+ingredients:["Whole Wheat Wrap","Chickpeas","Vegetables"],
+recipe:"Fill wrap with chickpeas and vegetables.",
+serving:"1 wrap",
+calories:350,
+protein:18,
+carbs:55,
+fat:7,
+fiber:12,
+vitamins:"Folate, Iron",
+alternative:"Use lentils"
+},
+
+
+{
+id:383,
+name:"Yogurt Cucumber Salad",
+meal:"Snack",
+ingredients:["Yogurt","Cucumber","Mint"],
+recipe:"Mix yogurt with cucumber and mint.",
+serving:"1 bowl",
+calories:160,
+protein:12,
+carbs:18,
+fat:4,
+fiber:3,
+vitamins:"Calcium, Vitamin C",
+alternative:"Use low-fat yogurt"
+},
+
+
+{
+id:384,
+name:"Fish Brown Rice Bowl",
+meal:"Dinner",
+ingredients:["Fish","Brown Rice","Vegetables"],
+recipe:"Serve grilled fish with brown rice.",
+serving:"1 bowl",
+calories:420,
+protein:45,
+carbs:55,
+fat:10,
+fiber:10,
+vitamins:"Omega-3, Vitamin D",
+alternative:"Use chicken"
+},
+
+
+{
+id:385,
+name:"Apple Peanut Chia Bowl",
+meal:"Breakfast",
+ingredients:["Apple","Peanuts","Chia Seeds","Yogurt"],
+recipe:"Mix ingredients into a healthy bowl.",
+serving:"1 bowl",
+calories:300,
+protein:18,
+carbs:40,
+fat:10,
+fiber:9,
+vitamins:"Vitamin E, Calcium",
+alternative:"Use almonds"
+},
+
+
+{
+id:386,
+name:"Chicken Vegetable Soup",
+meal:"Dinner",
+ingredients:["Chicken","Carrots","Beans","Spinach"],
+recipe:"Cook chicken with vegetables in broth.",
+serving:"1 bowl",
+calories:280,
+protein:40,
+carbs:25,
+fat:6,
+fiber:7,
+vitamins:"Vitamin A, Iron",
+alternative:"Use mushrooms"
+},
+
+
+{
+id:387,
+name:"Egg Chickpea Salad",
+meal:"Lunch",
+ingredients:["Eggs","Chickpeas","Cucumber","Lettuce"],
+recipe:"Mix boiled eggs with chickpeas and salad.",
+serving:"1 bowl",
+calories:360,
+protein:25,
+carbs:45,
+fat:12,
+fiber:11,
+vitamins:"Iron, Vitamin D",
+alternative:"Use tuna"
+},
+
+
+{
+id:388,
+name:"Green Apple Smoothie",
+meal:"Breakfast",
+ingredients:["Apple","Spinach","Yogurt","Lemon"],
+recipe:"Blend all ingredients together.",
+serving:"1 glass",
+calories:220,
+protein:14,
+carbs:40,
+fat:3,
+fiber:8,
+vitamins:"Vitamin C, Vitamin K",
+alternative:"Use cucumber"
+},
+
+
+{
+id:389,
+name:"Chicken Quinoa Salad",
+meal:"Lunch",
+ingredients:["Chicken","Quinoa","Vegetables"],
+recipe:"Mix chicken with quinoa and vegetables.",
+serving:"1 bowl",
+calories:400,
+protein:45,
+carbs:50,
+fat:8,
+fiber:10,
+vitamins:"Magnesium, Iron",
+alternative:"Use brown rice"
+},
+
+
+{
+id:390,
+name:"Vegetable Soup With Tofu",
+meal:"Dinner",
+ingredients:["Tofu","Broccoli","Carrot","Broth"],
+recipe:"Cook tofu with vegetables in soup.",
+serving:"1 bowl",
+calories:260,
+protein:22,
+carbs:30,
+fat:8,
+fiber:8,
+vitamins:"Calcium, Vitamin C",
+alternative:"Use chicken instead of tofu"
+},
+
+{
+id:391,
+name:"Chicken Vegetable Lettuce Cups",
+meal:"Lunch",
+ingredients:["Chicken","Lettuce","Carrot","Cucumber"],
+recipe:"Fill lettuce leaves with cooked chicken and vegetables.",
+serving:"4 cups",
+calories:280,
+protein:40,
+carbs:18,
+fat:7,
+fiber:6,
+vitamins:"Vitamin A, Vitamin C",
+alternative:"Use tofu instead of chicken"
+},
+
+
+{
+id:392,
+name:"Oat Berry Breakfast Bowl",
+meal:"Breakfast",
+ingredients:["Oats","Berries","Yogurt","Chia Seeds"],
+recipe:"Combine oats with yogurt, berries and chia seeds.",
+serving:"1 bowl",
+calories:320,
+protein:22,
+carbs:50,
+fat:7,
+fiber:11,
+vitamins:"Calcium, Antioxidants",
+alternative:"Use apple instead of berries"
+},
+
+
+{
+id:393,
+name:"Grilled Chicken Vegetable Plate",
+meal:"Dinner",
+ingredients:["Chicken","Broccoli","Carrots","Capsicum"],
+recipe:"Grill chicken and serve with steamed vegetables.",
+serving:"1 plate",
+calories:350,
+protein:48,
+carbs:25,
+fat:8,
+fiber:9,
+vitamins:"Vitamin A, Vitamin C",
+alternative:"Use grilled fish"
+},
+
+
+{
+id:394,
+name:"Masala Lentil Soup",
+meal:"Dinner",
+ingredients:["Lentils","Tomatoes","Spinach","Spices"],
+recipe:"Cook lentils with vegetables and spices.",
+serving:"1 bowl",
+calories:300,
+protein:20,
+carbs:45,
+fat:5,
+fiber:13,
+vitamins:"Iron, Folate",
+alternative:"Use chickpeas"
+},
+
+
+{
+id:395,
+name:"Egg And Avocado Breakfast Bowl",
+meal:"Breakfast",
+ingredients:["Eggs","Avocado","Spinach","Tomato"],
+recipe:"Combine boiled eggs with vegetables and avocado.",
+serving:"1 bowl",
+calories:360,
+protein:25,
+carbs:18,
+fat:22,
+fiber:8,
+vitamins:"Vitamin D, Vitamin E",
+alternative:"Use cucumber instead of avocado"
+},
+
+
+{
+id:396,
+name:"Chicken Whole Wheat Sandwich",
+meal:"Lunch",
+ingredients:["Whole Wheat Bread","Chicken","Lettuce","Tomato"],
+recipe:"Prepare sandwich with grilled chicken and vegetables.",
+serving:"1 sandwich",
+calories:340,
+protein:40,
+carbs:40,
+fat:7,
+fiber:8,
+vitamins:"Vitamin B12, Iron",
+alternative:"Use tuna filling"
+},
+
+
+{
+id:397,
+name:"Vegetable Tofu Stir Fry Bowl",
+meal:"Dinner",
+ingredients:["Tofu","Broccoli","Capsicum","Carrots"],
+recipe:"Stir fry tofu with vegetables.",
+serving:"1 bowl",
+calories:310,
+protein:25,
+carbs:35,
+fat:10,
+fiber:10,
+vitamins:"Calcium, Vitamin C",
+alternative:"Use chicken instead of tofu"
+},
+
+
+{
+id:398,
+name:"Healthy Mango Yogurt Bowl",
+meal:"Snack",
+ingredients:["Mango","Yogurt","Chia Seeds"],
+recipe:"Mix mango with yogurt and chia seeds.",
+serving:"1 bowl",
+calories:270,
+protein:18,
+carbs:45,
+fat:5,
+fiber:7,
+vitamins:"Vitamin A, Calcium",
+alternative:"Use berries"
+},
+
+
+{
+id:399,
+name:"Chicken Clear Soup Final",
+meal:"Dinner",
+ingredients:["Chicken","Celery","Carrots","Broth"],
+recipe:"Cook chicken with vegetables in clear broth.",
+serving:"1 bowl",
+calories:240,
+protein:35,
+carbs:20,
+fat:5,
+fiber:5,
+vitamins:"Vitamin B6, Vitamin A",
+alternative:"Use fish or tofu"
+},
+
+
+{
+id:400,
+name:"Ultimate Weight Loss Power Bowl",
+meal:"Lunch",
+ingredients:["Chicken","Quinoa","Vegetables","Yogurt Sauce"],
+recipe:"Combine protein, whole grains and vegetables into a balanced bowl.",
+serving:"1 large bowl",
+calories:450,
+protein:50,
+carbs:55,
+fat:10,
+fiber:12,
+vitamins:"Iron, Vitamin C, Calcium",
+alternative:"Use beans instead of chicken"
+}
 
 
 };
