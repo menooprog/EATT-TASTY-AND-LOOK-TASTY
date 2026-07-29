@@ -1,88 +1,76 @@
-function generatePlan(){
+<!DOCTYPE html>
+<html>
 
-let name =
-document.getElementById("userName").value;
+<head>
 
+<title>Diet Planner</title>
 
-let goal =
-document.getElementById("goal").value;
+<link rel="stylesheet" href="css/style.css">
 
-
-let result =
-document.getElementById("planResult");
+</head>
 
 
-if(name===""){
+<body>
 
-result.innerHTML =
-"Please enter your name.";
 
-return;
+<header>
 
-}
+<h1>90 Day Diet Planner 🍽️</h1>
+
+</header>
 
 
 
-let plan="";
+<section class="hero">
 
 
-if(goal==="gain"){
+<input id="userName" placeholder="Your Name">
 
 
-plan=`
-
-<h2>${name}'s Weight Gain Plan</h2>
-
-<h3>Breakfast</h3>
-<p>Oats + Milk + Banana + Nuts</p>
-
-<h3>Lunch</h3>
-<p>Rice + Chicken + Vegetables</p>
-
-<h3>Snack</h3>
-<p>Peanut Butter Sandwich</p>
-
-<h3>Dinner</h3>
-<p>Eggs + Roti + Yogurt</p>
-
-`;
-
-}
+<input id="age" type="number" placeholder="Age">
 
 
-else{
+<input id="weight" type="number" placeholder="Weight kg">
 
 
-plan=`
-
-<h2>${name}'s Weight Loss Plan</h2>
-
-<h3>Breakfast</h3>
-<p>Eggs + Fruit</p>
-
-<h3>Lunch</h3>
-<p>Chicken Salad</p>
-
-<h3>Snack</h3>
-<p>Yogurt</p>
-
-<h3>Dinner</h3>
-<p>Vegetable Soup</p>
-
-`;
-
-}
+<input id="height" type="number" placeholder="Height cm">
 
 
-result.innerHTML = `
 
-<div class="foodCard">
+<select id="goal">
 
-${plan}
-
-</div>
-
-`;
+<option value="gain">
+Weight Gain
+</option>
 
 
-}
+<option value="loss">
+Weight Loss
+</option>
+
+
+</select>
+
+
+
+<button onclick="generatePlan()">
+
+Generate Plan
+
+</button>
+
+
+
+<div id="planResult"></div>
+
+
+</section>
+
+
+
+<script src="js/planner.js"></script>
+
+
+</body>
+
+</html>
