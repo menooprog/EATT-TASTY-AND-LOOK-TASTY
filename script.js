@@ -430,8 +430,36 @@ loadPlannerData();
 
 
 // 6. Load food dropdown
-PASTE loadFoodOptions() HERE
 
+function loadFoodOptions(){
+   ...
+}
+
+
+loadFoodOptions();
+
+
+
+// PASTE 3 MONTH PLANNER CODE HERE
+
+
+
+function generateProgressPlan(){
+   ...
+}
+
+
+function savePlannerData(){
+   ...
+}
+
+
+function loadPlannerData(){
+   ...
+}
+
+
+loadPlannerData();
 
 // 7. Keep this at the very end
 
