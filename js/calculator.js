@@ -1,28 +1,54 @@
 function calculateNutrition(){
 
-let name = document
+
+let foodName = document
 .getElementById("foodName")
 .value
 .toLowerCase();
 
 
-let amount = Number(
+let grams = Number(
 document.getElementById("amount").value
 );
 
-
-let food = ALL_FOODS.find(item =>
-item.name.toLowerCase().includes(name)
-);
 
 
 let result = document.getElementById("calculationResult");
 
 
-if(food && amount > 0){
+
+let food = DATABASE.gainFoods.find(food =>
+
+food.name.toLowerCase() === foodName
+
+);
 
 
-let ratio = amount / 100;
+
+if(!food){
+
+result.innerHTML = 
+"<div class='foodCard'>Food not found. Try Banana, Egg, Rice or Oats.</div>";
+
+return;
+
+}
+
+
+
+if(grams<=0){
+
+result.innerHTML =
+"<div class='foodCard'>Enter valid grams.</div>";
+
+return;
+
+}
+
+
+
+let multiply = grams / 100;
+
 
 
 result.innerHTML = `
@@ -31,29 +57,22 @@ result.innerHTML = `
 
 <h2>${food.name}</h2>
 
-<p>Amount: ${amount} g</p>
 
-<p>Calories: ${(food.calories * ratio).toFixed(1)} kcal</p>
+<p><b>Quantity:</b> ${grams} g</p>
 
-<p>Protein: ${(food.protein * ratio).toFixed(1)} g</p>
+<p><b>Calories:</b> ${(food.calories*multiply).toFixed(1)} kcal</p>
 
-<p>Carbs: ${(food.carbs * ratio).toFixed(1)} g</p>
+<p><b>Protein:</b> ${(food.protein*multiply).toFixed(1)} g</p>
 
-<p>Fat: ${(food.fat * ratio).toFixed(1)} g</p>
+<p><b>Carbohydrates:</b> ${(food.carbs*multiply).toFixed(1)} g</p>
 
-<p>Fiber: ${(food.fiber * ratio).toFixed(1)} g</p>
+<p><b>Fat:</b> ${(food.fat*multiply).toFixed(1)} g</p>
+
+<p><b>Fiber:</b> ${(food.fiber*multiply).toFixed(1)} g</p>
+
 
 </div>
 
 `;
-
-}
-
-else{
-
-result.innerHTML =
-"Please enter a valid food name and quantity.";
-
-}
 
 }
