@@ -3,318 +3,259 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>EAT AND LOOK TASTY</title>
-
+<title>EAT AND LOOK TASTY — Weight Gain &amp; Weight Loss Recipes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">EL</span>
+      <span class="brand-text">
+        <span class="brand-name">EAT AND LOOK TASTY</span>
+        <span class="brand-credit">created by syeda manahyl</span>
+      </span>
+    </a>
 
-<h1>EAT AND LOOK TASTY</h1>
+    <nav class="main-nav" id="mainNav">
+      <a href="#recipes">Recipes</a>
+      <a href="#bmi">BMI</a>
+      <a href="#calories">Calories</a>
+      <a href="#planner">Planner</a>
+      <a href="#progress">Progress</a>
+    </nav>
 
-<p class="creator">
-Created by Syeda Manahil
-</p>
+    <div class="mode-dial" role="group" aria-label="Goal mode">
+      <button type="button" class="dial-btn active" data-mode="loss" id="btnModeLoss">Lose</button>
+      <span class="dial-track" aria-hidden="true"><span class="dial-thumb" id="dialThumb"></span></span>
+      <button type="button" class="dial-btn" data-mode="gain" id="btnModeGain">Gain</button>
+    </div>
 
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
-<section class="hero">
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow">400 recipes · full macro breakdown · your plan, your pace</p>
+    <h1 class="hero-title">Eat with a <span class="accent-swap">direction</span>.</h1>
+    <p class="hero-sub">
+      EAT AND LOOK TASTY holds 200 calorie-dense recipes for building weight and 200 lean, high-volume recipes for losing it —
+      every dish costed out in calories, protein, carbs, fats, fiber, and vitamins. Search, plan, and track your way there.
+    </p>
 
-<h2>
-Eat Healthy. Look Healthy.
-</h2>
+    <form class="search-form" id="searchForm" role="search">
+      <input type="search" id="searchInput" placeholder="Search 400 recipes — try “salmon”, “high fiber”, “Thai”…" aria-label="Search recipes">
+      <button type="submit">Search</button>
+    </form>
 
-<p>
-
-Whether your goal is healthy weight gain or sustainable weight loss,
-your personalized diet journey starts here.
-
-</p>
-
-<div class="buttons">
-
-<a href="weight-gain.html">
-<button id="gainBtn">Weight Gain</button>
-</a>
-
-<a href="weight-loss.html">
-<button id="lossBtn">Weight Loss</button>
-</a>
-<a href="progress.html">
-
-<button>
-Progress Tracker
-</button>
-
-</a>
-<a href="search.html">
-
-<button>
-Recipe Search
-</button>
-
-</a>
-<a href="calculator.html">
-
-<button>
-Calorie Calculator
-</button>
-
-</a>
-
-<a href="calculator.html">
-
-<button>
-Nutrition Calculator
-</button>
-
-</a>
-<a href="planner.html">
-
-<button>
-3 Month Diet Planner
-</button>
-
-</a>
-div>
-
-section>
-
-<section class="features">
-
-<div class="card">
-
-<h3>🥗 Weight Gain</h3>
-
-<p>
-
-High-calorie foods, healthy meals,
-protein-rich recipes and
-3-month planner.
-
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>🥬 Weight Loss</h3>
-
-<p>
-
-Low-calorie nutritious meals,
-healthy recipes and
-fat-loss planner.
-
-</p>
-
-</div>
-
-<script src="food.js"></script>
-<script src="script.js"></script>
-
-<div class="card">
-
-<h3>🔍 Recipe Search</h3>
-
-<p>
-
-Search any food and instantly see
-calories,
-protein,
-carbs,
-fat,
-fiber and recipe.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>📈 Progress Tracker</h3>
-
-<p>
-
-Track your weekly weight journey
-for 3 months.
-
-</p>
-
-</div>
-
+    <div class="hero-stats">
+      <div><span class="stat-num" id="statGain">200</span><span class="stat-label">Gain recipes</span></div>
+      <div><span class="stat-num" id="statLoss">200</span><span class="stat-label">Loss recipes</span></div>
+      <div><span class="stat-num">6</span><span class="stat-label">Tracked nutrients</span></div>
+    </div>
+  </div>
 </section>
 
-<!-- Search Section -->
+<!-- ============ RECIPES ============ -->
+<section class="section" id="recipes">
+  <div class="section-inner">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">The library</p>
+        <h2>Browse every recipe</h2>
+      </div>
+      <div class="filter-row">
+        <div class="seg-toggle" id="segToggle">
+          <button type="button" class="seg-btn active" data-filter="all">All</button>
+          <button type="button" class="seg-btn" data-filter="gain">Weight Gain</button>
+          <button type="button" class="seg-btn" data-filter="loss">Weight Loss</button>
+        </div>
+        <select id="cuisineFilter" aria-label="Filter by cuisine">
+          <option value="">All cuisines</option>
+        </select>
+        <select id="sortFilter" aria-label="Sort recipes">
+          <option value="name">Sort: Name A–Z</option>
+          <option value="cal-asc">Sort: Calories (low–high)</option>
+          <option value="cal-desc">Sort: Calories (high–low)</option>
+          <option value="protein-desc">Sort: Protein (high–low)</option>
+        </select>
+      </div>
+    </div>
 
-<div id="searchResult"></div>
+    <p class="result-count" id="resultCount"></p>
+    <div class="recipe-grid" id="recipeGrid" aria-live="polite"></div>
+    <button class="load-more" id="loadMoreBtn">Show more recipes</button>
+  </div>
+</section>
 
+<!-- ============ BMI ============ -->
+<section class="section alt" id="bmi">
+  <div class="section-inner narrow">
+    <p class="eyebrow">Know your starting point</p>
+    <h2>BMI calculator</h2>
+    <div class="tool-card">
+      <div class="tool-grid">
+        <label>Units
+          <select id="bmiUnits">
+            <option value="metric">Metric (kg / cm)</option>
+            <option value="imperial">Imperial (lb / in)</option>
+          </select>
+        </label>
+        <label id="bmiWeightLabel">Weight (kg)
+          <input type="number" id="bmiWeight" min="1" step="0.1" placeholder="e.g. 68">
+        </label>
+        <label id="bmiHeightLabel">Height (cm)
+          <input type="number" id="bmiHeight" min="1" step="0.1" placeholder="e.g. 170">
+        </label>
+        <button type="button" class="primary-btn" id="bmiCalcBtn">Calculate BMI</button>
+      </div>
+      <div class="result-panel" id="bmiResult" hidden>
+        <div class="result-number" id="bmiNumber">--</div>
+        <div class="result-tag" id="bmiCategory">--</div>
+        <div class="bmi-scale" id="bmiScale">
+          <div class="bmi-scale-fill" id="bmiScaleFill"></div>
+          <div class="bmi-scale-marker" id="bmiScaleMarker"></div>
+        </div>
+        <p class="fine-print">BMI is a screening tool, not a diagnosis. It doesn't account for muscle mass, frame, age, or sex-specific differences.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ============ CALORIES ============ -->
+<section class="section" id="calories">
+  <div class="section-inner narrow">
+    <p class="eyebrow">Set your target</p>
+    <h2>Daily calorie calculator</h2>
+    <div class="tool-card">
+      <div class="tool-grid">
+        <label>Sex
+          <select id="calSex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </label>
+        <label>Age
+          <input type="number" id="calAge" min="10" max="100" placeholder="e.g. 28">
+        </label>
+        <label>Weight (kg)
+          <input type="number" id="calWeight" min="1" step="0.1" placeholder="e.g. 68">
+        </label>
+        <label>Height (cm)
+          <input type="number" id="calHeight" min="1" step="0.1" placeholder="e.g. 170">
+        </label>
+        <label>Activity level
+          <select id="calActivity">
+            <option value="1.2">Sedentary (little/no exercise)</option>
+            <option value="1.375">Light (1–3 days/week)</option>
+            <option value="1.55" selected>Moderate (3–5 days/week)</option>
+            <option value="1.725">Active (6–7 days/week)</option>
+            <option value="1.9">Very active (physical job/training)</option>
+          </select>
+        </label>
+        <label>Goal
+          <select id="calGoal">
+            <option value="loss">Lose weight</option>
+            <option value="gain">Gain weight</option>
+            <option value="maintain">Maintain</option>
+          </select>
+        </label>
+        <button type="button" class="primary-btn" id="calCalcBtn">Calculate calories</button>
+      </div>
+      <div class="result-panel" id="calResult" hidden>
+        <div class="cal-summary">
+          <div><span class="result-number" id="calMaintain">--</span><span class="result-tag">Maintenance / day</span></div>
+          <div><span class="result-number" id="calTarget">--</span><span class="result-tag" id="calTargetLabel">Target / day</span></div>
+        </div>
+        <p class="fine-print" id="calMacroNote"></p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- Nutrition Calculator Section -->
+<!-- ============ PLANNER ============ -->
+<section class="section alt" id="planner">
+  <div class="section-inner">
+    <p class="eyebrow">Twelve weeks, one plate at a time</p>
+    <h2>3-month planner</h2>
+    <div class="tool-card">
+      <div class="tool-grid">
+        <label>Plan goal
+          <select id="plannerGoal">
+            <option value="gain">Weight gain</option>
+            <option value="loss">Weight loss</option>
+          </select>
+        </label>
+        <label>Meals per day
+          <select id="plannerMeals">
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+          </select>
+        </label>
+        <button type="button" class="primary-btn" id="plannerGenBtn">Generate 12-week plan</button>
+        <button type="button" class="ghost-btn" id="plannerClearBtn">Clear saved plan</button>
+      </div>
+      <p class="fine-print" id="plannerNote">Your plan is saved automatically in this browser.</p>
+      <div class="planner-weeks" id="plannerWeeks"></div>
+    </div>
+  </div>
+</section>
 
-<select id="foodSelect"></select>
+<!-- ============ PROGRESS ============ -->
+<section class="section" id="progress">
+  <div class="section-inner narrow">
+    <p class="eyebrow">The proof is on the scale</p>
+    <h2>Progress tracker</h2>
+    <div class="tool-card">
+      <form class="tool-grid" id="progressForm">
+        <label>Date
+          <input type="date" id="progDate" required>
+        </label>
+        <label>Weight (kg)
+          <input type="number" id="progWeight" step="0.1" min="1" required placeholder="e.g. 68.4">
+        </label>
+        <label>Note (optional)
+          <input type="text" id="progNote" placeholder="How did today feel?">
+        </label>
+        <button type="submit" class="primary-btn">Log entry</button>
+      </form>
 
-<input id="quantity">
+      <div class="progress-chart-wrap">
+        <canvas id="progressChart" height="220"></canvas>
+        <p class="empty-state" id="progressEmpty">No entries yet — log your first weight above to start your chart.</p>
+      </div>
 
-<button onclick="calculateNutrition()">
-Calculate
-</button>
+      <table class="progress-table" id="progressTable">
+        <thead><tr><th>Date</th><th>Weight (kg)</th><th>Change</th><th>Note</th><th></th></tr></thead>
+        <tbody id="progressTableBody"></tbody>
+      </table>
+      <button class="ghost-btn" id="progressClearBtn">Clear all progress data</button>
+    </div>
+  </div>
+</section>
 
-<div id="nutritionResult"></div>
+<!-- ============ RECIPE MODAL ============ -->
+<div class="modal-overlay" id="modalOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close recipe">×</button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
 
-
-
-<!-- PASTE PLANNER HTML HERE -->
-
-<h2>3 Month Weight Planner</h2>
-
-<input id="plannerName" placeholder="Your Name">
-
-<input id="plannerAge" placeholder="Age">
-
-<input id="plannerWeight" placeholder="Current Weight kg">
-
-<select id="plannerGoal">
-
-<option value="gain">
-Weight Gain
-</option>
-
-<option value="loss">
-Weight Loss
-</option>
-
-</select>
-
-<button onclick="generateProgressPlan()">
-Generate My Plan
-</button>
-
-<div id="plannerResult"></div>
-
-
-
-<!-- Footer comes after this -->
-
-<footer>
-
-<p>
-
-© 2026 EAT AND LOOK TASTY
-
-</p>
-
+<footer class="site-footer">
+  <p>EAT AND LOOK TASTY — created by syeda manahyl. Recipe and macro data is for general guidance only, not medical advice.</p>
 </footer>
-script src="script.js"></script>
 
-<section class="food-library">
-
-<h1>🥗 Food Library</h1>
-
-
-<div class="food-columns">
-
-
-<div class="food-box gain-food">
-
-<h2>💪 Weight Gain Foods (200)</h2>
-
-<div id="gainFoods">
-
-</div>
-
-</div>
-
-
-
-<div class="food-box loss-food">
-
-<h2>🥗 Weight Loss Foods (200)</h2>
-
-<div id="lossFoods">
-
-</div>
-
-</div>
-
-
-</div>
-
-</section>
-<section class="recipe-container">
-
-<h1 class="recipe-title">🍽️ Explore Recipes</h1>
-
-<div class="search-area">
-
-<input 
-type="text" 
-id="recipeSearch"
-placeholder="🔍 Search recipes (chicken, rice, smoothie...)"
-onkeyup="searchRecipes()"
->
-
-</div>
-<div class="recipe-columns">
-
-<!-- WEIGHT GAIN SIDE -->
-<div class="recipe-box gain-box">
-
-<h2>💪 Weight Gain Recipes</h2>
-
-<div id="gainRecipes" class="recipe-grid">
-<!-- Recipes will appear here automatically -->
-</div>
-
-</div>
-
-
-
-<!-- WEIGHT LOSS SIDE -->
-<div class="recipe-box loss-box">
-
-<h2>🥗 Weight Loss Recipes</h2>
-
-<div id="lossRecipes" class="recipe-grid">
-<!-- Recipes will appear here automatically -->
-</div>
-
-</div>
-
-
-</div>
-
-
-<!-- POPUP DETAILS -->
-
-<div id="recipePopup" class="popup">
-
-<div class="popup-content">
-
-<span onclick="closeRecipe()" class="close">×</span>
-
-<h2 id="recipeName"></h2>
-
-<p id="recipeInfo"></p>
-
-</div>
-
-</div>
-
-
-</section>
-<!-- Recipe database -->
-<script src="recipes.js"></script>
-
-<!-- Main website functions -->
+<script src="foods.js"></script>
 <script src="script.js"></script>
-
 </body>
 </html>
