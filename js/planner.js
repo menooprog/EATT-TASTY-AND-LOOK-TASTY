@@ -3,7 +3,49 @@ function generatePlan(){
 let name = document.getElementById("userName").value;
 
 let goal = document.getElementById("goal").value;
+let bmi = weight / ((height/100)*(height/100));
 
+
+let calories = 0;
+
+
+if(activity==="low"){
+
+calories = (10*weight + 6.25*height - 5*age) * 1.2;
+
+}
+
+
+else if(activity==="medium"){
+
+calories = (10*weight + 6.25*height - 5*age) * 1.55;
+
+}
+
+
+else{
+
+calories = (10*weight + 6.25*height - 5*age) * 1.725;
+
+}
+
+
+
+if(goal==="gain"){
+
+calories += 500;
+
+}
+
+else{
+
+calories -= 500;
+
+}
+
+
+
+let protein = weight * 1.6;
 let plan = document.getElementById("planResult");
 
 let weight = Number(document.getElementById("weight").value);
@@ -96,9 +138,11 @@ let output = `
 
 <h2>${name}'s 90 Day Diet Plan</h2>
 
-`;
+<p><b>BMI:</b> ${bmi.toFixed(1)}</p>
 
+<p><b>Daily Calories Target:</b> ${Math.round(calories)} kcal</p>
 
+<p><b>Protein Target:</b> ${protein.toFixed(0)} g/day</p>
 
 for(let day=1; day<=90; day++){
 
