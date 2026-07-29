@@ -10,15 +10,13 @@ document.getElementById("foodName")
 let amount =
 Number(document.getElementById("amount").value);
 
+let food = ALL_FOODS.find(item =>
 
-
-let food = DATABASE.gainFoods.find(item =>
-
-item.name.toLowerCase()
+item.name
+.toLowerCase()
 .includes(name)
 
 );
-
 
 
 let result =
