@@ -1,34 +1,28 @@
 function calculateNutrition(){
 
-
-let name =
-document.getElementById("foodName")
+let name = document
+.getElementById("foodName")
 .value
 .toLowerCase();
 
 
-let amount =
-Number(document.getElementById("amount").value);
-
-let food = ALL_FOODS.find(item =>
-
-item.name
-.toLowerCase()
-.includes(name)
-
+let amount = Number(
+document.getElementById("amount").value
 );
 
 
-let result =
-document.getElementById("calculationResult");
+let food = ALL_FOODS.find(item =>
+item.name.toLowerCase().includes(name)
+);
 
 
+let result = document.getElementById("calculationResult");
 
-if(food){
+
+if(food && amount > 0){
 
 
 let ratio = amount / 100;
-
 
 
 result.innerHTML = `
@@ -37,7 +31,7 @@ result.innerHTML = `
 
 <h2>${food.name}</h2>
 
-<p>Quantity: ${amount} g</p>
+<p>Amount: ${amount} g</p>
 
 <p>Calories: ${(food.calories * ratio).toFixed(1)} kcal</p>
 
@@ -49,7 +43,6 @@ result.innerHTML = `
 
 <p>Fiber: ${(food.fiber * ratio).toFixed(1)} g</p>
 
-
 </div>
 
 `;
@@ -58,12 +51,9 @@ result.innerHTML = `
 
 else{
 
-
 result.innerHTML =
-"Food not found in database";
-
+"Please enter a valid food name and quantity.";
 
 }
-
 
 }
