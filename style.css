@@ -408,3 +408,252 @@ width:95%;
 }
 
 }
+
+ /* ================================
+   FOOD CARDS DESIGN
+   ================================ */
+
+
+.food-section{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+
+
+.food-card{
+
+    background:#3b1f1f;
+    color:white;
+
+    border:2px solid #87ceeb;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
+}
+
+
+
+.food-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#5a252f;
+
+    border-color:#bdefff;
+
+}
+
+
+
+.food-card h3{
+
+    color:#87ceeb;
+
+    font-size:20px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.food-card p{
+
+    color:#ffe6cc;
+
+    font-size:15px;
+
+}
+
+
+
+
+/* ================================
+   RECIPE POPUP
+   ================================ */
+
+
+#recipeDetails{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.7);
+
+    z-index:1000;
+
+    overflow:auto;
+
+    padding:30px;
+
+}
+
+
+
+.recipe-box{
+
+    max-width:650px;
+
+    margin:50px auto;
+
+    background:#2b1515;
+
+    color:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    border:3px solid #87ceeb;
+
+    animation:popup 0.3s ease;
+
+}
+
+
+
+@keyframes popup{
+
+from{
+
+transform:scale(0.7);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+
+
+.recipe-box h2{
+
+    color:#87ceeb;
+
+    text-align:center;
+
+}
+
+
+
+.recipe-box h3{
+
+    color:#ff9aa2;
+
+    margin-top:20px;
+
+}
+
+
+
+.recipe-box p{
+
+    line-height:1.6;
+
+    color:#f9e6d0;
+
+}
+
+
+
+/* Close Button */
+
+
+.recipe-box button{
+
+    background:#87ceeb;
+
+    color:#3b1f1f;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    margin-top:20px;
+
+}
+
+
+
+.recipe-box button:hover{
+
+    background:#ff9aa2;
+
+}
+
+
+
+/* ================================
+   SEARCH RESULTS
+   ================================ */
+
+
+#searchResult{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.food-card{
+
+padding:15px;
+
+}
+
+
+.recipe-box{
+
+margin:20px auto;
+
+padding:20px;
+
+}
+
+}
