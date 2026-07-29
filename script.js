@@ -161,61 +161,44 @@ recipePopup.style.display="none";
 }
 
 
-
-
-// SEARCH FUNCTION
-
-function searchFood(){
-
-
-let text =
-document.getElementById("searchBox").value.toLowerCase();
-
-
-
-let results =
-document.getElementById("searchResult");
-
-
-results.innerHTML="";
-
-
-
-foods.forEach((food,index)=>{
-
-
-if(food.name.toLowerCase().includes(text)){
-
-
-results.innerHTML+=`
-
-<div class="food-card"
-onclick="showRecipe(${index})">
-
-<h3>${food.name}</h3>
-
-<p>${food.calories} kcal</p>
-
-</div>
-
-`;
-
+// 1. Display all foods
+function displayFoods(){
+   ...
 }
 
 
-});
-
-
+// 2. Show recipe popup
+function showRecipe(index){
+   ...
 }
 
 
+// 3. Close popup
+function closeRecipe(){
+   ...
+}
 
 
+// 4. Old search function
+// DELETE your old searchFood() function
+// PASTE the new advanced searchFood() here
 
-// LOAD FOOD WHEN PAGE OPENS
+
+// 5. Nutrition calculator
+PASTE calculateNutrition() HERE
+
+
+// 6. Load food dropdown
+PASTE loadFoodOptions() HERE
+
+
+// 7. Keep this at the very end
 
 window.onload=function(){
 
-displayFoods();
+    displayFoods();
+    loadFoodOptions();
 
 };
+
+
