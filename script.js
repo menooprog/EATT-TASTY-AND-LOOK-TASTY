@@ -86,6 +86,77 @@ ${recipe.name}
 
 
 }
+function searchRecipes(){
+
+
+let input = document.getElementById("recipeSearch").value.toLowerCase();
+
+
+let gainContainer = document.getElementById("gainRecipes");
+
+let lossContainer = document.getElementById("lossRecipes");
+
+
+
+gainContainer.innerHTML="";
+
+lossContainer.innerHTML="";
+
+
+
+// Search weight gain
+
+weightGainRecipes
+.filter(recipe => 
+recipe.name.toLowerCase().includes(input)
+||
+recipe.ingredients.join(" ").toLowerCase().includes(input)
+)
+.forEach(recipe=>{
+
+
+gainContainer.innerHTML += `
+
+<div class="recipe-card"
+onclick="showRecipe(${recipe.id},'gain')">
+
+${recipe.name}
+
+</div>
+
+`;
+
+});
+
+
+
+
+// Search weight loss
+
+weightLossRecipes
+.filter(recipe => 
+recipe.name.toLowerCase().includes(input)
+||
+recipe.ingredients.join(" ").toLowerCase().includes(input)
+)
+.forEach(recipe=>{
+
+
+lossContainer.innerHTML += `
+
+<div class="recipe-card"
+onclick="showRecipe(${recipe.id},'loss')">
+
+${recipe.name}
+
+</div>
+
+`;
+
+});
+
+
+}
 
 
 
