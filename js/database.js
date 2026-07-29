@@ -41,3 +41,7 @@ const DATABASE = {
     }
   ]
 };
+const ALL_FOODS = [
+    ...DATABASE.gainFoods,
+    ...DATABASE.lossFoods
+];
