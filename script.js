@@ -44,51 +44,132 @@ ${recipe.name}
 }
 
 
+function displayRecipes(){
 
-function showRecipe(name){
-
-
-let allRecipes=[...gainRecipes,...lossRecipes];
-
-
-let recipe=allRecipes.find(r=>r.name===name);
+let gainContainer = document.getElementById("gainRecipes");
+let lossContainer = document.getElementById("lossRecipes");
 
 
+// Weight Gain
 
-document.getElementById("recipeName").innerHTML=recipe.name;
+weightGainRecipes.forEach(recipe => {
 
+gainContainer.innerHTML += `
 
-document.getElementById("recipeInfo").innerHTML=`
+<div class="recipe-card" onclick="showRecipe(${recipe.id}, 'gain')">
 
-<b>Meal:</b> ${recipe.meal}<br><br>
+${recipe.name}
 
-<b>Ingredients:</b> ${recipe.ingredients.join(", ")}<br><br>
-
-<b>Recipe:</b> ${recipe.recipe}<br><br>
-
-<b>Serving:</b> ${recipe.serving}<br><br>
-
-🔥 Calories: ${recipe.calories} kcal<br>
-
-💪 Protein: ${recipe.protein} g<br>
-
-🍚 Carbohydrates: ${recipe.carbs} g<br>
-
-🥑 Fat: ${recipe.fat} g<br>
-
-🌿 Fibre: ${recipe.fiber} g<br>
-
-🍊 Vitamins: ${recipe.vitamins}<br><br>
-
-✨ Alternative: ${recipe.alternative}
+</div>
 
 `;
+
+});
+
+
+
+// Weight Loss
+
+weightLossRecipes.forEach(recipe => {
+
+lossContainer.innerHTML += `
+
+<div class="recipe-card" onclick="showRecipe(${recipe.id}, 'loss')">
+
+${recipe.name}
+
+</div>
+
+`;
+
+});
+
+
+}
+
+
+
+function showRecipe(id,type){
+
+
+let recipe;
+
+
+if(type==="gain"){
+
+recipe = weightGainRecipes.find(item=>item.id===id);
+
+}
+
+else{
+
+recipe = weightLossRecipes.find(item=>item.id===id);
+
+}
+
+
+
+document.getElementById("recipeName").innerHTML = recipe.name;
+
+
+document.getElementById("recipeInfo").innerHTML = `
+
+
+🍽️ <b>Meal:</b> ${recipe.meal}<br><br>
+
+
+🥘 <b>Ingredients:</b><br>
+${recipe.ingredients.join(", ")}
+<br><br>
+
+
+👩‍🍳 <b>Recipe:</b><br>
+${recipe.recipe}
+
+<br><br>
+
+
+🍴 <b>Serving:</b> ${recipe.serving}
+
+<br><br>
+
+
+🔥 Calories: ${recipe.calories} kcal
+
+<br>
+
+💪 Protein: ${recipe.protein} g
+
+<br>
+
+🍚 Carbohydrates: ${recipe.carbs} g
+
+<br>
+
+🥑 Fat: ${recipe.fat} g
+
+<br>
+
+🌿 Fibre: ${recipe.fiber} g
+
+<br>
+
+🍊 Vitamins: ${recipe.vitamins}
+
+<br><br>
+
+🔄 Alternative:
+${recipe.alternative}
+
+`;
+
 
 
 document.getElementById("recipePopup").style.display="block";
 
 
 }
+
 
 
 
